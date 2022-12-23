@@ -1,11 +1,14 @@
 @use "./_fonts.scss";
 @use "./_Header.scss";
 @use "./_Home.scss";
+@use "./_Footer.scss";
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: none;
 }
 
 ul {
