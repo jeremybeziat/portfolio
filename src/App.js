@@ -1,16 +1,18 @@
-import "./App.scss";
+import "./assets/styles/App.scss";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Profil from "./pages/Profil";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-      <main>
-      </main>
-      <footer>
-        
-      </footer>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/profil" element={<Profil />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
