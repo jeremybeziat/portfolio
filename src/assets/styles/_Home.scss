@@ -1,0 +1,86 @@
+.presentation {
+  .name {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
+  }
+
+  svg {
+    margin-left: 5px;
+    opacity: 50%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  hr {
+    border: 1px solid white;
+    opacity: 20%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+}
+
+.works {
+  margin-top: 80px;
+
+  h2 {
+    font-size: 30px;
+  }
+
+  hr {
+    border: 1px solid white;
+    opacity: 20%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .works-cards {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+  }
+
+  figure {
+    width: 100%;
+    position: relative;
+  }
+
+  figure img {
+    object-fit: cover;
+    object-position: top;
+    max-height: 200px;
+    width: 100%;
+    opacity: 50%;
+  }
+
+  figcaption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  h3 {
+    color: white;
+    margin: 20px;
+    font-size: 30px;
+  }
+
+  svg {
+    opacity: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+  }
+}
