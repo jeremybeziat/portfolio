@@ -29,11 +29,15 @@ h3,
 h4,
 h5,
 h6 {
-  color: white;
-  opacity: 80%;
+  color: #cecece;
   font-family: "Dirtyline";
   font-weight: normal;
   letter-spacing: 2.5px;
+}
+
+p {
+  color: #cecece;
+  font-family: "Satoshi";
 }
 
 body {
@@ -47,5 +51,4 @@ header {
 
 main {
   padding: 0px 10px;
-  // padding-top: 3em;
 }

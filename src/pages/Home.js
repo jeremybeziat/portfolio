@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-// import works from "../assets/images/bgd.webp";
+import jeremy from "../assets/images/jeremy-n&b.webp";
 import works2 from "../assets/images/rainingstars.webp";
 // import works3 from "../assets/images/murale.jpg";
 
@@ -16,8 +16,8 @@ function Home() {
             <h1>jErEmy bEziAt</h1>
             <Link to="/profil">
               <svg
-                width="22"
-                height="22"
+                width="25"
+                height="25"
                 viewBox="0 0 16 16"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -30,12 +30,15 @@ function Home() {
               </svg>
             </Link>
           </div>
-          <div>
-            <h2>wEb dEvElOpEr</h2>
-            <hr />
-            <h2>dEsignEr ui</h2>
-            <hr />
-            <h2>grAphic dEsignEr</h2>
+          <div className="presentation-content">
+            <div>
+              <p>Web Developer</p>
+              <hr />
+              <p>Designer UI</p>
+              <hr />
+              <p>Graphic Designer</p>
+            </div>
+            <img src={jeremy} alt="jeremy-beziat" />
           </div>
         </section>
         <section className="works">
@@ -123,7 +126,7 @@ function Home() {
           </div>
         </section>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
