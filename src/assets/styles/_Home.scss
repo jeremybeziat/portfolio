@@ -78,12 +78,13 @@
 
   .works-cards {
     flex: 0 0 100%;
-    scroll-snap-align: auto;
+    scroll-snap-align: center;
   }
 
   figure {
     width: 100%;
     position: relative;
+    overflow: hidden;
   }
 
   figure img {
@@ -92,6 +93,7 @@
     max-height: 200px;
     width: 100%;
     opacity: 50%;
+    transition: all 800ms;
   }
 
   figcaption {
@@ -100,6 +102,13 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  figure:active {
+    img {
+      transform: scale(1.05);
+      transition: 800ms;
+    }
   }
 
   h3 {
