@@ -6,22 +6,19 @@
   }
 
   svg {
-    opacity: 80%;
-    margin-left: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 
   h1 {
     font-size: 35px;
   }
 
-  h2 {
-    font-size: 24px;
-  }
-
   hr {
     border: 1px solid white;
     opacity: 20%;
-    margin: 15px 0;
+    margin: 10px 0;
   }
 
   img {
@@ -30,10 +27,30 @@
   }
 
   .presentation-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
+    font-size: 16px;
+    padding: 15px;
+    position: relative;
+  }
+
+  .presentation-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: url("../images/jeremy-n&b.webp");
+    background-size: cover;
+    background-position-y: 59%;
+    background-position-x: 81px;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+  }
+
+  .works-name {
+    position: relative;
   }
 }
 
@@ -51,11 +68,18 @@
     margin-bottom: 10px;
   }
 
-  .works-cards {
-    padding-top: 10px;
+  .works-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    overflow-x: scroll;
+    width: 300px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    gap: 12px;
+  }
+
+  .works-cards {
+    flex: 0 0 100%;
+    scroll-snap-align: auto;
   }
 
   figure {
