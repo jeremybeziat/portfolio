@@ -1,13 +1,13 @@
 .presentation {
   .name {
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
     margin-bottom: 20px;
   }
 
   svg {
     opacity: 80%;
+    margin-left: 2px;
   }
 
   h1 {
