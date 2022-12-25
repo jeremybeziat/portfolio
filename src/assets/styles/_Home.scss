@@ -71,7 +71,6 @@
   .works-container {
     display: flex;
     overflow-x: scroll;
-    width: 300px;
     scroll-snap-type: x mandatory;
     scroll-padding: 24px;
     gap: 12px;
