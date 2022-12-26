@@ -6,13 +6,13 @@
   }
 
   svg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    width: 25px;
+    opacity: 0.5;
+    margin-left: 5px;
   }
 
   h1 {
-    font-size: 35px;
+    font-size: 34px;
   }
 
   hr {
@@ -28,25 +28,8 @@
 
   .presentation-content {
     font-size: 16px;
-    padding: 15px;
+    padding: 5px;
     position: relative;
-  }
-
-  .presentation-content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border: 1px solid white;
-    border-radius: 10px;
-    background: url("../images/jeremy-n&b.webp");
-    background-size: cover;
-    background-position-y: 59%;
-    background-position-x: 81px;
-    background-repeat: no-repeat;
-    opacity: 0.7;
   }
 
   .works-name {
@@ -98,10 +81,11 @@
 
   figcaption {
     width: 100%;
-    height: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   figure:active {
@@ -111,16 +95,14 @@
     }
   }
 
-  h3 {
+  p {
+    color: white;
+    font-family: "Satoshi-Medium";
     margin: 20px;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   svg {
-    stroke: #cecece;
-    position: absolute;
-    bottom: 0;
-    right: 0;
     margin: 20px;
   }
 }
