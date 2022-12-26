@@ -16,28 +16,25 @@ function Home() {
             <div className="works-name">
               <div className="name">
                 <h1>jErEmy bEziAt</h1>
+                <Link to="/profil">
+                  <svg
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.4454 10.9099L12.9264 10.8657L12.9264 4.59014L2.18718 15.3293L0.419417 13.5616L11.1586 2.82237L4.88303 2.82237L4.83883 0.303301H15.4454V10.9099Z"
+                      fill="white"
+                    />
+                  </svg>
+                </Link>
               </div>
               <p>Web Developer</p>
               <hr />
               <p>Designer UI</p>
               <hr />
               <p>Graphic Designer</p>
-              <Link to="/profil">
-                <svg
-                  width="25"
-                  height="25"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M15.4454 10.9099L12.9264 10.8657L12.9264 4.59014L2.18718 15.3293L0.419417 13.5616L11.1586 2.82237L4.88303 2.82237L4.83883 0.303301H15.4454V10.9099Z"
-                    fill="white"
-                  />
-                </svg>
-              </Link>
             </div>
-            {/* <img src={jeremy} alt="jeremy-beziat" /> */}
           </div>
         </section>
         <section className="works">
@@ -49,6 +46,7 @@ function Home() {
                 <img src={works2} alt="works" />
                 <a href="/">
                   <figcaption>
+                    <p>Raining stars</p>
                     <svg
                       width="39"
                       height="39"
@@ -77,6 +75,7 @@ function Home() {
                 <img src={works} alt="works" />
                 <a href="/">
                   <figcaption>
+                    <p>Murale</p>
                     <svg
                       width="39"
                       height="39"
@@ -105,6 +104,7 @@ function Home() {
                 <img src={works3} alt="works" />
                 <a href="/">
                   <figcaption>
+                    <p>Stalone first</p>
                     <svg
                       width="39"
                       height="39"
@@ -129,6 +129,7 @@ function Home() {
               </figure>
             </div>
           </div>
+          <hr />
         </section>
       </main>
       <Footer />
