@@ -1,11 +1,20 @@
 footer {
-  padding-top: 100px;
-  padding-bottom: 10px;
   display: flex;
   justify-content: center;
   align-content: center;
+  padding-top: 77px;
 
   a {
-    margin: 10px;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding-top: 41px;
+  }
+
+  svg {
+    width: 35px;
   }
 }

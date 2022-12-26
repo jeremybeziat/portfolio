@@ -21,6 +21,11 @@
   font-size: 30px;
 }
 
+li .navbar__link:hover {
+  translate: ss;
+  color: #518cff;
+}
+
 .navbar__burger {
   width: 40px;
   height: 40px;
@@ -42,7 +47,6 @@
     background-color: #121212;
     visibility: hidden;
     transition: all 0.5s ease;
-    
   }
 
   .show-nav .navbar__links {
@@ -113,5 +117,11 @@
 
   .show-nav .burger-bar::after {
     transform: rotate(-45deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding-right: 0;
   }
 }
