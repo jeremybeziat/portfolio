@@ -5,14 +5,18 @@
     margin-bottom: 20px;
   }
 
+  h1 {
+    font-size: 34px;
+  }
+
   svg {
     width: 25px;
     opacity: 0.5;
     margin-left: 5px;
   }
 
-  h1 {
-    font-size: 34px;
+  p {
+    font-size: 24px;
   }
 
   hr {
@@ -37,17 +41,35 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .works {
   margin-top: 80px;
 
   h2 {
-    font-size: 35px;
+    font-size: 50px;
   }
 
   hr {
     border: 1px solid white;
     opacity: 20%;
-    margin-top: 5px;
     margin-bottom: 10px;
   }
 
@@ -80,12 +102,13 @@
   }
 
   figcaption {
-    width: 100%;
     position: absolute;
     bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding: 15px;
   }
 
   figure:active {
@@ -96,13 +119,32 @@
   }
 
   p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     color: white;
     font-family: "Satoshi-Medium";
-    margin: 20px;
     font-size: 20px;
   }
+}
 
-  svg {
-    margin: 20px;
+@media screen and (min-width: 768px) {
+  .presentation {
+    h1 {
+      font-size: 50px;
+    }
+
+    svg {
+      width: 35px;
+    }
+  }
+  .works {
+    .works-cards {
+      flex: none;
+    }
+
+    figure {
+      width: 350px;
+    }
   }
 }

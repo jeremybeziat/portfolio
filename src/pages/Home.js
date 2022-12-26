@@ -46,7 +46,7 @@ function Home() {
                 <img src={works2} alt="works" />
                 <a href="/">
                   <figcaption>
-                    <p>Raining stars</p>
+                    <p>Raining stars 07</p>
                     <svg
                       width="39"
                       height="39"
@@ -104,32 +104,36 @@ function Home() {
                 <img src={works3} alt="works" />
                 <a href="/">
                   <figcaption>
-                    <p>Stalone first</p>
-                    <svg
-                      width="39"
-                      height="39"
-                      viewBox="0 0 39 39"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle
-                        cx="19.5"
-                        cy="19.5"
-                        r="18.525"
-                        stroke="white"
-                        strokeWidth="1.95"
-                      />
-                      <path
-                        d="M22.037 26.4444L20.3519 24.6991L24.625 20.4259H10V18.0185H24.625L20.3519 13.7454L22.037 12L29.2593 19.2222L22.037 26.4444Z"
-                        fill="white"
-                      />
-                    </svg>
+                    <p>
+                      Stalone first Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Expedita, fuga.
+                    </p>
+                    <div>
+                      <svg
+                        width="39"
+                        height="39"
+                        viewBox="0 0 39 39"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="19.5"
+                          cy="19.5"
+                          r="18.525"
+                          stroke="white"
+                          strokeWidth="1.95"
+                        />
+                        <path
+                          d="M22.037 26.4444L20.3519 24.6991L24.625 20.4259H10V18.0185H24.625L20.3519 13.7454L22.037 12L29.2593 19.2222L22.037 26.4444Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
                   </figcaption>
                 </a>
               </figure>
             </div>
           </div>
-          <hr />
         </section>
       </main>
       <Footer />
