@@ -29,11 +29,11 @@ function Home() {
                   </svg>
                 </Link>
               </div>
-              <p>Web Developer</p>
+              <p className="web-developer">Web Developer</p>
               <hr />
-              <p>Designer UI</p>
-              <hr />
-              <p>Graphic Designer</p>
+              <p className="designer-ui">Designer UI</p>
+              <hr className="hr-last" />
+              <p className="graphic-designer">Graphic Designer</p>
             </div>
           </div>
         </section>
