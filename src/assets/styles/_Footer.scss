@@ -1,20 +1,23 @@
-footer {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding-top: 77px;
-
-  a {
-    margin: 15px;
+@media screen and (min-width: 768px) {
+  footer {
+    svg {
+      width: 30px;
+      height: 20px;
+    }
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   footer {
-    padding-top: 41px;
-  }
+    svg {
+      width: 30px;
+      height: 25px;
+    }
 
-  svg {
-    width: 35px;
+    a:hover {
+      svg path {
+        fill: #518cff;
+      }
+    }
   }
 }
