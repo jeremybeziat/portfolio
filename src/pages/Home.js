@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import works from "../assets/images/bgd.webp";
 import works2 from "../assets/images/rainingstars.webp";
-import works3 from "../assets/images/murale.jpg";
+import works3 from "../assets/images/murale.webp";
 
 function Home() {
   return (
@@ -16,7 +16,7 @@ function Home() {
             <div className="works-name">
               <div className="name">
                 <h1>jErEmy bEziAt</h1>
-                <Link to="/profil">
+                <Link to="/profil" title="profil">
                   <svg
                     viewBox="0 0 16 16"
                     fill="none"

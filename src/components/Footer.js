@@ -8,6 +8,7 @@ function Footer() {
         href="https://twitter.com/SkarryxD"
         target="_blank"
         rel="noopener noreferrer"
+        title="Twitter"
       >
         <svg
           width="25"
@@ -27,6 +28,7 @@ function Footer() {
         href="https://www.instagram.com/skarryx.design"
         target="_blank"
         rel="noopener noreferrer"
+        title="Instagram"
       >
         <svg
           width="21"
@@ -46,6 +48,7 @@ function Footer() {
         href="https://www.behance.net/jeremybeziat"
         target="_blank"
         rel="noopener noreferrer"
+        title="Behance"
       >
         <svg
           width="31.69"
@@ -65,6 +68,7 @@ function Footer() {
         href="https://github.com/jeremybeziat"
         target="_blank"
         rel="noopener noreferrer"
+        title="Github"
       >
         <svg
           width="21"
@@ -80,7 +84,7 @@ function Footer() {
           />
         </svg>
       </a>
-      <a href="mailto:jeremybeziat.pro@gmail.com">
+      <a href="mailto:jeremybeziat.pro@gmail.com" title="Mail">
         <svg
           width="26"
           height="20"
