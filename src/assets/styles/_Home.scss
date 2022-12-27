@@ -221,6 +221,19 @@
     color: white;
     font-family: "Satoshi-Medium";
     font-size: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .works {
+    .works-cards {
+      flex: none;
+    }
+
+    figure {
+      width: 350px;
+    }
   }
 }
 
@@ -232,15 +245,6 @@
 
     svg {
       width: 35px;
-    }
-  }
-  .works {
-    .works-cards {
-      flex: none;
-    }
-
-    figure {
-      width: 350px;
     }
   }
 }
