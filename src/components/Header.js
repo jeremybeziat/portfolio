@@ -17,7 +17,7 @@ function Header() {
           </li>
           <li className="navbar__item">
             <a href="/profil" className="navbar__link">
-              prOfil
+              AbOut
             </a>
           </li>
           <li className="navbar__item">

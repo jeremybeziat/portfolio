@@ -1,0 +1,113 @@
+.presentation {
+  .name {
+    h1 {
+      animation: name 1.5s ease 0s 1 normal forwards;
+    }
+
+    @keyframes name {
+      0% {
+        opacity: 0;
+        transform: translateX(-250px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    svg {
+      animation: svg 1.5s ease 0s 1 normal forwards;
+    }
+
+    @keyframes svg {
+      0% {
+        transform: translateY(-250px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .web-developer {
+    animation: web 1.3s ease 0s 1 normal forwards;
+  }
+
+  @keyframes web {
+    0% {
+      transform: translateX(-200px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  hr {
+    animation: hr 1.3s ease 0s 1 normal forwards;
+  }
+
+  @keyframes hr {
+    0% {
+      opacity: 0;
+      transform: translateX(250px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .designer-ui {
+    animation: concepteur 1.6s ease 0s 1 normal forwards;
+  }
+
+  @keyframes concepteur {
+    0% {
+      transform: translateX(-200px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .hr-last {
+    animation: hr-last 1.7s ease 0s 1 normal forwards;
+  }
+
+  @keyframes hr-last {
+    0% {
+      opacity: 0;
+      transform: translateX(250px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .graphic-designer {
+    animation: graphic 1.9s ease 0s 1 normal forwards;
+  }
+
+  @keyframes graphic {
+    0% {
+      transform: translateX(-200px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+
+.works h2, .recent {
+  animation: name 1.5s ease 0s 1 normal forwards;
+}
+
+.works-container {
+  animation: name 2.2s ease 0s 1 normal forwards;
+}

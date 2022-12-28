@@ -1,3 +1,7 @@
+// ################################
+// ####### PRESENTATION ###########
+// ################################
+
 .presentation {
   .name {
     display: flex;
@@ -7,115 +11,20 @@
 
   h1 {
     font-size: 34px;
-    animation: name 1.5s ease 0s 1 normal forwards;
-  }
-
-  @keyframes name {
-    0% {
-      opacity: 0;
-      transform: translateX(-250px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
   }
 
   svg {
     width: 25px;
     opacity: 0.5;
     margin-left: 5px;
-    animation: svg 1.5s ease 0s 1 normal forwards;
-  }
-
-  @keyframes svg {
-    0% {
-      transform: translateY(-250px);
-    }
-
-    100% {
-      transform: translateY(0);
-    }
   }
 
   p {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   hr {
-    border: 1px solid white;
-    opacity: 20%;
     margin: 10px 0;
-    animation: hr 1.3s ease 0s 1 normal forwards;
-  }
-
-  @keyframes hr {
-    0% {
-      opacity: 0;
-      transform: translateX(250px);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  .hr-last {
-    animation: hr-last 1.7s ease 0s 1 normal forwards;
-  }
-
-  @keyframes hr-last {
-    0% {
-      opacity: 0;
-      transform: translateX(250px);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  .web-developer {
-    animation: web 1.3s ease 0s 1 normal forwards;
-  }
-
-  @keyframes web {
-    0% {
-      transform: translateX(-200px);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  .designer-ui {
-    animation: concepteur 1.6s ease 0s 1 normal forwards;
-  }
-
-  @keyframes concepteur {
-    0% {
-      transform: translateX(-200px);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  .graphic-designer {
-    animation: graphic 1.9s ease 0s 1 normal forwards;
-  }
-
-  @keyframes graphic {
-    0% {
-      transform: translateX(-200px);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
   }
 
   img {
@@ -125,7 +34,6 @@
 
   .presentation-content {
     font-size: 16px;
-    padding: 5px;
     position: relative;
   }
 
@@ -148,28 +56,21 @@
   background: transparent;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
 .works {
   margin-top: 80px;
 
-  h2 {
-    animation: name 2s ease 0s 1 normal forwards;
-    font-size: 50px;
+  .recent {
+    color: #808080;
+    font-family: "Satoshi-Light";
+    margin-bottom: 2px;
   }
 
-  hr {
-    border: 1px solid white;
-    opacity: 20%;
+  h2 {
+    font-size: 50px;
     margin-bottom: 10px;
-    animation: hr 1.3s ease 0s 1 normal forwards;
   }
 
   .works-container {
-    animation: name 2.5s ease 0s 1 normal forwards;
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -191,9 +92,9 @@
   figure img {
     object-fit: cover;
     object-position: top;
-    max-height: 200px;
+    height: 200px;
     width: 100%;
-    opacity: 50%;
+    opacity: 60%;
     transition: all 800ms;
   }
 
@@ -205,9 +106,17 @@
     align-items: center;
     width: 100%;
     padding: 15px;
+    background: linear-gradient(transparent, #121212ab);
   }
 
   figure:active {
+    img {
+      transform: scale(1.05);
+      transition: 800ms;
+    }
+  }
+
+  figure:hover {
     img {
       transform: scale(1.05);
       transition: 800ms;

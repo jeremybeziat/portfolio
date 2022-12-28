@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import works from "../assets/images/bgd.webp";
+import works from "../assets/images/purplestars.webp";
 import works2 from "../assets/images/rainingstars.webp";
-import works3 from "../assets/images/murale.webp";
+import works3 from "../assets/images/roman.webp";
+import works4 from "../assets/images/creartor.webp";
 
 function Home() {
   return (
@@ -29,7 +30,7 @@ function Home() {
                   </svg>
                 </Link>
               </div>
-              <p className="web-developer">Web Developer</p>
+              <p className="web-developer">Front-End Developer</p>
               <hr />
               <p className="designer-ui">Designer UI</p>
               <hr className="hr-last" />
@@ -38,8 +39,8 @@ function Home() {
           </div>
         </section>
         <section className="works">
+          <p className="recent">Recent</p>
           <h2>wOrks</h2>
-          <hr />
           <div className="works-container">
             <div className="works-cards">
               <figure>
@@ -75,7 +76,7 @@ function Home() {
                 <img src={works} alt="works" />
                 <a href="/">
                   <figcaption>
-                    <p>Murale</p>
+                    <p>Purple stars</p>
                     <svg
                       width="39"
                       height="39"
@@ -104,10 +105,38 @@ function Home() {
                 <img src={works3} alt="works" />
                 <a href="/">
                   <figcaption>
-                    <p>
-                      Stalone first Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Expedita, fuga.
-                    </p>
+                    <p>Dream II</p>
+                    <div>
+                      <svg
+                        width="39"
+                        height="39"
+                        viewBox="0 0 39 39"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="19.5"
+                          cy="19.5"
+                          r="18.525"
+                          stroke="white"
+                          strokeWidth="1.95"
+                        />
+                        <path
+                          d="M22.037 26.4444L20.3519 24.6991L24.625 20.4259H10V18.0185H24.625L20.3519 13.7454L22.037 12L29.2593 19.2222L22.037 26.4444Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </figcaption>
+                </a>
+              </figure>
+            </div>
+            <div className="works-cards">
+              <figure>
+                <img src={works4} alt="works" />
+                <a href="/">
+                  <figcaption>
+                    <p>Creartor</p>
                     <div>
                       <svg
                         width="39"
