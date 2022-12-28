@@ -1,3 +1,22 @@
+footer {
+  a:active {
+    svg path {
+      fill: #518cff;
+    }
+  }
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+
+  p {
+    color: #808080;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   footer {
     svg {
