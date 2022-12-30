@@ -1,88 +1,62 @@
-.presentation {
-  .web-developer {
-    animation: web 1.3s ease 0s 1 normal forwards;
+// .presentation
+.web-developer {
+  animation: web 1.3s ease 0s 1 normal forwards;
+}
+
+@keyframes web {
+  0% {
+    transform: translateX(-200px);
   }
 
-  @keyframes web {
-    0% {
-      transform: translateX(-200px);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  hr {
-    animation: hr 1.3s ease 0s 1 normal forwards;
-  }
-
-  @keyframes hr {
-    0% {
-      opacity: 0;
-      transform: translateX(250px);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  .designer-ui {
-    animation: concepteur 1.6s ease 0s 1 normal forwards;
-  }
-
-  @keyframes concepteur {
-    0% {
-      transform: translateX(-200px);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  .hr-last {
-    animation: hr-last 1.7s ease 0s 1 normal forwards;
-  }
-
-  @keyframes hr-last {
-    0% {
-      opacity: 0;
-      transform: translateX(250px);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  .graphic-designer {
-    animation: graphic 1.9s ease 0s 1 normal forwards;
-  }
-
-  @keyframes graphic {
-    0% {
-      transform: translateX(-200px);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
+  100% {
+    transform: translateX(0);
   }
 }
 
+hr {
+  animation: web 1.3s ease 0s 1 normal forwards;
+}
 
-
-
-@keyframes name {
+@keyframes web {
   0% {
     opacity: 0;
-    transform: translateX(-250px);
+    transform: translateX(-200px);
   }
 
   100% {
     opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hr {
+  animation: web 1.7s ease 0s 1 normal forwards;
+}
+
+.designer-ui {
+  animation: concepteur 1.6s ease 0s 1 normal forwards;
+}
+
+@keyframes concepteur {
+  0% {
+    transform: translateX(-200px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.graphic-designer {
+  animation: graphic 1.9s ease 0s 1 normal forwards;
+}
+
+@keyframes graphic {
+  0% {
+    transform: translateX(-200px);
+  }
+
+  100% {
     transform: translateX(0);
   }
 }

@@ -33,7 +33,7 @@ function Home() {
               <p className="web-developer">Front-End Developer</p>
               <hr />
               <p className="designer-ui">Designer UI</p>
-              <hr className="hr-last" />
+              <hr className="hr" />
               <p className="graphic-designer">Graphic Designer</p>
             </div>
           </div>

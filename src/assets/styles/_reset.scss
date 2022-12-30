@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: none;
+}
+
+ul {
+  font-family: "Dirtyline";
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 2.5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #cecece;
+  font-family: "Dirtyline";
+  font-weight: normal;
+  letter-spacing: 2.5px;
+}
+
+p {
+  color: #cecece;
+  font-family: "Satoshi";
+  font-size: 20px;
+}
+
+hr {
+  border: 1px solid rgb(39, 39, 39);
+}
+
+::selection {
+  background: #518cff;
+  color: white;
+}
