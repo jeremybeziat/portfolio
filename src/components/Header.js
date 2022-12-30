@@ -26,7 +26,7 @@ function Header() {
             </a>
           </li>
         </ul>
-        <button className="navbar__burger" onClick={handleShowLinks}>
+        <button title="menu" className="navbar__burger" onClick={handleShowLinks}>
           <span className="burger-bar"></span>
         </button>
       </nav>
