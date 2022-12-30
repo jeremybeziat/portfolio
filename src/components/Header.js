@@ -10,11 +10,11 @@ function Header() {
     <header>
       <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
         <ul className="navbar__links">
-          <li className="navbar__item">
+          {/* <li className="navbar__item">
             <a href="/" className="navbar__link">
               hOmE
             </a>
-          </li>
+          </li> */}
           <li className="navbar__item">
             <a href="/profil" className="navbar__link">
               AbOut

@@ -17,7 +17,7 @@ function Home() {
             <div className="works-name">
               <div className="name">
                 <h1>jErEmy bEziAt</h1>
-                <Link to="/profil" title="profil">
+                {/* <Link to="/profil" title="about">
                   <svg
                     viewBox="0 0 16 16"
                     fill="none"
@@ -28,7 +28,7 @@ function Home() {
                       fill="white"
                     />
                   </svg>
-                </Link>
+                </Link> */}
               </div>
               <p className="web-developer">Front-End Developer</p>
               <hr />
@@ -37,6 +37,17 @@ function Home() {
               <p className="graphic-designer">Graphic Designer</p>
             </div>
           </div>
+        </section>
+        <section className="about">
+          <p>
+            I started as a graphic designer in 2021 and I reconverted in 2022 to
+            become a front-end developer with the graduation of my web/web
+            mobile developer. I am now a designer UI training with Formasup81.
+            <br />
+            <br />
+            The technologies I use every day : SCSS, Javascript, Wordpress,
+            InDesign, Illustrator, Photoshop, Figma.
+          </p>
         </section>
         <section className="works">
           <p className="recent">Recent</p>
