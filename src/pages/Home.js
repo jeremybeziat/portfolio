@@ -44,8 +44,15 @@ function Home() {
           <div className="works-container">
             <div className="works-cards">
               <figure>
-                <img src={works2} alt="works" />
                 <a href="/">
+                  <img
+                    fetchpriority="high"
+                    rel="preload"
+                    src={works2}
+                    alt="works"
+                    as="image"
+                    type="image/webp"
+                  />
                   <figcaption>
                     <p>Raining stars 07</p>
                     <svg
@@ -73,8 +80,15 @@ function Home() {
             </div>
             <div className="works-cards">
               <figure>
-                <img src={works} alt="works" />
                 <a href="/">
+                  <img
+                    fetchpriority="high"
+                    rel="preload"
+                    src={works}
+                    alt="works"
+                    as="image"
+                    type="image/webp"
+                  />
                   <figcaption>
                     <p>Purple stars</p>
                     <svg
@@ -102,8 +116,15 @@ function Home() {
             </div>
             <div className="works-cards">
               <figure>
-                <img src={works3} alt="works" />
                 <a href="/">
+                  <img
+                    fetchpriority="high"
+                    rel="preload"
+                    src={works3}
+                    alt="works"
+                    as="image"
+                    type="image/webp"
+                  />
                   <figcaption>
                     <p>Dream II</p>
                     <div>
@@ -133,8 +154,15 @@ function Home() {
             </div>
             <div className="works-cards">
               <figure>
-                <img src={works4} alt="works" />
                 <a href="/">
+                  <img
+                    fetchpriority="high"
+                    rel="preload"
+                    src={works4}
+                    alt="works"
+                    as="image"
+                    type="image/webp"
+                  />
                   <figcaption>
                     <p>Creartor</p>
                     <div>

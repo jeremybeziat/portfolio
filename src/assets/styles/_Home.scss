@@ -157,3 +157,25 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .presentation {
+    svg:hover path {
+      fill: #518cff;
+    }
+
+    svg:hover {
+      opacity: 1;
+    }
+  }
+  figcaption {
+    transition: all 300ms ease-in-out;
+
+    opacity: 0;
+  }
+
+  figure:hover figcaption {
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+  }
+}
