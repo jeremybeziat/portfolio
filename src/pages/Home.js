@@ -17,7 +17,7 @@ function Home() {
             <div className="works-name">
               <div className="name">
                 <h1>jErEmy bEziAt</h1>
-                {/* <Link to="/profil" title="about">
+                <Link to="/profil" title="about">
                   <svg
                     viewBox="0 0 16 16"
                     fill="none"
@@ -28,7 +28,7 @@ function Home() {
                       fill="white"
                     />
                   </svg>
-                </Link> */}
+                </Link>
               </div>
               <p className="web-developer">Front-End Developer</p>
               <hr />
@@ -39,6 +39,7 @@ function Home() {
           </div>
         </section>
         <section className="about">
+          <h2>AbOut</h2>
           <p>
             I started as a graphic designer in 2021 and I reconverted in 2022 to
             become a front-end developer with the graduation of my web/web
