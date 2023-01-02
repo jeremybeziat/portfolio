@@ -50,7 +50,7 @@
   padding-top: 50px;
 
   h2 {
-    font-size: 40px;
+    font-size: 32px;
     margin-bottom: 20px;
   }
 
@@ -58,8 +58,8 @@
     color: white;
     text-align: left;
     line-height: 1.2;
-    font-size: 14px;
-    opacity: 0.6;
+    font-size: 16px;
+    opacity: 0.8;
   }
 }
 
@@ -88,11 +88,16 @@
     color: #808080;
     font-family: "Satoshi-Light";
     margin-bottom: 2px;
+    font-size: 16px;
   }
 
   h2 {
-    font-size: 50px;
+    font-size: 32px;
     margin-bottom: 10px;
+  }
+
+  a {
+    display: flex;
   }
 
   .works-container {
@@ -145,6 +150,26 @@
     img {
       transform: scale(1.05);
       transition: 800ms;
+    }
+  }
+
+  .other-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Satoshi";
+    font-size: 20px;
+    color: #cecece;
+    height: 200px;
+
+    svg {
+      margin-left: 20px;
+      circle {
+        stroke: #cecece;
+      }
+      path {
+        fill: #cecece;
+      }
     }
   }
 
