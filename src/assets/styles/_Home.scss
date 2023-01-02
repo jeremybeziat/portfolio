@@ -146,13 +146,6 @@
     }
   }
 
-  figure:hover {
-    img {
-      transform: scale(1.05);
-      transition: 800ms;
-    }
-  }
-
   .other-projects {
     display: flex;
     justify-content: center;
@@ -161,6 +154,7 @@
     font-size: 20px;
     color: #cecece;
     height: 200px;
+    background: #00000036;
 
     svg {
       margin-left: 20px;
@@ -221,6 +215,14 @@
   figure img {
     opacity: 1;
   }
+
+  figure:hover {
+    img {
+      transform: scale(1.05);
+      transition: 800ms;
+    }
+  }
+
   figcaption {
     transition: all 300ms ease-in-out;
     opacity: 0;
