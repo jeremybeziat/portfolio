@@ -1,6 +1,6 @@
 // .presentation
 .web-developer {
-  animation: web 1.3s ease 0s 1 normal forwards;
+  animation: web 1s ease 0s 1 normal forwards;
 }
 
 @keyframes web {
@@ -14,7 +14,7 @@
 }
 
 hr {
-  animation: web 1.3s ease 0s 1 normal forwards;
+  animation: web 1.1s ease 0s 1 normal forwards;
 }
 
 @keyframes web {
@@ -30,33 +30,37 @@ hr {
 }
 
 .hr {
-  animation: web 1.7s ease 0s 1 normal forwards;
+  animation: web 1.4s ease 0s 1 normal forwards;
 }
 
 .designer-ui {
-  animation: concepteur 1.6s ease 0s 1 normal forwards;
+  animation: concepteur 1.3s ease 0s 1 normal forwards;
 }
 
 @keyframes concepteur {
   0% {
+    opacity: 0;
     transform: translateX(-200px);
   }
 
   100% {
+    opacity: 1;
     transform: translateX(0);
   }
 }
 
 .graphic-designer {
-  animation: graphic 1.9s ease 0s 1 normal forwards;
+  animation: graphic 1.5s ease 0s 1 normal forwards;
 }
 
 @keyframes graphic {
   0% {
+    opacity: 0;
     transform: translateX(-200px);
   }
 
   100% {
+    opacity: 1;
     transform: translateX(0);
   }
 }
