@@ -1,0 +1,31 @@
+.navigation {
+  padding: 20px;
+  width: 100vw;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+nav {
+  background: #d9d9d9;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 3px;
+  a {
+    font-size: 14px;
+    text-align: center;
+    font-family: "Satoshi-Bold";
+    color: #121212;
+    padding: 15px;
+    margin: 3px;
+    width: 33%;
+    &.active {
+      color: white;
+      font-weight: normal;
+      background-color: #121212;
+      border-radius: 5px;
+    }
+  }
+}
