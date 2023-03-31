@@ -1,0 +1,38 @@
+section.work {
+  position: relative;
+  padding: 0px 25px;
+  margin-bottom: 95px;
+}
+
+figure {
+  position: relative;
+  height: 213px;
+  margin-bottom: 20px;
+}
+
+figure img {
+  height: 213px;
+  object-fit: cover;
+  object-position: top;
+}
+
+figure figcaption {
+  width: 100%;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  background: linear-gradient(#12121200, #121212a2);
+}
+
+figure figcaption .work-title {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: "Satoshi-Medium";
+}
+
+figure figcaption .work-subtitle {
+  font-size: 14px;
+  font-family: "Satoshi-Light";
+  font-weight: 200;
+}

@@ -1,0 +1,54 @@
+.presentation-work {
+padding: 0px 25px;
+}
+.work-presentation {
+  height: 100%;
+  margin-top: 20px;
+}
+
+.container-contact {
+  margin-top: 20px;
+  h1 {
+    color: white;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border-radius: 5px;
+  background: #0066ff;
+  padding: 20px 15px;
+  .intro {
+    margin-top: 10px;
+    color: white;
+    font-size: 14px;
+  }
+
+  .btn-contact {
+    display: block;
+    text-align: center;
+    font-family: "Satoshi-Bold";
+    width: 100%;
+    background: #121212;
+    color: white;
+    border: none;
+    margin: 20px 0;
+    border-radius: 5px;
+    padding: 16px 23px;
+  }
+  a {
+    font-size: 14px;
+    display: flex;
+  }
+
+  .icon-social {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  svg {
+    height: 25px;
+  }
+}

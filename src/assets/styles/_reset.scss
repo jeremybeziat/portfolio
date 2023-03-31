@@ -13,7 +13,7 @@ footer {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -23,7 +23,8 @@ footer {
 }
 
 :where(h1, h2, h3, h4, h5, h6) {
-  font-weight: normal;
+  font-weight: 500;
+  font-family: "Satoshi-Medium";
 }
 
 a {
