@@ -128,7 +128,6 @@ function Home() {
             </a>
           </figure>
         </section>
-        <div className="pattern2"></div>
       </main>
     </div>
   );
