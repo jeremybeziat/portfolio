@@ -1,19 +1,21 @@
 .presentation-work {
-padding: 0px 25px;
+  padding: 0px 25px;
 }
 .work-presentation {
   height: 100%;
-  margin-top: 20px;
+  width: 100%;
 }
 
 .container-contact {
   margin-top: 20px;
+  margin-bottom: 90px;
+
   h1 {
     color: white;
   }
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   border-radius: 5px;
@@ -51,8 +53,4 @@ padding: 0px 25px;
   svg {
     height: 25px;
   }
-}
-
-.container-social {
-  margin-bottom: 90px;
 }
