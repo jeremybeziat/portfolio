@@ -208,7 +208,7 @@ function Home() {
             <span>imagination</span>
           </h2>
           <h2>
-            I use
+            I use my
             <br />
             <span>imagination</span>
           </h2>
@@ -223,7 +223,10 @@ function Home() {
             <a href="https://www.behance.net/gallery/159684055/Raining-Stars">
               <img src={work1} alt="raining stars N°07" />
               <figcaption>
-                <a href="https://www.behance.net/gallery/159684055/Raining-Stars">
+                <a
+                  title="raining stars N°07"
+                  href="https://www.behance.net/gallery/159684055/Raining-Stars"
+                >
                   <svg
                     width="50"
                     height="50"
@@ -246,10 +249,10 @@ function Home() {
             </a>
           </figure>
           <figure className="work-preview">
-            <a href="/">
+            <a title="rbm-website" href="/">
               <img src={work2} alt="rbm-website" />
               <figcaption>
-                <a href="/">
+                <a title="rbm-website" href="/">
                   <svg
                     width="50"
                     height="50"
@@ -272,10 +275,10 @@ function Home() {
             </a>
           </figure>
           <figure className="work-preview">
-            <a href="/">
+            <a title="AV-coaching-toulouse-website" href="/">
               <img src={work3} alt="AV-coaching-toulouse-website" />
               <figcaption>
-                <a href="/">
+                <a title="AV-coaching-toulouse-website" href="/">
                   <svg
                     width="50"
                     height="50"
