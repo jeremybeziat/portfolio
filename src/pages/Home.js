@@ -1,9 +1,9 @@
 import React from "react";
 // import { useState } from "react";
 import Header from "../components/Header";
-import work1 from "../assets/images/mockup-raining.jpg";
-import work2 from "../assets/images/mockup-rbm.jpg";
-import work3 from "../assets/images/mockup-av.jpg";
+import work1 from "../assets/images/mockup-raining.webp";
+import work2 from "../assets/images/mockup-rbm.webp";
+import work3 from "../assets/images/mockup-av.webp";
 
 function Home() {
   return (
