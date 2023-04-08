@@ -17,11 +17,11 @@ function Profil() {
         </section>
         <div className="container-social">
           <section className="container-contact">
-            <h1>You want start a project with me ? contact me !</h1>
+            <h1>
+              You want start <br /> a project with me ? <br /> contact me !
+            </h1>
             <p className="intro">
-              I started as a graphic designer in 2021 and I reconverted in 2022
-              to become a front-end developer with the graduation of my web/web
-              mobile developer. I am now a designer UI training with Formasup81.
+            You can contact me on social media or by email. You need a website, a graphic identity, a visual, a logo or simply chat with me. I am available to talk about it with you.
             </p>
             <a href="mailto:jeremybeziat.pro@gmail.com" className="btn-contact">
               Contact me
