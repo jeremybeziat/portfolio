@@ -220,10 +220,10 @@ function Home() {
         </section>
         <section className="work-preview-container">
           <figure className="work-preview">
-            <a href="/">
+            <a href="https://www.behance.net/gallery/159684055/Raining-Stars">
               <img src={work1} alt="raining stars N°07" />
               <figcaption>
-                <a href="/">
+                <a href="https://www.behance.net/gallery/159684055/Raining-Stars">
                   <svg
                     width="50"
                     height="50"
