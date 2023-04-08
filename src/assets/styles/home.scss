@@ -1,78 +1,100 @@
-main {
+.home-about {
   position: relative;
   width: 100%;
-  margin-top: 25px;
-}
-
-.container-picture {
-  padding: 0 25px 0;
-}
-
-img {
-  object-fit: cover;
-  width: 100%;
-  height: 250px;
-  border-radius: 5px;
 }
 
 .container-presentation {
-  padding: 20px 25px 0;
+  padding: 0 35px 0;
+  display: flex;
+  align-items: center;
   width: 100%;
+  height: 100vh;
 }
 
 .presentation {
   width: 100%;
-  background: #d9d9d9;
-  padding: 15px;
   border-radius: 5px;
-  h1 {
-    font-size: 22px;
-  }
-  p {
-    font-family: "Satoshi-Medium";
-    font-size: 14px;
-  }
-  .intro {
-    margin: 10px 0;
-  }
-}
-
-.container-social {
-  padding: 0px 25px;
-  margin-top: 20px;
-}
-
-.social {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  border-radius: 5px;
-  background: #0066ff;
-  padding: 20px 15px;
-  a {
-    display: inline-flex;
-  }
-  svg {
-    height: 25px;
-  }
-}
-
-section.work-latest {
-  padding: 0px 25px;
   color: white;
-  margin-top: 25px;
-  margin-bottom: 90px;
-  h2 {
-    margin-bottom: 16px;
-  }
-  figure {
+  h1 {
+    font-family: "Satoshi-Medium", sans-serif;
+    font-style: normal;
+    font-size: 22px;
     margin-bottom: 20px;
   }
-}
-
-@media (min-width: 375px) {
-  img {
-    height: 290px;
+  p {
+    font-family: "Satoshi";
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  span {
+    font-family: "Satoshi-Medium", sans-serif;
+    font-size: 14px;
+    position: absolute;
+    opacity: 0.5;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
+
+.introduction {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  h2 {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Satoshi-Light", sans-serif;
+    margin-bottom: 80px;
+  }
+  span {
+    font-family: "Satoshi-Medium", sans-serif;
+  }
+}
+
+section.work-preview-container {
+  width: 100%;
+}
+
+.work-preview {
+  height: 100vh;
+  margin: 0;
+  img {
+    object-fit: cover;
+    height: 100%;
+  }
+  figcaption {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    bottom: 0;
+    padding: 20px 0 90px 0;
+    right: 0;
+    background: linear-gradient(#12121200, #121212);
+  }
+}
+a:hover {
+  svg path {
+    fill: #121212;
+  }
+  circle {
+    fill: white;
+  }
+}
+
+.work-preview-text {
+  font-family: "Satoshi-Medium";
+  font-size: 12px;
+  margin-left: 10px;
+  margin-right: 20px;
+  p {
+    margin: 5px;
+  }
+}
+
+.work-preview-rbm {}
