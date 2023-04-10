@@ -73,12 +73,12 @@ section.work-preview-container {
     justify-content: flex-end;
     align-items: center;
     bottom: 0;
-    padding: 20px 0 90px 0;
+    padding: 20px 0 100px 0;
     right: 0;
     background: linear-gradient(#12121200, #121212);
   }
 }
-a:hover {
+.arrow-link:hover {
   svg path {
     fill: #121212;
   }
@@ -96,5 +96,3 @@ a:hover {
     margin: 5px;
   }
 }
-
-.work-preview-rbm {}
