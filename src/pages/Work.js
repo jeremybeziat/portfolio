@@ -7,8 +7,10 @@ function Work() {
     <div>
       <Header />
       <main>
-        <h1 className="last-work">Last <span>Work</span></h1>
         <section className="work">
+          <h1 className="last-work">
+            Last <span>Work</span>
+          </h1>
           <figure className="work-preview">
             <img src={work1} alt="raining stars N°07" />
             <figcaption>
