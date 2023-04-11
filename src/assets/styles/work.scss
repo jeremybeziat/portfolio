@@ -1,19 +1,34 @@
-section.work {
+.last-work {
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 100;
+  color: white;
+  font-family: "Satoshi-Light";
+  font-size: 50px;
+  top: 60px;
+  text-align: center;
+  background: linear-gradient(#121212, rgba(18, 18, 18, 0));
+  padding: 40px;
+  span {
+    font-family: "Satoshi-Medium";
+  }
+}
+
+.work {
   position: relative;
-  padding: 0px 25px;
-  margin-bottom: 95px;
-  margin-top: 20px;
 }
 
 figure {
   position: relative;
-  height: 213px;
+  height: 99vh;
   margin-bottom: 20px;
 }
 
 figure img {
   width: 100%;
-  height: 213px;
+  height: 99vh;
   object-fit: cover;
   object-position: top;
 }
