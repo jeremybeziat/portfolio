@@ -6,7 +6,7 @@ function Profil() {
   return (
     <div>
       <Header />
-      <main>
+      <main className="contact">
         <div className="pattern"></div>
         <section className="presentation-work">
           <img
