@@ -4,11 +4,26 @@
 }
 
 .container-presentation {
+  position: relative;
   padding: 0 35px 0;
   display: flex;
   align-items: center;
   width: 100%;
   height: 100vh;
+  background: linear-gradient(#0000, #000);
+}
+
+.container-presentation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../images/icon/pattern/pattern-portfolio.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
 }
 
 .presentation {
@@ -39,6 +54,7 @@
 
 .introduction {
   position: relative;
+  background: linear-gradient(#000, #0000);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -55,6 +71,20 @@
   span {
     font-family: "Satoshi-Medium", sans-serif;
   }
+}
+
+.introduction::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.3;
+  background: url("../images/icon/pattern/pattern-portfolio.svg");
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section.work-preview-container {
