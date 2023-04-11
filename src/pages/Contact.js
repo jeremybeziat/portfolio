@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import workPresentation from "../assets/images/work-presentation.webp";
+import workPresentation from "../assets/images/work-presentation-phone.webp";
 
 function Profil() {
   return (
@@ -11,6 +11,7 @@ function Profil() {
         <section className="presentation-work">
           <img
             className="work-presentation"
+            rel="preload"
             src={workPresentation}
             alt="work-presentation"
           />
@@ -27,7 +28,7 @@ function Profil() {
               Contact me
             </a>
             <div className="icon-social">
-              <a href="/">
+              <a title="Twitter" href="/">
                 <svg
                   width="31"
                   height="25"
@@ -41,7 +42,7 @@ function Profil() {
                   />
                 </svg>
               </a>
-              <a href="/">
+              <a title="Behance" href="/">
                 <svg
                   width="41"
                   height="25"
@@ -55,7 +56,7 @@ function Profil() {
                   />
                 </svg>
               </a>
-              <a href="/">
+              <a title="Instagram" href="/">
                 <svg
                   width="26"
                   height="25"
@@ -69,7 +70,7 @@ function Profil() {
                   />
                 </svg>
               </a>
-              <a href="/">
+              <a title="Linkedin" href="/">
                 <svg
                   width="27"
                   height="25"
@@ -84,7 +85,7 @@ function Profil() {
                 </svg>
               </a>
 
-              <a href="/">
+              <a title="Github" href="/">
                 <svg
                   width="27"
                   height="25"
