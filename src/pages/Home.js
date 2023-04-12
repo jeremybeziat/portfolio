@@ -3,52 +3,48 @@ import { gsap } from "gsap";
 import Header from "../components/Header";
 import work1 from "../assets/images/mockup-raining.webp";
 
-import { ScrollTrigger } from 'gsap/ScrollTrigger'; // Importez ScrollTrigger
+import { ScrollTrigger } from "gsap/ScrollTrigger"; // Importez ScrollTrigger
 
 gsap.registerPlugin(ScrollTrigger); // Enregistrez le plugin ScrollTrigger
 
 function Home() {
-
   const texteRefs = useRef([]); // Références pour les éléments de texte
-  const containerRef = useRef(null); // Référence pour le conteneur parent
 
   useEffect(() => {
-    // Animation avec GSAP pour les éléments de texte au défilement
-    texteRefs.current.forEach((texteRef) => {
+    // Animation avec GSAP pour chaque élément de texte à l'arrivée du composant
+    texteRefs.current.forEach((texteRef, index) => {
       gsap.from(texteRef, {
-        opacity: 0,
+        opacity: 0, // Opacité initiale à 0
         y: 50, // Animation de déplacement vers le bas
-        duration: 1,
-        scrollTrigger: {
-          trigger: texteRef,
-          start: 'top bottom', // Point de départ de l'animation
-          end: 'bottom top', // Point d'arrivée de l'animation
-          scrub: true, // Effet de frottement pour une animation plus douce
-        },
+        duration: 1, // Durée de l'animation en secondes
+        delay: index * 0.2, // Délai d'animation pour chaque texte pour obtenir un effet de cascade
       });
     });
+  }, []);
+  const sectionRef = useRef(null);
+  const textRefs = useRef([]);
 
-    // Réinitialisation de l'animation lorsque la page est rechargée ou lorsque l'on revient en arrière
-    ScrollTrigger.addEventListener('refresh', () => {
-      gsap.set(texteRefs.current, { opacity: 0, y: 50 });
-      gsap.set(containerRef.current, { scrollTop: 0 });
-      gsap.from(texteRefs.current, {
-        opacity: 0,
-        y: 50, // Animation de déplacement vers le bas
-        duration: 1,
+  useEffect(() => {
+    // Configuration de l'animation avec GSAP
+    gsap.set(textRefs.current, { autoAlpha: 0 }); // Masquer les textes au début
+    gsap.set(sectionRef.current, { overflow: "hidden" }); // Cacher le dépassement du texte
+    gsap
+      .timeline({
         scrollTrigger: {
-          trigger: texteRefs.current,
-          start: 'top bottom', // Point de départ de l'animation
-          end: 'bottom top', // Point d'arrivée de l'animation
-          scrub: true, // Effet de frottement pour une animation plus douce
+          trigger: sectionRef.current,
+          markers: true,
+          pin: true,
+          anticipatePin: 1,
+          start: "top", // Début de l'animation au centre de la section
+          end: "bottom top", // Fin de l'animation au centre de la section
+          scrub: true, // Animation en fonction du défilement
+          onComplete: () => {
+            gsap.set(sectionRef.current, { overflow: "auto" }); // Rétablir le défilement une fois l'animation terminée
+          },
         },
-      });
-    });
-
-    // Nettoyage des écouteurs d'événements lorsque le composant est démonté
-    return () => {
-      ScrollTrigger.removeEventListener('refresh');
-    };
+      })
+      .to(textRefs.current, { autoAlpha: 1, stagger: 8 }) // Faire apparaître les textes un par un avec un délai de 0.3s entre chaque
+      .to({}, { duration: 8 }); // Ajouter un délai de 1s à la fin de l'animation pour bloquer la section
   }, []);
   return (
     <div>
@@ -56,49 +52,57 @@ function Home() {
       <main className="home-about">
         <div className="container-presentation">
           <section className="presentation">
-            <h1>
+            <h1 ref={(el) => (texteRefs.current[0] = el)}>
               Hello, I'm Jérémy Béziat,
               <br /> a Designer With 3 years of experience.
             </h1>
             <div>
-              <p>
+              <p ref={(el) => (texteRefs.current[1] = el)}>
                 I started as a graphic designer in 2021 and I reconverted in
                 2022 to become a front-end developer with the graduation of my
                 web/web mobile developer. I am now a designer UI training with
                 Formasup81.
               </p>
-              <p>
+              <p ref={(el) => (texteRefs.current[2] = el)}>
                 The technologies I use every day : SCSS, Javascript, Wordpress,
                 InDesign, Illustrator, Photoshop, Première Pro, After effects,
                 Figma.
               </p>
               <div className="scroll">
-                <span>Scroll Down</span>
+                <span ref={(el) => (texteRefs.current[3] = el)}>Scroll Down</span>
               </div>
             </div>
           </section>
         </div>
-        <section ref={containerRef} className="introduction">
-          <h2 ref={(el) => (texteRefs.current[0] = el)}>
-            When I start
-            <br />
-            <span>a project</span>
-          </h2>
-          <h2 ref={(el) => (texteRefs.current[1] = el)}>
-            I search in my
-            <br />
-            <span>imagination</span>
-          </h2>
-          <h2>
-            I use my
-            <br />
-            <span>imagination</span>
-          </h2>
-          <h2>
-            And I create my
-            <br />
-            <span>universe</span>
-          </h2>
+        <section ref={sectionRef} className="introduction">
+          <div ref={(el) => (textRefs.current[0] = el)}>
+            <h2>
+              When I start
+              <br />
+              <span>a project</span>
+            </h2>
+          </div>
+          <div ref={(el) => (textRefs.current[1] = el)}>
+            <h2>
+              I search in my
+              <br />
+              <span>imagination</span>
+            </h2>
+          </div>
+          <div ref={(el) => (textRefs.current[2] = el)}>
+            <h2>
+              I use my
+              <br />
+              <span>imagination</span>
+            </h2>
+          </div>
+          <div ref={(el) => (textRefs.current[3] = el)}>
+            <h2>
+              And I create my
+              <br />
+              <span>universe</span>
+            </h2>
+          </div>
         </section>
         <section className="work-preview-container">
           <figure className="work-preview">
