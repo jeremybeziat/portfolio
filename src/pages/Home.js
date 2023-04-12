@@ -17,7 +17,7 @@ function Home() {
         opacity: 0, // Opacité initiale à 0
         y: 50, // Animation de déplacement vers le bas
         duration: 1, // Durée de l'animation en secondes
-        delay: index * 0.2, // Délai d'animation pour chaque texte pour obtenir un effet de cascade
+        delay: index * 0.4, // Délai d'animation pour chaque texte pour obtenir un effet de cascade
       });
     });
   }, []);
