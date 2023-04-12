@@ -3,32 +3,52 @@ import { gsap } from "gsap";
 import Header from "../components/Header";
 import work1 from "../assets/images/mockup-raining.webp";
 
+import { ScrollTrigger } from 'gsap/ScrollTrigger'; // Importez ScrollTrigger
+
+gsap.registerPlugin(ScrollTrigger); // Enregistrez le plugin ScrollTrigger
+
 function Home() {
-  const texteRef1 = useRef(null); // Référence pour le premier élément de texte
-  const texteRef2 = useRef(null); // Référence pour le deuxième élément de texte
-  const texteRef3 = useRef(null); // Référence pour le troisième élément de texte
+
+  const texteRefs = useRef([]); // Références pour les éléments de texte
+  const containerRef = useRef(null); // Référence pour le conteneur parent
 
   useEffect(() => {
-    // Animation avec GSAP pour le premier élément de texte
-    gsap.from(texteRef1.current, {
-      opacity: 0,
-      duration: 1,
-      delay: 0.5,
+    // Animation avec GSAP pour les éléments de texte au défilement
+    texteRefs.current.forEach((texteRef) => {
+      gsap.from(texteRef, {
+        opacity: 0,
+        y: 50, // Animation de déplacement vers le bas
+        duration: 1,
+        scrollTrigger: {
+          trigger: texteRef,
+          start: 'top bottom', // Point de départ de l'animation
+          end: 'bottom top', // Point d'arrivée de l'animation
+          scrub: true, // Effet de frottement pour une animation plus douce
+        },
+      });
     });
 
-    // Animation avec GSAP pour le deuxième élément de texte
-    gsap.from(texteRef2.current, {
-      opacity: 0,
-      duration: 1,
-      delay: 1,
+    // Réinitialisation de l'animation lorsque la page est rechargée ou lorsque l'on revient en arrière
+    ScrollTrigger.addEventListener('refresh', () => {
+      gsap.set(texteRefs.current, { opacity: 0, y: 50 });
+      gsap.set(containerRef.current, { scrollTop: 0 });
+      gsap.from(texteRefs.current, {
+        opacity: 0,
+        y: 50, // Animation de déplacement vers le bas
+        duration: 1,
+        scrollTrigger: {
+          trigger: texteRefs.current,
+          start: 'top bottom', // Point de départ de l'animation
+          end: 'bottom top', // Point d'arrivée de l'animation
+          scrub: true, // Effet de frottement pour une animation plus douce
+        },
+      });
     });
 
-    // Animation avec GSAP pour le troisième élément de texte
-    gsap.from(texteRef3.current, {
-      opacity: 0,
-      duration: 1,
-      delay: 1.5,
-    });
+    // Nettoyage des écouteurs d'événements lorsque le composant est démonté
+    return () => {
+      ScrollTrigger.removeEventListener('refresh');
+    };
   }, []);
   return (
     <div>
@@ -36,18 +56,18 @@ function Home() {
       <main className="home-about">
         <div className="container-presentation">
           <section className="presentation">
-            <h1 ref={texteRef1}>
+            <h1>
               Hello, I'm Jérémy Béziat,
               <br /> a Designer With 3 years of experience.
             </h1>
             <div>
-              <p ref={texteRef2}>
+              <p>
                 I started as a graphic designer in 2021 and I reconverted in
                 2022 to become a front-end developer with the graduation of my
                 web/web mobile developer. I am now a designer UI training with
                 Formasup81.
               </p>
-              <p ref={texteRef3}>
+              <p>
                 The technologies I use every day : SCSS, Javascript, Wordpress,
                 InDesign, Illustrator, Photoshop, Première Pro, After effects,
                 Figma.
@@ -58,13 +78,13 @@ function Home() {
             </div>
           </section>
         </div>
-        <section className="introduction">
-          <h2>
+        <section ref={containerRef} className="introduction">
+          <h2 ref={(el) => (texteRefs.current[0] = el)}>
             When I start
             <br />
             <span>a project</span>
           </h2>
-          <h2 className="">
+          <h2 ref={(el) => (texteRefs.current[1] = el)}>
             I search in my
             <br />
             <span>imagination</span>
