@@ -4,17 +4,31 @@ import Header from "../components/Header";
 import work1 from "../assets/images/mockup-raining.webp";
 
 function Home() {
-  const myElementRef = useRef(null);
+  const texteRef1 = useRef(null); // Référence pour le premier élément de texte
+  const texteRef2 = useRef(null); // Référence pour le deuxième élément de texte
+  const texteRef3 = useRef(null); // Référence pour le troisième élément de texte
 
   useEffect(() => {
-    // Animation à effectuer une fois que le composant est monté
-    const myElement = myElementRef.current;
-    gsap.from(myElement, { opacity: 0, duration: 1, y: -50 });
+    // Animation avec GSAP pour le premier élément de texte
+    gsap.from(texteRef1.current, {
+      opacity: 0,
+      duration: 1,
+      delay: 0.5,
+    });
 
-    // Nettoyage de l'animation lors du démontage du composant
-    return () => {
-      gsap.killTweensOf(myElement);
-    };
+    // Animation avec GSAP pour le deuxième élément de texte
+    gsap.from(texteRef2.current, {
+      opacity: 0,
+      duration: 1,
+      delay: 1,
+    });
+
+    // Animation avec GSAP pour le troisième élément de texte
+    gsap.from(texteRef3.current, {
+      opacity: 0,
+      duration: 1,
+      delay: 1.5,
+    });
   }, []);
   return (
     <div>
@@ -22,24 +36,26 @@ function Home() {
       <main className="home-about">
         <div className="container-presentation">
           <section className="presentation">
-            <h1 ref={myElementRef}>
+            <h1 ref={texteRef1}>
               Hello, I'm Jérémy Béziat,
               <br /> a Designer With 3 years of experience.
             </h1>
             <div>
-              <p>
+              <p ref={texteRef2}>
                 I started as a graphic designer in 2021 and I reconverted in
                 2022 to become a front-end developer with the graduation of my
                 web/web mobile developer. I am now a designer UI training with
                 Formasup81.
               </p>
-              <p>
+              <p ref={texteRef3}>
                 The technologies I use every day : SCSS, Javascript, Wordpress,
                 InDesign, Illustrator, Photoshop, Première Pro, After effects,
                 Figma.
               </p>
+              <div className="scroll">
+                <span>Scroll Down</span>
+              </div>
             </div>
-            <span>Scroll Down</span>
           </section>
         </div>
         <section className="introduction">
@@ -66,7 +82,12 @@ function Home() {
         </section>
         <section className="work-preview-container">
           <figure className="work-preview">
-            <img src={work1} loading="lazy" rel="preload" alt="raining stars N°07" />
+            <img
+              src={work1}
+              loading="lazy"
+              rel="preload"
+              alt="raining stars N°07"
+            />
             <figcaption>
               <a
                 className="arrow-link"
