@@ -32,7 +32,7 @@ function Home() {
       .timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          markers: true,
+          // markers: true,
           pin: true,
           anticipatePin: 1,
           start: "top", // Début de l'animation au centre de la section
