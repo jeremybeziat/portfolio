@@ -8,6 +8,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"; // Importez ScrollTrigger
 gsap.registerPlugin(ScrollTrigger); // Enregistrez le plugin ScrollTrigger
 
 function Home() {
+
+  // Animation avec GSAP pour la presentation
+
   const texteRefs = useRef([]); // Références pour les éléments de texte
 
   useEffect(() => {
@@ -17,12 +20,14 @@ function Home() {
         opacity: 0, // Opacité initiale à 0
         y: 50, // Animation de déplacement vers le bas
         duration: 1, // Durée de l'animation en secondes
-        delay: index * 0.4, // Délai d'animation pour chaque texte pour obtenir un effet de cascade
+        delay: index * 0.5, // Délai d'animation pour chaque texte pour obtenir un effet de cascade
       });
     });
   }, []);
   const sectionRef = useRef(null);
   const textRefs = useRef([]);
+
+  // Animation avec GSAP pour chaque élément de texte
 
   useEffect(() => {
     // Configuration de l'animation avec GSAP
@@ -108,8 +113,6 @@ function Home() {
           <figure className="work-preview">
             <img
               src={work1}
-              loading="lazy"
-              rel="preload"
               alt="raining stars N°07"
             />
             <figcaption>
