@@ -16,7 +16,25 @@
   }
 }
 
-.work {
+.title-other-works {
+  width: 100%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 100;
+  color: white;
+  font-family: "Satoshi-Light";
+  font-size: 40px;
+  top: 0;
+  text-align: center;
+  background: linear-gradient(#121212, rgba(18, 18, 18, 0));
+  padding: 25px;
+  span {
+    font-family: "Satoshi-Medium";
+  }
+}
+
+.other-works {
   position: relative;
 }
 
