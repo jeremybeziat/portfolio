@@ -1,9 +1,9 @@
 .last-work {
+  z-index: 1;
   width: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  z-index: 100;
   color: white;
   font-family: "Satoshi-Light";
   font-size: 50px;
@@ -17,11 +17,9 @@
 }
 
 .title-other-works {
-  width: 100%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
   position: absolute;
-  z-index: 100;
+  z-index: 1;
+  width: 100%;
   color: white;
   font-family: "Satoshi-Light";
   font-size: 40px;
