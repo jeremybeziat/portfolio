@@ -1,21 +1,27 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 
 function Header() {
   const handleScrollToTop = () => {
     window.scrollTo({
-      top: -10,
-      behavior: "smooth"
+      top: 0,
+      behavior: "smooth",
     });
   };
+
   return (
     <header>
       <div className="navigation">
-          <nav>
-            <NavLink onClick={handleScrollToTop} to="/">About</NavLink>
-            <NavLink onClick={handleScrollToTop} to="/work">Work</NavLink>
-            <NavLink onClick={handleScrollToTop} to="/contact">Contact</NavLink>
-          </nav>
+        <nav>
+          <NavLink onClick={handleScrollToTop} to="/">
+            About
+          </NavLink>
+          <NavLink onClick={handleScrollToTop} to="/work">
+            Work
+          </NavLink>
+          <NavLink onClick={handleScrollToTop} to="/contact">
+            Contact
+          </NavLink>
+        </nav>
       </div>
       <div className="hide"></div>
     </header>

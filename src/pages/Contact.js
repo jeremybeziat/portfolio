@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import Header from "../components/Header";
-import workPresentation from "../assets/images/work-presentation-phone.webp";
+import workPresentation from "../assets/images/mockup-portfolio.webp";
 
 function Profil() {
   const pageRef = useRef(null);

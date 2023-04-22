@@ -8,12 +8,14 @@
 }
 
 .presentation-work {
-  padding: 20px;
+  padding: 0 20px;
   padding-bottom: 0;
 }
 .work-presentation {
   height: 100%;
   width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .container-social {
@@ -21,12 +23,12 @@
 }
 
 .container-contact {
-  margin-top: 10px;
-  margin-bottom: 90px;
+  margin-bottom: 60px;
 
   h1 {
     color: white;
     font-size: 26px;
+    line-height: 26px;
   }
   display: flex;
   flex-direction: column;

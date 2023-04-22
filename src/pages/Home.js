@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import Header from "../components/Header";
-import work1 from "../assets/images/mockup-raining.webp";
+// import work1 from "../assets/images/mockup-raining.webp";
 import ScrollTrigger from "gsap-trial/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger); // Enregistrez le plugin ScrollTrigger
@@ -10,13 +10,13 @@ function Home() {
   const pageRef = useRef(null);
 
   useEffect(() => {
-    const tl = gsap.timeline();
+    const tl = gsap.timeline({});
 
     // Animation de la transition de la page
     tl.fromTo(
       pageRef.current,
       { opacity: 0 },
-      { opacity: 1, duration: 1, ease: "power2.inOut" }
+      { opacity: 1, duration: 1, ease: "expo.out" }
     );
   }, []);
 
@@ -73,10 +73,11 @@ function Home() {
     // Création de l'animation d'entrée en scène avec ScrollTrigger
     gsap.fromTo(
       figureElement,
-      { y: "100%", opacity: 0 },
+      { y: "20%", opacity: 0 },
       {
         y: "0%",
         opacity: 1,
+        duration: 8,
         scrollTrigger: {
           trigger: sectionElement,
           start: "top 80%", // Début de l'animation lorsque le bas de la section atteint le bas de l'écran
@@ -91,6 +92,7 @@ function Home() {
     gsap.to(figureElement, {
       y: "100%",
       opacity: 0,
+      duration: 8,
       scrollTrigger: {
         trigger: sectionElement,
         start: "bottom top", // Début de l'animation lorsque le haut de la section atteint le haut de l'écran
@@ -163,7 +165,7 @@ function Home() {
                 </h2>
               </div>
             </section>
-            <section ref={sectionRefTwo} className="work-preview-container">
+            {/* <section ref={sectionRefTwo} className="work-preview-container">
               <figure ref={figureRef} className="work-preview">
                 <img src={work1} alt="raining stars N°07" />
                 <figcaption>
@@ -192,7 +194,7 @@ function Home() {
                   </div>
                 </figcaption>
               </figure>
-            </section>
+            </section> */}
           </main>
         </div>
       </div>
