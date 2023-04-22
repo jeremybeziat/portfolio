@@ -8,12 +8,12 @@
 }
 
 .presentation-work {
-  padding: 0 20px;
+  padding: 50px 20px;
   padding-bottom: 0;
 }
 .work-presentation {
-  height: 100%;
-  width: 100%;
+  height: 220px;
+  width: 400px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -34,7 +34,7 @@
   flex-direction: column;
   width: 100%;
   border-radius: 5px;
-  padding: 20px 15px;
+  padding: 20px 0;
   .intro {
     margin-top: 10px;
     color: white;
