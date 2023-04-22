@@ -26,11 +26,6 @@
   .container-presentation::before {
     background: url("../images/icon/pattern/pattern-white.svg");
   }
-  .presentation,
-  .intro {
-    color: #000;
-    font-weight: 600;
-  }
 
   h1,
   h2,
@@ -38,6 +33,7 @@
   h4,
   h5,
   H6,
+  p,
   span {
     color: #121212;
   }
