@@ -143,7 +143,7 @@ function Home() {
               </div>
               <h3 ref={element5Ref}>All available on</h3>
               <div ref={element6Ref} className="behance">
-                <a href="https://www.behance.net/jeremybeziat">
+                <a title="jeremybeziat-Behance" href="https://www.behance.net/jeremybeziat">
                   <svg
                     width="109"
                     height="20"
