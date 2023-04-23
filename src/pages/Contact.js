@@ -47,7 +47,7 @@ function Profil() {
                 Contact me
               </a>
               <div className="icon-social">
-                <a title="Twitter" href="/">
+                <a title="Twitter" href="https://twitter.com/SkarryxD">
                   <svg
                     width="31"
                     height="25"
@@ -61,7 +61,7 @@ function Profil() {
                     />
                   </svg>
                 </a>
-                <a title="Behance" href="/">
+                <a title="Behance" href="https://www.behance.net/jeremybeziat">
                   <svg
                     width="41"
                     height="25"
@@ -75,7 +75,10 @@ function Profil() {
                     />
                   </svg>
                 </a>
-                <a title="Instagram" href="/">
+                <a
+                  title="Instagram"
+                  href="https://www.instagram.com/skarryx.design"
+                >
                   <svg
                     width="26"
                     height="25"
@@ -89,7 +92,10 @@ function Profil() {
                     />
                   </svg>
                 </a>
-                <a title="Linkedin" href="/">
+                <a
+                  title="Linkedin"
+                  href="https://www.linkedin.com/in/jeremy-beziat/"
+                >
                   <svg
                     width="27"
                     height="25"
@@ -104,7 +110,7 @@ function Profil() {
                   </svg>
                 </a>
 
-                <a title="Github" href="/">
+                <a title="Github" href="https://github.com/jeremybeziat">
                   <svg
                     width="27"
                     height="25"
