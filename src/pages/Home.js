@@ -1,10 +1,11 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import Header from "../components/Header";
 import work1 from "../assets/images/mockup-raining.webp";
 import work2 from "../assets/images/mockup-purple.webp";
 import work3 from "../assets/images/mockup-dream.webp";
 import ScrollTrigger from "gsap-trial/ScrollTrigger";
+import messages from "../components/langue";
 
 gsap.registerPlugin(ScrollTrigger); // Enregistrez le plugin ScrollTrigger
 
@@ -85,36 +86,45 @@ function Home() {
       }
     );
   }, []);
+
+  const [language, setLanguage] = useState("Fr");
+
+  // Fonction pour basculer entre les langues
+  const toggleLanguage = () => {
+    if (language === "Fr") {
+      setLanguage("En");
+    } else {
+      setLanguage("Fr");
+    }
+  };
   return (
     <div>
       <Header />
       <div ref={pageRef}>
+        {/* <h1>Langue actuelle : {language}</h1> */}
+        <button className="btn-translate" onClick={toggleLanguage}>
+          {language === "Fr" ? "En" : "Fr"}
+        </button>
         <div>
           <main className="home-about">
             <div className="container-presentation">
               <section className="presentation">
                 <h1 ref={(el) => (texteRefs.current[0] = el)}>
-                  Hello, I'm Jérémy Béziat,
-                  <br /> a Designer With 3 years of experience.
+                  {messages[language].titre}
                 </h1>
                 <div>
                   <p ref={(el) => (texteRefs.current[1] = el)}>
-                    I started as a graphic designer in 2021 and I reconverted in
-                    2022 to become a front-end developer with the graduation of
-                    my web/web mobile developer. I am now a designer UI training
-                    with Formasup81.
+                    {messages[language].intro1}
                   </p>
                   <p ref={(el) => (texteRefs.current[2] = el)}>
-                    The technologies I use every day : SCSS, Javascript,
-                    Wordpress, InDesign, Illustrator, Photoshop, Première Pro,
-                    After effects, Figma.
+                    {messages[language].intro2}
                   </p>
                   <div className="scroll">
                     <span
                       id="elementADisparaitre"
                       ref={(el) => (texteRefs.current[3] = el)}
                     >
-                      Scroll Down
+                      {messages[language].scroll}
                     </span>
                   </div>
                 </div>
@@ -122,7 +132,7 @@ function Home() {
             </div>
             <section ref={sectionRef} className="product section">
               <h2 ref={element1Ref}>
-                What <span>I product</span> ?
+                {messages[language].what} <span>{messages[language].product}</span> ?
               </h2>
               <div className="work-product">
                 <figure ref={element2Ref}>
@@ -141,9 +151,12 @@ function Home() {
                   </a>
                 </figure>
               </div>
-              <h3 ref={element5Ref}>All available on</h3>
+              <h3 ref={element5Ref}>{messages[language].available}</h3>
               <div ref={element6Ref} className="behance">
-                <a title="jeremybeziat-Behance" href="https://www.behance.net/jeremybeziat">
+                <a
+                  title="jeremybeziat-Behance"
+                  href="https://www.behance.net/jeremybeziat"
+                >
                   <svg
                     width="109"
                     height="20"
