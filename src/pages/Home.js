@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import Header from "../components/Header";
 import work1 from "../assets/images/mockup-raining.webp";
-import work2 from "../assets/images/mockup-purple.jpg";
+import work2 from "../assets/images/mockup-purple.webp";
 import work3 from "../assets/images/mockup-dream.webp";
 import ScrollTrigger from "gsap-trial/ScrollTrigger";
 
@@ -36,6 +36,21 @@ function Home() {
     });
   }, []);
 
+  useEffect(() => {
+    // Fonction pour cacher l'élément lors du scroll
+    const cacherElement = () => {
+      gsap.to("#elementADisparaitre", { opacity: 0, duration: 1.5 }); // Animation de la disparition de l'élément avec GSAP
+    };
+
+    // Ajoute un écouteur d'événement pour le scroll lors du montage du composant
+    window.addEventListener("scroll", cacherElement);
+
+    // Nettoie l'écouteur d'événement lors du démontage du composant
+    return () => {
+      window.removeEventListener("scroll", cacherElement);
+    };
+  }, []);
+
   const sectionRef = useRef(null);
   const element1Ref = useRef(null);
   const element2Ref = useRef(null);
@@ -53,7 +68,7 @@ function Home() {
         element3Ref.current,
         element4Ref.current,
         element5Ref.current,
-        element6Ref.current
+        element6Ref.current,
       ],
       {
         opacity: 0,
@@ -61,9 +76,9 @@ function Home() {
         stagger: 0.2, // délai entre chaque élément
         duration: 1,
         scrollTrigger: {
-          markers: true,
+          // markers: true,
           trigger: sectionRef.current, // section en tant que déclencheur
-          start: "top 50%", // point de départ de l'animation
+          start: "top 60%", // point de départ de l'animation
           end: "top top", // point d'arrivée de l'animation
           scrub: true, // effet d'effacement lors du scroll
         },
@@ -95,7 +110,10 @@ function Home() {
                     After effects, Figma.
                   </p>
                   <div className="scroll">
-                    <span ref={(el) => (texteRefs.current[3] = el)}>
+                    <span
+                      id="elementADisparaitre"
+                      ref={(el) => (texteRefs.current[3] = el)}
+                    >
                       Scroll Down
                     </span>
                   </div>
@@ -108,13 +126,19 @@ function Home() {
               </h2>
               <div className="work-product">
                 <figure ref={element2Ref}>
-                  <img src={work1} alt="raining stars" />
+                  <a href="https://www.behance.net/gallery/159684055/Raining-Stars">
+                    <img src={work1} alt="raining stars" />
+                  </a>
                 </figure>
                 <figure ref={element3Ref}>
-                  <img src={work2} alt="purple stars" />
+                  <a href="https://www.behance.net/gallery/161765241/Purple-Stars">
+                    <img src={work2} alt="purple stars" />
+                  </a>
                 </figure>
                 <figure ref={element4Ref}>
-                  <img src={work3} alt="DREAM II" />
+                  <a href="https://www.behance.net/gallery/161021241/DREAM-II">
+                    <img src={work3} alt="DREAM II" />
+                  </a>
                 </figure>
               </div>
               <h3 ref={element5Ref}>All available on</h3>
