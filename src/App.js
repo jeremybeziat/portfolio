@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Work from "./pages/Work";
 import Contact from "./pages/Contact";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { gsap } from "gsap";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -11,9 +12,14 @@ function App() {
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
+
   return (
     <div className={isDarkMode ? "dark-mode" : "light-mode"}>
-      <button title="button-mode" className="btn-mode" onClick={toggleDarkMode}></button>
+      <button
+        title="button-mode"
+        className="btn-mode"
+        onClick={toggleDarkMode}
+      ></button>
       <BrowserRouter>
         <Routes>
           <Route exact path="*" element={<Home />} />
