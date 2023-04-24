@@ -108,17 +108,24 @@ section.product {
     }
   }
 }
+.available {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-  @media (min-width: 375px) {
-    section.product .work-product figure {
-      width: 320px;
-      height: 220px;
-    }
+@media (min-width: 375px) {
+  section.product .work-product figure {
+    width: 320px;
+    height: 220px;
   }
+}
 
-  @media (min-width: 425px) {
-    section.product .work-product figure {
-      width: 350px;
-      height: 220px;
-    }
+@media (min-width: 425px) {
+  section.product .work-product figure {
+    width: 350px;
+    height: 220px;
   }
+}
