@@ -1,11 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
-import messages from "../components/langue";
+// import messages from "../components/langue";
 
 import Header from "../components/Header";
 import work1 from "../assets/images/mockup-raining.webp";
-// import work2 from "../assets/images/mockup-purple-stars.webp";
-import work3 from "../assets/images/mockup-dream.webp";
 
 function Work() {
   const pageRef = useRef(null);
@@ -21,29 +19,28 @@ function Work() {
     );
   }, []);
 
-  const [language, setLanguage] = useState("Fr");
+  // const [language, setLanguage] = useState("Fr");
 
-  // Fonction pour basculer entre les langues
-  const toggleLanguage = () => {
-    if (language === "Fr") {
-      setLanguage("En");
-    } else {
-      setLanguage("Fr");
-    }
-  };
+  // // Fonction pour basculer entre les langues
+  // const toggleLanguage = () => {
+  //   if (language === "Fr") {
+  //     setLanguage("En");
+  //   } else {
+  //     setLanguage("Fr");
+  //   }
+  // };
 
   return (
     <div>
       <Header />
-      <button className="btn-translate" onClick={toggleLanguage}>
+      {/* <button className="btn-translate" onClick={toggleLanguage}>
         {language === "Fr" ? "En" : "Fr"}
-      </button>
+      </button> */}
       <div ref={pageRef}>
         <main className="work">
           <section className="last-project">
             <h1>
-              {messages[language].last}{" "}
-              <span>{messages[language].project}</span>
+              My last <span>project</span>
             </h1>
             <figure>
               <a
