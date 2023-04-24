@@ -101,7 +101,6 @@ function Home() {
     <div>
       <Header />
       <div ref={pageRef}>
-        {/* <h1>Langue actuelle : {language}</h1> */}
         <button className="btn-translate" onClick={toggleLanguage}>
           {language === "Fr" ? "En" : "Fr"}
         </button>
