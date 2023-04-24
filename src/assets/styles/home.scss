@@ -83,7 +83,7 @@ section.product {
     figure {
       height: 180px;
       border-radius: 5px;
-      width: clamp(270px, 3em, 800px);
+      width: 270px;
       margin-bottom: 20px;
       img {
         object-fit: cover;
@@ -108,3 +108,17 @@ section.product {
     }
   }
 }
+
+  @media (min-width: 375px) {
+    section.product .work-product figure {
+      width: 320px;
+      height: 220px;
+    }
+  }
+
+  @media (min-width: 425px) {
+    section.product .work-product figure {
+      width: 350px;
+      height: 220px;
+    }
+  }
