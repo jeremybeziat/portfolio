@@ -10,6 +10,8 @@ const messages = {
     what: "Ce que",
     product: "je produit",
     available: "Tous disponibles sur",
+    last: "Mon dernier",
+    project:"projet",
   },
 
   En: {
@@ -23,6 +25,8 @@ const messages = {
     what: "What",
     product: "I product",
     available: "All available on",
+    last: "My last",
+    project:"project",
   },
 };
 
