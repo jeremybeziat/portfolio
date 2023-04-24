@@ -1,0 +1,49 @@
+.last-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/icon/pattern/pattern-white.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  h1 {
+    font-size: 34px;
+    text-align: center;
+    font-family: "Satoshi-Light";
+  }
+  span {
+    font-family: "Satoshi-Bold";
+  }
+  figure {
+    position: relative;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  figure a {
+    display: flex;
+  }
+  img {
+    height: 550px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  figcaption {
+    background: linear-gradient(#12121200, #121212);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    padding: 20px 0;
+    border-radius: 0 0 5px 5px;
+  }
+  .title-author p {
+    font-size: 14px;
+    color: white;
+  }
+  .title-author p:first-child {
+    margin-bottom: 5px;
+  }
+}
