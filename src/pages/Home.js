@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import Header from "../components/Header";
-import work1 from "../assets/images/mockup-raining.webp";
-import work2 from "../assets/images/mockup-purple.webp";
-import work3 from "../assets/images/mockup-dream.webp";
+import work1 from "../assets/images/mockup-raining-phone.webp";
+import work2 from "../assets/images/mockup-purple-phone.webp";
+import work3 from "../assets/images/mockup-dream-phone.webp";
 import ScrollTrigger from "gsap-trial/ScrollTrigger";
 import messages from "../components/langue";
 
@@ -137,17 +137,17 @@ function Home() {
               <div className="work-product">
                 <figure ref={element2Ref}>
                   <a href="https://www.behance.net/gallery/159684055/Raining-Stars">
-                    <img src={work1} alt="raining stars" />
+                    <img height={500} width={500} src={work1} alt="raining stars" />
                   </a>
                 </figure>
                 <figure ref={element3Ref}>
                   <a href="https://www.behance.net/gallery/161765241/Purple-Stars">
-                    <img src={work2} alt="purple stars" />
+                    <img height={500} width={500} src={work2} alt="purple stars" />
                   </a>
                 </figure>
                 <figure ref={element4Ref}>
                   <a href="https://www.behance.net/gallery/161021241/DREAM-II">
-                    <img src={work3} alt="DREAM II" />
+                    <img height={500} width={500} src={work3} alt="DREAM II" />
                   </a>
                 </figure>
               </div>
