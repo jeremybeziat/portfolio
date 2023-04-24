@@ -72,7 +72,7 @@ function Home() {
         stagger: 0.5, // délai entre chaque élément
         duration: 1,
         scrollTrigger: {
-          markers: true,
+          // markers: true,
           trigger: sectionRef.current, // section en tant que déclencheur
           start: "top 50%", // point de départ de l'animation
           end: "5% top", // point d'arrivée de l'animation
