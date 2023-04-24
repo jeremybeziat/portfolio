@@ -79,51 +79,43 @@ function Home() {
         scrollTrigger: {
           // markers: true,
           trigger: sectionRef.current, // section en tant que déclencheur
-          start: "top 60%", // point de départ de l'animation
-          end: "top top", // point d'arrivée de l'animation
+          start: "top 20%", // point de départ de l'animation
+          end: "20% top", // point d'arrivée de l'animation
           scrub: true, // effet d'effacement lors du scroll
         },
       }
     );
   }, []);
-
-  const [language, setLanguage] = useState("Fr");
-
-  // Fonction pour basculer entre les langues
-  const toggleLanguage = () => {
-    if (language === "Fr") {
-      setLanguage("En");
-    } else {
-      setLanguage("Fr");
-    }
-  };
   return (
     <div>
       <Header />
       <div ref={pageRef}>
-        <button className="btn-translate" onClick={toggleLanguage}>
-          {language === "Fr" ? "En" : "Fr"}
-        </button>
         <div>
           <main className="home-about">
             <div className="container-presentation">
               <section className="presentation">
                 <h1 ref={(el) => (texteRefs.current[0] = el)}>
-                  {messages[language].titre}
+                  Hello, I’m Jérémy Béziat, a Designer With 3 years of
+                  experience.
                 </h1>
                 <div>
                   <p ref={(el) => (texteRefs.current[1] = el)}>
-                    {messages[language].intro1}
+                    I started as a graphic designer in 2021 and I reconverted in
+                    2022 to become a front-end developer with the graduation of
+                    my web/web mobile developer. I am now a designer UI training
+                    with Formasup81.
                   </p>
                   <p ref={(el) => (texteRefs.current[2] = el)}>
-                    {messages[language].intro2}
+                    The technologies I use every day : SCSS, Javascript,
+                    Wordpress, InDesign, Illustrator, Photoshop, Premiere Pro,
+                    After Effects, Figma.
                   </p>
                   <div className="scroll">
                     <span
                       id="elementADisparaitre"
                       ref={(el) => (texteRefs.current[3] = el)}
                     >
-                      {messages[language].scroll}
+                      Scroll Down
                     </span>
                   </div>
                 </div>
@@ -131,17 +123,28 @@ function Home() {
             </div>
             <section ref={sectionRef} className="product section">
               <h2 ref={element1Ref}>
-                {messages[language].what} <span>{messages[language].product}</span> ?
+                What
+                <span>I products</span> ?
               </h2>
               <div className="work-product">
                 <figure ref={element2Ref}>
                   <a href="https://www.behance.net/gallery/159684055/Raining-Stars">
-                    <img height={500} width={500} src={work1} alt="raining stars" />
+                    <img
+                      height={500}
+                      width={500}
+                      src={work1}
+                      alt="raining stars"
+                    />
                   </a>
                 </figure>
                 <figure ref={element3Ref}>
                   <a href="https://www.behance.net/gallery/161765241/Purple-Stars">
-                    <img height={500} width={500} src={work2} alt="purple stars" />
+                    <img
+                      height={500}
+                      width={500}
+                      src={work2}
+                      alt="purple stars"
+                    />
                   </a>
                 </figure>
                 <figure ref={element4Ref}>
@@ -150,7 +153,7 @@ function Home() {
                   </a>
                 </figure>
               </div>
-              <h3 ref={element5Ref}>{messages[language].available}</h3>
+              <h3 ref={element5Ref}>All available on</h3>
               <div ref={element6Ref} className="behance">
                 <a
                   title="jeremybeziat-Behance"

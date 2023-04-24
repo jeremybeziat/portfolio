@@ -83,7 +83,7 @@ section.product {
     figure {
       height: 180px;
       border-radius: 5px;
-      width: 280px;
+      width: clamp(270px, 3em, 800px);
       margin-bottom: 20px;
       img {
         object-fit: cover;
