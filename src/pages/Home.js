@@ -123,8 +123,7 @@ function Home() {
             </div>
             <section ref={sectionRef} className="product section">
               <h2 ref={element1Ref}>
-                What
-                <span>I products</span> ?
+                What <span>I products</span> ?
               </h2>
               <div className="work-product">
                 <figure ref={element2Ref}>
