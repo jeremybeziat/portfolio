@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import Header from "../components/Header";
 import work1 from "../assets/images/mockup-raining-phone.webp";
