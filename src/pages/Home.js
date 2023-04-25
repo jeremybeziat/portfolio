@@ -2,7 +2,10 @@ import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import Header from "../components/Header";
 import work1 from "../assets/images/mockup-raining-phone.webp";
+import work1D from "../assets/images/mockup-raining.webp";
 import work2 from "../assets/images/mockup-purple-phone.webp";
+import work2D from "../assets/images/mockup-purple.webp";
+import work3D from "../assets/images/mockup-dream.webp";
 import work3 from "../assets/images/mockup-dream-phone.webp";
 import ScrollTrigger from "gsap-trial/ScrollTrigger";
 
@@ -69,7 +72,7 @@ function Home() {
       {
         opacity: 0,
         y: 100,
-        stagger: 0.5, // délai entre chaque élément
+        stagger: 0.8, // délai entre chaque élément
         duration: 1,
         scrollTrigger: {
           // markers: true,
@@ -143,43 +146,67 @@ function Home() {
                   <figure ref={element2Ref}>
                     <a href="https://www.behance.net/gallery/159684055/Raining-Stars">
                       <img
+                        className="img-phone"
                         height={500}
                         width={500}
                         src={work1}
                         alt="raining stars"
                       />
-                    </a>
-                    <figcaption>
-                      <h3>Raining Stars</h3>
-                    </figcaption>
-                  </figure>
-                  <figure ref={element3Ref}>
-                    <a href="https://www.behance.net/gallery/161765241/Purple-Stars">
                       <img
-                        height={500}
-                        width={500}
-                        src={work2}
-                        alt="purple stars"
+                        className="img-desktop"
+                        src={work1D}
+                        alt="raining stars"
                       />
                     </a>
                     <figcaption>
-                      <h3>Purple Stars</h3>
+                      <h3>Raining Stars N°07</h3>
+                      <h4>21/12/22</h4>
                     </figcaption>
                   </figure>
-                  <figure ref={element4Ref}>
+
+                  <figure ref={element3Ref}>
                     <a href="https://www.behance.net/gallery/161021241/DREAM-II">
                       <img
+                        className="img-phone"
                         height={500}
                         width={500}
                         src={work3}
                         alt="DREAM II"
                       />
+                      <img
+                        className="img-desktop"
+                        src={work3D}
+                        alt="DREAM II"
+                      />
                     </a>
                     <figcaption>
                       <h3>DREAM II</h3>
+                      <h4>11/01/23</h4>
+                    </figcaption>
+                  </figure>
+
+                  <figure ref={element4Ref}>
+                    <a href="https://www.behance.net/gallery/161765241/Purple-Stars">
+                      <img
+                        className="img-phone"
+                        height={500}
+                        width={500}
+                        src={work2}
+                        alt="purple stars"
+                      />
+                      <img
+                        className="img-desktop"
+                        src={work2D}
+                        alt="purple stars"
+                      />
+                    </a>
+                    <figcaption>
+                      <h3>Purple Stars N°11</h3>
+                      <h4>20/01/23</h4>
                     </figcaption>
                   </figure>
                 </div>
+
                 <div className="available">
                   <div className="test" ref={myElement}>
                     <h3>All available on</h3>
