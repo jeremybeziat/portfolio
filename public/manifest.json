@@ -3,17 +3,17 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "jeremy-n&b.webp",
+      "src": "favicon-portfolio.svg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "jeremy-n&b.webp",
+      "src": "favicon-portfolio.svg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "jeremy-n&b.webp",
+      "src": "favicon-portfolio.svg",
       "type": "image/png",
       "sizes": "512x512"
     }
