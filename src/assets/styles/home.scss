@@ -33,8 +33,9 @@
   h1 {
     font-family: "Satoshi-Medium", sans-serif;
     font-style: normal;
-    font-size: clamp(22px, 7vw, 44px);
+    font-size: clamp(22px, 7vw, 50px);
     margin-bottom: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
   p {
     font-family: "Satoshi";
@@ -145,7 +146,13 @@ section.product {
 @media (min-width: 744px) {
   .container-presentation {
     height: 100vh;
-    padding: 0 120px;
+    padding: 0 95px;
+  }
+  section.product {
+    padding: 20px 50px;
+    .work-product {
+      row-gap: 40px;
+    }
   }
   section.product .work-product figure {
     .img-phone {
@@ -160,18 +167,50 @@ section.product {
       border-radius: 5px;
     }
   }
+  .behance a svg {
+    height: 50px;
+    width: 180px;
+  }
 }
 
 @media (min-width: 768px) {
   .container-presentation {
     height: 100vh;
-    padding: 0 140px;
+    padding: 0 100px;
   }
 }
 
 @media (min-width: 1024px) {
   .container-presentation {
     height: 100vh;
-    padding: 0 260px;
+    padding: 0 220px;
+  }
+  .presentation p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container-presentation {
+    height: 100vh;
+    padding: 0 444px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .container-presentation {
+    height: 100vh;
+    padding: 0 560px;
+    h1 {
+      font-size: 70px;
+      line-height: 75px;
+    }
+  }
+  section.product {
+    width: 100%;
+    padding: 20px 620px;
+    .work-product {
+      row-gap: 60px;
+    }
   }
 }

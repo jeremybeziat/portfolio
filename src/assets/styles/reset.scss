@@ -52,3 +52,11 @@ a {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+
+@media (min-width: 768px) {
+  :where(html) {
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+}
