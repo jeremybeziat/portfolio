@@ -93,7 +93,7 @@ function Home() {
       y: 100,
       duration: 1,
       scrollTrigger: {
-        markers: true,
+        // markers: true,
         trigger: myElement.current,
         start: "top 80%",
         end: "50% 80%",
@@ -112,7 +112,8 @@ function Home() {
               <div className="container-presentation">
                 <section className="presentation">
                   <h1 ref={(el) => (texteRefs.current[0] = el)}>
-                    Hello, I’m Jérémy Béziat, a Designer With 3 years of experience.
+                    Hello, I’m Jeremy Beziat, <br /> a Designer With 3 years{" "}
+                    <br /> of experience.
                   </h1>
                   <div>
                     <p ref={(el) => (texteRefs.current[1] = el)}>
@@ -137,7 +138,7 @@ function Home() {
                   </div>
                 </section>
               </div>
-              <section ref={sectionRef} className="product section">
+              <section ref={sectionRef} className="product">
                 <h2 ref={element1Ref}>
                   What <span>I products</span> ?
                 </h2>
@@ -206,8 +207,8 @@ function Home() {
                   </figure>
                 </div>
 
-                <div ref={myElement} className="available">
-                  <div className="test">
+                <div className="available">
+                  <div ref={myElement}>
                     <h3>All available on</h3>
                     <div className="behance">
                       <a
