@@ -15,7 +15,7 @@ function App() {
   };
 
   return (
-    <div className={isDarkMode ? "dark-mode" : "light-mode"}>
+    <div className={isDarkMode ? "light-mode" : "dark-mode"}>
       <button
         title="button-mode"
         className="btn-mode"

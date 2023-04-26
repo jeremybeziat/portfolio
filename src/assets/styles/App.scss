@@ -144,3 +144,19 @@
     }
   }
 }
+@media (min-width: 744px) {
+  .dark-mode {
+    .container-presentation::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: url("../images/icon/pattern/pattern-accueil-tablette-black.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.5;
+    }
+  }
+}
