@@ -31,3 +31,9 @@ nav {
     }
   }
 }
+
+@media (min-width: 768px) {
+  nav a {
+    font-size: 14px;
+  }
+}
