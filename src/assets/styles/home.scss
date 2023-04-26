@@ -190,6 +190,12 @@ section.product {
   }
 }
 
+@media (min-width: 1200px) {
+  .container-presentation {
+    height: 100vh;
+    padding: 0 324px;
+  }
+}
 @media (min-width: 1440px) {
   .container-presentation {
     height: 100vh;
