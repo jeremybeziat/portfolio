@@ -96,7 +96,7 @@ function Home() {
         markers: true,
         trigger: myElement.current,
         start: "top 80%",
-        end: "50% bottom",
+        end: "50% 80%",
         toggleActions: "play none none reverse",
       },
     });
@@ -206,8 +206,8 @@ function Home() {
                   </figure>
                 </div>
 
-                <div className="available">
-                  <div className="test" ref={myElement}>
+                <div ref={myElement} className="available">
+                  <div className="test">
                     <h3>All available on</h3>
                     <div className="behance">
                       <a
