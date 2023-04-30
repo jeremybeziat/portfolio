@@ -8,6 +8,7 @@ import work2D from "../assets/images/mockup-purple.webp";
 import work3D from "../assets/images/mockup-dream.webp";
 import work3 from "../assets/images/mockup-dream-phone.webp";
 import ScrollTrigger from "gsap-trial/ScrollTrigger";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger); // Enregistrez le plugin ScrollTrigger
 
@@ -42,7 +43,7 @@ function Home() {
   useEffect(() => {
     // Fonction pour cacher l'élément lors du scroll
     const cacherElement = () => {
-      gsap.to("#elementADisparaitre", { opacity: 0, duration: 2 }); // Animation de la disparition de l'élément avec GSAP
+      gsap.to("#elementADisparaitre", { opacity: 0, duration: 1 }); // Animation de la disparition de l'élément avec GSAP
     };
 
     // Ajoute un écouteur d'événement pour le scroll lors du montage du composant
@@ -111,30 +112,34 @@ function Home() {
             <main className="home-about">
               <div className="container-presentation">
                 <section className="presentation">
-                  <h1 ref={(el) => (texteRefs.current[0] = el)}>
-                    Hello, I’m Jeremy Beziat, <br /> a Designer With 3 years{" "}
-                    <br /> of experience.
-                  </h1>
-                  <div>
-                    <p ref={(el) => (texteRefs.current[1] = el)}>
-                      I started as a graphic designer in 2021 and I reconverted
-                      in 2022 to become a front-end developer with the
-                      graduation of my web/web mobile developer. I am now a
-                      designer UI training with Formasup81.
-                    </p>
-                    <p ref={(el) => (texteRefs.current[2] = el)}>
-                      The technologies I use every day : SCSS, Javascript,
-                      Wordpress, InDesign, Illustrator, Photoshop, Premiere Pro,
-                      After Effects, Figma.
-                    </p>
-                    <div className="scroll">
-                      <span
-                        id="elementADisparaitre"
-                        ref={(el) => (texteRefs.current[3] = el)}
-                      >
-                        Scroll Down
-                      </span>
+                  <div className="responsive-presentation">
+                    <div className="title">
+                      <h1 ref={(el) => (texteRefs.current[0] = el)}>
+                        Hello, I’m Jeremy Beziat, <br /> a Designer With 3 years{" "}
+                        <br /> of experience.
+                      </h1>
                     </div>
+                    <div className="intro">
+                      <p ref={(el) => (texteRefs.current[1] = el)}>
+                        I started as a graphic designer in 2021 and I
+                        reconverted in 2022 to become a front-end developer with
+                        the graduation of my web/web mobile developer. I am now
+                        a designer UI training with Formasup81.
+                      </p>
+                      <p ref={(el) => (texteRefs.current[2] = el)}>
+                        The technologies I use every day : SCSS, Javascript,
+                        Wordpress, InDesign, Illustrator, Photoshop, Premiere
+                        Pro, After Effects, Figma.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="scroll">
+                    <span
+                      id="elementADisparaitre"
+                      ref={(el) => (texteRefs.current[4] = el)}
+                    >
+                      Scroll Down
+                    </span>
                   </div>
                 </section>
               </div>

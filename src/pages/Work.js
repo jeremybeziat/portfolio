@@ -3,7 +3,9 @@ import { gsap } from "gsap";
 // import messages from "../components/langue";
 
 import Header from "../components/Header";
-import work1 from "../assets/images/mockup-raining.webp";
+import work1 from "../assets/images/mockup-raining-phone.webp";
+import work2 from "../assets/images/mockup-dream-phone.webp";
+import work21 from "../assets/images/roman-couverture.webp";
 
 function Work() {
   const pageRef = useRef(null);
@@ -19,56 +21,126 @@ function Work() {
     );
   }, []);
 
-  // const [language, setLanguage] = useState("Fr");
+  const [show, setShow] = useState(false);
 
-  // // Fonction pour basculer entre les langues
-  // const toggleLanguage = () => {
-  //   if (language === "Fr") {
-  //     setLanguage("En");
-  //   } else {
-  //     setLanguage("Fr");
-  //   }
-  // };
+  const toggleHandler = () => {
+    setShow((prevState) => !prevState);
+  };
+  const [show2, setShow2] = useState(false);
+
+  const toggleHandler2 = () => {
+    setShow2((prevState) => !prevState);
+  };
 
   return (
     <div>
       <Header />
-      {/* <button className="btn-translate" onClick={toggleLanguage}>
-        {language === "Fr" ? "En" : "Fr"}
-      </button> */}
       <div ref={pageRef}>
-        <main className="work">
-          <section className="last-project">
-            <h1>
-              My last <span>project</span>
-            </h1>
-            <figure>
-              <a
-                title="Behance raining stars"
-                href="https://www.behance.net/gallery/159684055/Raining-Stars"
-              >
-                <img src={work1} alt="raining-stars" />
-              </a>
-              <figcaption>
-                <div className="title-author">
-                  <p>Title : Raining Stars - N°07</p>
-                  <p>Name : Jeremy Beziat</p>
+        <main>
+          <section className="work">
+            <h1>Work</h1>
+            <div className="work-container">
+              <div className="work-name">
+                <div className="work-title">
+                  <h2>Raining Stars</h2>
+                  <h3>poster</h3>
                 </div>
                 <svg
-                  width="50"
-                  height="50"
-                  viewBox="0 0 50 50"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <circle cx="25" cy="25" r="24.5" stroke="white" />
-                  <path
-                    d="M20.4 32L19 30.6L28.6 21H20V19H32V31H30V22.4L20.4 32Z"
-                    fill="white"
-                  />
+                  <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="white" />
                 </svg>
-              </figcaption>
-            </figure>
+              </div>
+              <img src={work1} alt="raining stars" />
+            </div>
+            <div className="work-container">
+              <div className="work-name">
+                <div className="work-title">
+                  <h2>DREAM II</h2>
+                  <h3>book</h3>
+                </div>
+                <button onClick={toggleHandler}>
+                  {show ? (
+                    <svg
+                      width="14"
+                      height="2"
+                      viewBox="0 0 14 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M14 2H0V0H14V2Z" fill="white" />
+                    </svg>
+                  ) : (
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="white" />
+                    </svg>
+                  )}
+                </button>
+              </div>
+              <img src={work2} alt="purple stars" />
+              {show && (
+                <div className="work-content">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Cupiditate facilis, voluptas ipsum libero rem dolorem
+                    incidunt. Quae quam esse nemo.
+                  </p>
+                  <img src={work21} alt="lol" />
+                </div>
+              )}
+            </div>
+            <div className="work-container">
+              <div className="work-name">
+                <div className="work-title">
+                  <h2>DREAM II</h2>
+                  <h3>book</h3>
+                </div>
+                <button onClick={toggleHandler2}>
+                  {show2 ? (
+                    <svg
+                      width="14"
+                      height="2"
+                      viewBox="0 0 14 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M14 2H0V0H14V2Z" fill="white" />
+                    </svg>
+                  ) : (
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="white" />
+                    </svg>
+                  )}
+                </button>
+              </div>
+              <img src={work2} alt="purple stars" />
+              {show2 && (
+                <div className="work-content">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Cupiditate facilis, voluptas ipsum libero rem dolorem
+                    incidunt. Quae quam esse nemo.
+                  </p>
+                  <img src={work21} alt="lol" />
+                </div>
+              )}
+            </div>
           </section>
         </main>
       </div>

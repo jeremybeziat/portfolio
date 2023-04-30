@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding-top: 130px;
+  padding-top: 100px;
 }
 
 .container-presentation::before {
@@ -35,23 +35,26 @@
     font-style: normal;
     font-size: clamp(22px, 7vw, 50px);
     margin-bottom: 20px;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    user-select: none;
   }
   p {
     font-family: "Satoshi";
     font-size: 16px;
+    user-select: none;
     &:first-child {
       margin-bottom: 20px;
     }
   }
-  .scroll {
-    margin-top: 30px;
-    width: 100%;
-    text-align: center;
-    font-family: "Satoshi-Medium", sans-serif;
-    font-size: 14px;
-    opacity: 0.5;
-  }
+}
+
+.scroll {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  font-family: "Satoshi-Medium", sans-serif;
+  font-size: 14px;
+  opacity: 0.5;
+  user-select: none;
 }
 
 .arrow-link:hover {
@@ -67,7 +70,7 @@ section.product {
   width: 100%;
   padding: 20px;
   h2 {
-    font-size: clamp(34px, 7vw, 44px);
+    font-size: clamp(30px, 7vw, 70px);
     text-align: center;
     margin-bottom: 20px;
     font-family: "Satoshi-Light", sans-serif;
@@ -84,7 +87,6 @@ section.product {
     figure {
       position: relative;
       height: 100%;
-      border-radius: 5px;
       width: 100%;
       img.img-desktop {
         display: none;
@@ -95,7 +97,6 @@ section.product {
         object-position: center;
         width: 100%;
         height: 100%;
-        border-radius: 5px;
       }
 
       figcaption {
@@ -139,14 +140,11 @@ section.product {
 
 @media (min-width: 425px) {
   .container-presentation {
-    padding: 0 47px;
-    padding-top: 130px;
   }
 }
 @media (min-width: 744px) {
   .container-presentation {
     height: 100vh;
-    padding: 0 95px;
   }
   section.product {
     padding: 20px 50px;
@@ -164,7 +162,6 @@ section.product {
       object-position: center;
       width: 100%;
       height: 100%;
-      border-radius: 5px;
     }
   }
   .behance a svg {
@@ -176,47 +173,46 @@ section.product {
 @media (min-width: 768px) {
   .container-presentation {
     height: 100vh;
-    padding: 0 100px;
   }
 }
 
 @media (min-width: 1024px) {
   .container-presentation {
     height: 100vh;
-    padding: 0 220px;
-  }
-  .presentation p {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container-presentation {
-    height: 100vh;
-    padding: 0 324px;
-  }
-}
-@media (min-width: 1440px) {
-  .container-presentation {
-    height: 100vh;
-    padding: 0 444px;
-  }
-}
-
-@media (min-width: 1900px) {
-  .container-presentation {
-    height: 100vh;
-    padding: 0 560px;
-    h1 {
-      font-size: 70px;
-      line-height: 75px;
+    padding: 0 35px;
+    .presentation {
+      height: 100%;
     }
-  }
-  section.product {
-    width: 100%;
-    padding: 20px 620px;
-    .work-product {
-      row-gap: 60px;
+    .responsive-presentation {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: space-around;
+      .title {
+        height: 50%;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(50px, 4vw, 70px);
+      }
+      .intro {
+        margin-left: 20px;
+        width: 40%;
+        height: 0%;
+        p {
+          font-size: clamp(16px, 1.5vw, 20px);
+        }
+      }
+    }
+    .scroll {
+      font-size: 16px;
+      position: absolute;
+      margin: 0;
+      bottom: 15%;
+      width: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }

@@ -17,6 +17,14 @@
   width: 25px;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .btn-mode {
+    height: 35px;
+    width: 35px;
+  }
 }
 
 .btn-translate {
@@ -43,10 +51,8 @@
     background-size: cover;
   }
 
-  .last-project {
-    background: url("../images/icon/pattern/pattern-white.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  .work-name {
+    border-bottom: 1px solid #121212;
   }
 
   h1,
