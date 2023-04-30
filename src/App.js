@@ -15,12 +15,14 @@ function App() {
   };
 
   return (
+    
     <div className={isDarkMode ? "light-mode" : "dark-mode"}>
       <button
         title="button-mode"
         className="btn-mode"
         onClick={toggleDarkMode}
       ></button>
+
       <BrowserRouter>
         <Routes>
           <Route exact path="*" element={<Home />} />
