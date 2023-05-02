@@ -32,13 +32,36 @@ function Work() {
     setShow2((prevState) => !prevState);
   };
 
+  const newRef = useRef(null);
+  const newMaskRef = useRef(null);
+
+  useEffect(() => {
+    gsap.set(newRef.current, { y: "100%", overflow: "hidden" });
+    gsap.set(newMaskRef.current, { y: "-100%", overflow: "hidden" });
+    gsap
+      .timeline()
+      .fromTo(
+        newMaskRef.current,
+        { y: "-100%" },
+        { y: "0%", duration: 1.5, ease: "power4.out" }
+      )
+      .fromTo(
+        newRef.current,
+        { y: "100%" },
+        { y: "0%", duration: 1, ease: "power4.out" },
+        "-=1"
+      );
+  }, []);
+
   return (
     <div>
       <Header />
       <div ref={pageRef}>
         <main>
           <section className="work">
-            <h1>Work</h1>
+            <div ref={newMaskRef} className="mask">
+              <h1 ref={newRef}>Work</h1>
+            </div>
             <div className="work-container">
               <div className="work-name">
                 <div className="work-title">
@@ -63,7 +86,7 @@ function Work() {
                   <h2>DREAM II</h2>
                   <h3>book</h3>
                 </div>
-                <button onClick={toggleHandler}>
+                <button title="en voir plus" onClick={toggleHandler}>
                   {show ? (
                     <svg
                       width="14"
@@ -89,48 +112,6 @@ function Work() {
               </div>
               <img src={work2} alt="purple stars" />
               {show && (
-                <div className="work-content">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Cupiditate facilis, voluptas ipsum libero rem dolorem
-                    incidunt. Quae quam esse nemo.
-                  </p>
-                  <img src={work21} alt="lol" />
-                </div>
-              )}
-            </div>
-            <div className="work-container">
-              <div className="work-name">
-                <div className="work-title">
-                  <h2>DREAM II</h2>
-                  <h3>book</h3>
-                </div>
-                <button onClick={toggleHandler2}>
-                  {show2 ? (
-                    <svg
-                      width="14"
-                      height="2"
-                      viewBox="0 0 14 2"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M14 2H0V0H14V2Z" fill="white" />
-                    </svg>
-                  ) : (
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="white" />
-                    </svg>
-                  )}
-                </button>
-              </div>
-              <img src={work2} alt="purple stars" />
-              {show2 && (
                 <div className="work-content">
                   <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.

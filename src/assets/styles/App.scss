@@ -51,6 +51,15 @@
     background-size: cover;
   }
 
+  .link-work {
+    a {
+      color: black;
+    }
+    svg path {
+      fill: #121212;
+    }
+  }
+
   .work-name {
     border-bottom: 1px solid #121212;
   }
@@ -163,6 +172,11 @@
       background-repeat: no-repeat;
       background-size: cover;
       opacity: 0.5;
+    }
+    .work {
+      background: url("../images/icon/pattern/pattern-accueil-tablette-black.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }
