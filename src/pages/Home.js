@@ -36,7 +36,7 @@ function Home() {
       .fromTo(
         maskRef.current,
         { y: "0%" },
-        { y: "0%", duration: 1, ease: "power4.out" }
+        { y: "0%", duration: 1.2, ease: "power4.out" }
       )
       .fromTo(
         textRef.current,
