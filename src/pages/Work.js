@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
-// import messages from "../components/langue";
 
 import Header from "../components/Header";
 import work1 from "../assets/images/mockup-raining-phone.webp";
@@ -25,11 +24,6 @@ function Work() {
 
   const toggleHandler = () => {
     setShow((prevState) => !prevState);
-  };
-  const [show2, setShow2] = useState(false);
-
-  const toggleHandler2 = () => {
-    setShow2((prevState) => !prevState);
   };
 
   const newRef = useRef(null);
@@ -114,9 +108,12 @@ function Work() {
               {show && (
                 <div className="work-content">
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Cupiditate facilis, voluptas ipsum libero rem dolorem
-                    incidunt. Quae quam esse nemo.
+                    The cover is an illustration made with Photoshop. In the
+                    foreground, a young girl who is highlighted. In the
+                    background, a dreamy landscape unfolds, with green hills, a
+                    giant clock, a castle and a fairy-coloured sky. This cover
+                    attracts attention and makes you want to discover the story
+                    of this young girl.
                   </p>
                   <img src={work21} alt="lol" />
                 </div>
