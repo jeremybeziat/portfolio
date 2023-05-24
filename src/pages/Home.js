@@ -1,14 +1,11 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import Header from "../components/Header";
-// import work1 from "../assets/images/mockup-raining-phone.webp";
-// import work1D from "../assets/images/mockup-raining.webp";
-// import work2 from "../assets/images/mockup-purple-phone.webp";
-// import work2D from "../assets/images/mockup-purple.webp";
-// import work3D from "../assets/images/mockup-dream.webp";
-// import work3 from "../assets/images/mockup-dream-phone.webp";
 import ScrollTrigger from "gsap-trial/ScrollTrigger";
-import { Link } from "react-router-dom";
+import work1 from "../assets/images/mockup-raining.webp";
+import work2 from "../assets/images/mockup-affiche-rbm.webp";
+import work3 from "../assets/images/mockup-purple.webp";
+import work4 from "../assets/images/mockup-dream.webp";
 
 gsap.registerPlugin(ScrollTrigger); // Enregistrez le plugin ScrollTrigger
 
@@ -40,27 +37,6 @@ function Home() {
       )
       .fromTo(
         textRef.current,
-        { y: "100%" },
-        { y: "0%", duration: 1, ease: "power4.out" },
-        "-=1"
-      );
-  }, []);
-
-  const newRef = useRef(null);
-  const newMaskRef = useRef(null);
-
-  useEffect(() => {
-    gsap.set(newRef.current, { y: "100%", overflow: "hidden" });
-    gsap.set(newMaskRef.current, { y: "-100%", overflow: "hidden" });
-    gsap
-      .timeline()
-      .fromTo(
-        newMaskRef.current,
-        { y: "-100%" },
-        { y: "0%", duration: 1.5, ease: "power4.out" }
-      )
-      .fromTo(
-        newRef.current,
         { y: "100%" },
         { y: "0%", duration: 1, ease: "power4.out" },
         "-=1"
@@ -102,46 +78,13 @@ function Home() {
                         </h1>
                       </div>
                     </div>
-                    <div className="intro">
-                      <div ref={newMaskRef} className="mask">
-                        <div ref={newRef}>
-                          <p>
-                            I started as a graphic designer in 2021 and I
-                            reconverted in 2022 to become a front-end developer
-                            with the graduation of my web/web mobile developer.
-                            I am now a designer UI training with Formasup81.
-                          </p>
-                          <p>
-                            The technologies I use every day : SCSS, Javascript,
-                            Wordpress, InDesign, Illustrator, Photoshop,
-                            Premiere Pro, After Effects, Figma.
-                          </p>
-                          <div className="link-work">
-                            <Link to="/work">
-                              See my work
-                              <span>
-                                <svg
-                                  width="13"
-                                  height="13"
-                                  viewBox="0 0 13 13"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M1.4 13L0 11.6L9.6 2H1V0H13V12H11V3.4L1.4 13Z"
-                                    fill="white"
-                                  />
-                                </svg>
-                              </span>
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
-                  {/* <div className="scroll">
-                    <span id="elementADisparaitre">Scroll Down</span>
-                  </div> */}
+                  <div className="container-image">
+                    <img src={work1} alt="Raining-stars" />
+                    <img src={work2} alt="Configurer votre table" />
+                    <img src={work3} alt="Purple stars" />
+                    <img src={work4} alt="DREAM II" />
+                  </div>
                 </section>
               </div>
             </main>
