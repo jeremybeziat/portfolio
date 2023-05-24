@@ -2,8 +2,8 @@ import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 
 import Header from "../components/Header";
-import work1 from "../assets/images/mockup-raining-phone.webp";
-import work2 from "../assets/images/mockup-dream-phone.webp";
+import work1 from "../assets/images/mockup-raining.webp";
+import work2 from "../assets/images/mockup-dream.webp";
 import work21 from "../assets/images/roman-couverture.webp";
 
 function Work() {
