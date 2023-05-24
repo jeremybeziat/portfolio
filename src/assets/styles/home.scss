@@ -67,17 +67,19 @@ img {
   }
 }
 
+@media (min-width: 768px) {
+  img:not(:last-child) {
+    padding-right: 20px;
+  }
+}
+
 @media (min-width: 1024px) {
   .container-presentation {
     .responsive-presentation {
-      width: 100%;
       h1 {
         margin: 0;
         font-size: clamp(50px, 4vw, 70px);
       }
-    }
-    img:not(:last-child) {
-      padding-right: 20px;
     }
   }
 }
