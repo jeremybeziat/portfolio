@@ -49,7 +49,7 @@ function Home() {
     gsap.from(myElement.current, {
       opacity: 0,
       y: 100,
-      duration: 1,
+      duration: 1.2,
       scrollTrigger: {
         // markers: true,
         trigger: myElement.current,
@@ -58,6 +58,27 @@ function Home() {
         toggleActions: "play none none reverse",
       },
     });
+  }, []);
+
+  const newRef = useRef(null);
+  const newMaskRef = useRef(null);
+
+  useEffect(() => {
+    gsap.set(newRef.current, { y: "100%", overflow: "hidden" });
+    gsap.set(newMaskRef.current, { y: "-100%", overflow: "hidden" });
+    gsap
+      .timeline()
+      .fromTo(
+        newMaskRef.current,
+        { y: "-100%" },
+        { y: "0%", duration: 1.6, ease: "power4.out" }
+      )
+      .fromTo(
+        newRef.current,
+        { y: "100%" },
+        { y: "0%", duration: 1, ease: "power4.out" },
+        "-=1"
+      );
   }, []);
 
   return (
@@ -79,14 +100,118 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="container-image">
-                    <img src={work1} alt="Raining-stars" />
-                    <img src={work2} alt="Configurer votre table" />
-                    <img src={work3} alt="Purple stars" />
-                    <img src={work4} alt="DREAM II" />
+                  <div ref={newMaskRef} className="container-image">
+                    <div ref={newRef}>
+                      <img src={work1} alt="Raining-stars" />
+                      <img src={work2} alt="Configurer votre table" />
+                      <img src={work3} alt="Purple stars" />
+                      <img src={work4} alt="DREAM II" />
+                    </div>
                   </div>
                 </section>
               </div>
+              <section className="works">
+                <h2 className="title-works">My works</h2>
+                <div>
+                  <a href="https://www.behance.net/gallery/159684055/Raining-Stars">
+                    <h2>Raining Stars N°07</h2>
+                    <h3>Poster</h3>
+                  </a>
+                </div>
+                {/* <div>
+                  <a href="/">
+                    <h2>RBM</h2>
+                    <h3>Poster</h3>
+                  </a>
+                </div> */}
+                <div>
+                  <a href="https://www.behance.net/gallery/161765241/Purple-Stars">
+                    <h2>Purple Stars N°11</h2>
+                    <h3>Poster</h3>
+                  </a>
+                </div>
+                <div>
+                  <a href="https://www.behance.net/gallery/161021241/DREAM-II">
+                    <h2>Dream II</h2>
+                    <h3>Book</h3>
+                  </a>
+                </div>
+              </section>
+              <section className="services">
+                <h2 className="title-services">Services</h2>
+                <div>
+                  <h3>Strategy</h3>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="white" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Brand Development</h3>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="white" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Graphic Design</h3>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="white" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Web & Digital Design</h3>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="white" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Web Development</h3>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="white" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Marketing</h3>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="white" />
+                  </svg>
+                </div>
+              </section>
             </main>
           </div>
         </div>
