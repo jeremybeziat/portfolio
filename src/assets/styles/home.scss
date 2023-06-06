@@ -103,16 +103,21 @@ img {
   z-index: 100;
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   padding: 0 20px;
+  padding-top: 150px;
+  svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.6;
+  }
   div {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 16px 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
     border-bottom: 1px solid #fff;
     padding-bottom: 5px;
   }
@@ -121,35 +126,23 @@ img {
     margin-bottom: 16px;
   }
   .accordion-content {
-    font-size: clamp(20px, 7vw, 40px);
+    font-size: clamp(18px, 5vw, 40px);
+  }
+  .accordion {
+    cursor: pointer;
   }
   h3 {
     font-family: "Satoshi-Light";
     font-size: clamp(18px, 3vw, 32px);
   }
-  .accordion {
-    svg {
-      height: 15px;
-      width: 15px;
-    }
+  ul {
+    margin-bottom: 30px;
   }
   li {
     color: #fff;
     margin-bottom: 5px;
+    font-size: clamp(16px, 3vw, 22px);
   }
-}
-
-.services::before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: url("../images/icon/pattern/pattern-service.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .contact {
