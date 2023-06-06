@@ -85,6 +85,25 @@
       fill: #121212;
     }
   }
+
+  .works,
+  .services {
+    div {
+      border-bottom: 1px solid #000;
+    }
+    li {
+      color: #121212;
+    }
+  }
+
+  .contact {
+    a {
+      color: #121212;
+    }
+    .icon-social {
+      fill: #121212;
+    }
+  }
 }
 
 .dark-mode {

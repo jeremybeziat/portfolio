@@ -68,9 +68,6 @@ img {
 }
 
 .works {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 100%;
   padding: 50px 20px;
   height: 100vh;
@@ -172,21 +169,12 @@ img {
       margin-right: 20px;
     }
   }
-}
-
-.contact::before {
-  content: "";
-  z-index: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: url("../images/icon/pattern/pattern-contact.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.6;
+  .pattern {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+  }
 }
 
 @media (min-width: 768px) {
