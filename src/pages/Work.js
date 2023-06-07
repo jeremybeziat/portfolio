@@ -4,6 +4,8 @@ import { gsap } from "gsap";
 import Header from "../components/Header";
 import work1 from "../assets/images/mockup-raining.webp";
 import work2 from "../assets/images/mockup-dream.webp";
+import work3 from "../assets/images/mockup-purple.webp";
+import work4 from "../assets/images/linear-design-mockup-poster.webp";
 
 function Work() {
   const pageRef = useRef(null);
@@ -61,11 +63,29 @@ function Work() {
             <div className="work-container">
               <div className="work-name">
                 <div className="work-title">
+                  <h2>Purple Stars</h2>
+                  <h3>poster</h3>
+                </div>
+              </div>
+              <img src={work3} alt="Purple Stars" />
+            </div>
+            <div className="work-container">
+              <div className="work-name">
+                <div className="work-title">
                   <h2>DREAM II</h2>
                   <h3>book</h3>
                 </div>
               </div>
-              <img src={work2} alt="purple stars" />
+              <img src={work2} alt="Dream II" />
+            </div>
+            <div className="work-container">
+              <div className="work-name">
+                <div className="work-title">
+                  <h2>Linear Design</h2>
+                  <h3>poster</h3>
+                </div>
+              </div>
+              <img src={work4} alt="Linear Design" />
             </div>
           </section>
         </main>

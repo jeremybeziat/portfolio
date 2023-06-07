@@ -135,8 +135,8 @@ function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <h2>Raining Stars N°07</h2>
-                    <h3>Poster</h3>
+                    <h3>Raining Stars N°07</h3>
+                    <h4>Poster</h4>
                   </a>
                 </div>
                 <div>
@@ -145,8 +145,8 @@ function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <h2>Purple Stars N°11</h2>
-                    <h3>Poster</h3>
+                    <h3>Purple Stars N°11</h3>
+                    <h4>Poster</h4>
                   </a>
                 </div>
                 <div>
@@ -155,8 +155,8 @@ function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <h2>Dream II</h2>
-                    <h3>Book</h3>
+                    <h3>Dream II</h3>
+                    <h4>Book</h4>
                   </a>
                 </div>
                 <div>
@@ -165,8 +165,8 @@ function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <h2>Linear Design</h2>
-                    <h3>poster</h3>
+                    <h3>Linear Design</h3>
+                    <h4>poster</h4>
                   </a>
                 </div>
               </section>
@@ -865,7 +865,7 @@ function Home() {
                     expandedIndex === 0 ? "accordion active" : "accordion"
                   }
                 >
-                  <h2 className="accordion-content">Strategy</h2>
+                  <h3 className="accordion-content">Strategy</h3>
                 </div>
                 {expandedIndex === 0 && (
                   <ul>
@@ -882,7 +882,7 @@ function Home() {
                     expandedIndex === 1 ? "accordion active" : "accordion"
                   }
                 >
-                  <h2 className="accordion-content">Brand Development</h2>
+                  <h3 className="accordion-content">Brand Development</h3>
                 </div>
                 {expandedIndex === 1 && (
                   <ul>
@@ -898,7 +898,7 @@ function Home() {
                     expandedIndex === 2 ? "accordion active" : "accordion"
                   }
                 >
-                  <h2 className="accordion-content">Graphic Design</h2>
+                  <h3 className="accordion-content">Graphic Design</h3>
                 </div>
                 {expandedIndex === 2 && (
                   <ul>
@@ -914,7 +914,7 @@ function Home() {
                     expandedIndex === 2 ? "accordion active" : "accordion"
                   }
                 >
-                  <h2 className="accordion-content">Web & Digital Design</h2>
+                  <h3 className="accordion-content">Web & Digital Design</h3>
                 </div>
                 {expandedIndex === 3 && (
                   <ul>
@@ -931,7 +931,7 @@ function Home() {
                     expandedIndex === 4 ? "accordion active" : "accordion"
                   }
                 >
-                  <h2 className="accordion-content">Web development</h2>
+                  <h3 className="accordion-content">Web development</h3>
                 </div>
                 {expandedIndex === 4 && (
                   <ul>
@@ -1026,242 +1026,242 @@ function Home() {
                   <path
                     d="M265.327 981.82C265.327 981.82 237.337 627.373 587.859 627.373"
                     stroke="url(#paint1_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M252.924 978.002C252.924 978.002 224.163 613.77 584.362 613.77"
                     stroke="url(#paint2_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M240.519 974.187C240.519 974.187 210.986 600.174 580.856 600.174"
                     stroke="url(#paint3_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M228.118 970.369C228.118 970.369 197.809 586.57 577.36 586.57"
                     stroke="url(#paint4_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M215.717 966.552C215.717 966.552 184.637 572.972 573.859 572.972"
                     stroke="url(#paint5_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M203.31 962.736C203.31 962.736 171.459 559.37 570.357 559.37"
                     stroke="url(#paint6_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M190.909 958.921C190.909 958.921 158.282 545.775 566.856 545.775"
                     stroke="url(#paint7_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M178.504 955.109C178.504 955.109 145.105 532.176 563.355 532.176"
                     stroke="url(#paint8_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M166.101 951.293C166.101 951.293 131.931 518.58 559.853 518.58"
                     stroke="url(#paint9_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M153.698 947.475C153.698 947.475 118.757 504.977 556.354 504.977"
                     stroke="url(#paint10_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M141.294 943.658C141.294 943.658 105.577 491.378 552.85 491.378"
                     stroke="url(#paint11_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M128.893 939.84C128.893 939.84 92.4049 477.775 549.354 477.775"
                     stroke="url(#paint12_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M116.49 936.025C116.49 936.025 79.2303 464.179 545.851 464.179"
                     stroke="url(#paint13_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M104.088 932.207C104.088 932.207 66.0576 450.575 542.354 450.575"
                     stroke="url(#paint14_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M91.6832 928.389C91.6832 928.389 52.8765 436.977 538.849 436.977"
                     stroke="url(#paint15_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M79.2808 924.579C79.2808 924.579 39.7028 423.381 535.351 423.381"
                     stroke="url(#paint16_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M66.8735 920.761C66.8735 920.761 26.5243 409.782 531.844 409.782"
                     stroke="url(#paint17_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M54.4733 916.946C54.4733 916.946 13.3481 396.181 528.349 396.181"
                     stroke="url(#paint18_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M42.0719 913.131C42.0719 913.131 0.175385 382.585 524.847 382.585"
                     stroke="url(#paint19_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M29.6666 909.313C29.6666 909.313 -13.0013 368.982 521.346 368.982"
                     stroke="url(#paint20_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M17.2644 905.495C17.2644 905.495 -26.1793 355.383 517.844 355.383"
                     stroke="url(#paint21_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M4.85882 901.677C4.85882 901.677 -39.3515 341.78 514.343 341.78"
                     stroke="url(#paint22_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-7.54335 897.867C-7.54335 897.867 -52.5297 328.184 510.841 328.184"
                     stroke="url(#paint23_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-19.9467 894.05C-19.9467 894.05 -65.7043 314.585 507.343 314.585"
                     stroke="url(#paint24_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-32.3499 890.235C-32.3499 890.235 -78.8834 300.984 503.84 300.984"
                     stroke="url(#paint25_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-44.7535 886.419C-44.7535 886.419 -92.0536 287.388 500.345 287.388"
                     stroke="url(#paint26_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-57.1576 882.602C-57.1576 882.602 -105.234 273.79 496.841 273.79"
                     stroke="url(#paint27_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-69.5559 878.784C-69.5559 878.784 -118.408 260.186 493.343 260.186"
                     stroke="url(#paint28_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-81.9634 874.969C-81.9634 874.969 -131.582 246.591 489.84 246.591"
                     stroke="url(#paint29_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-94.3636 871.151C-94.3636 871.151 -144.758 232.987 486.34 232.987"
                     stroke="url(#paint30_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-106.77 867.338C-106.77 867.338 -157.936 219.388 482.838 219.388"
                     stroke="url(#paint31_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-119.17 863.523C-119.17 863.523 -171.112 205.793 479.338 205.793"
                     stroke="url(#paint32_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-131.578 859.705C-131.578 859.705 -184.286 192.189 475.835 192.189"
                     stroke="url(#paint33_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-143.978 855.887C-143.978 855.887 -197.462 178.59 472.335 178.59"
                     stroke="url(#paint34_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-156.379 852.072C-156.379 852.072 -210.639 164.989 468.834 164.989"
                     stroke="url(#paint35_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-168.785 848.257C-168.785 848.257 -223.812 151.394 465.333 151.394"
                     stroke="url(#paint36_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-181.187 844.439C-181.187 844.439 -236.99 137.795 461.831 137.795"
                     stroke="url(#paint37_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-193.592 840.621C-193.592 840.621 -250.166 124.191 458.33 124.191"
                     stroke="url(#paint38_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-205.99 836.811C-205.99 836.811 -263.34 110.596 454.832 110.596"
                     stroke="url(#paint39_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M-218.398 832.993C-218.398 832.993 -276.515 96.9971 451.334 96.9971"
                     stroke="url(#paint40_linear_847_173)"
-                    stroke-width="2.66759"
-                    stroke-miterlimit="10"
+                    strokeWidth="2.66759"
+                    strokeMiterlimit="10"
                   />
                   <defs>
                     <linearGradient
@@ -1272,8 +1272,8 @@ function Home() {
                       y2="985.638"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_847_173"
@@ -1283,8 +1283,8 @@ function Home() {
                       y2="981.82"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint2_linear_847_173"
@@ -1294,8 +1294,8 @@ function Home() {
                       y2="978.002"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint3_linear_847_173"
@@ -1305,8 +1305,8 @@ function Home() {
                       y2="974.187"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint4_linear_847_173"
@@ -1316,8 +1316,8 @@ function Home() {
                       y2="970.369"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint5_linear_847_173"
@@ -1327,8 +1327,8 @@ function Home() {
                       y2="966.552"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint6_linear_847_173"
@@ -1338,8 +1338,8 @@ function Home() {
                       y2="962.736"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint7_linear_847_173"
@@ -1349,8 +1349,8 @@ function Home() {
                       y2="958.921"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint8_linear_847_173"
@@ -1360,8 +1360,8 @@ function Home() {
                       y2="955.108"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint9_linear_847_173"
@@ -1371,8 +1371,8 @@ function Home() {
                       y2="951.293"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint10_linear_847_173"
@@ -1382,8 +1382,8 @@ function Home() {
                       y2="947.475"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint11_linear_847_173"
@@ -1393,8 +1393,8 @@ function Home() {
                       y2="943.658"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint12_linear_847_173"
@@ -1404,8 +1404,8 @@ function Home() {
                       y2="939.84"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint13_linear_847_173"
@@ -1415,8 +1415,8 @@ function Home() {
                       y2="936.025"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint14_linear_847_173"
@@ -1426,8 +1426,8 @@ function Home() {
                       y2="932.207"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint15_linear_847_173"
@@ -1437,8 +1437,8 @@ function Home() {
                       y2="928.389"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint16_linear_847_173"
@@ -1448,8 +1448,8 @@ function Home() {
                       y2="924.579"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint17_linear_847_173"
@@ -1459,8 +1459,8 @@ function Home() {
                       y2="920.761"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint18_linear_847_173"
@@ -1470,8 +1470,8 @@ function Home() {
                       y2="916.946"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint19_linear_847_173"
@@ -1481,8 +1481,8 @@ function Home() {
                       y2="913.131"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint20_linear_847_173"
@@ -1492,8 +1492,8 @@ function Home() {
                       y2="909.313"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint21_linear_847_173"
@@ -1503,8 +1503,8 @@ function Home() {
                       y2="905.495"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint22_linear_847_173"
@@ -1514,8 +1514,8 @@ function Home() {
                       y2="901.677"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint23_linear_847_173"
@@ -1525,8 +1525,8 @@ function Home() {
                       y2="897.867"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint24_linear_847_173"
@@ -1536,8 +1536,8 @@ function Home() {
                       y2="894.05"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint25_linear_847_173"
@@ -1547,8 +1547,8 @@ function Home() {
                       y2="890.234"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint26_linear_847_173"
@@ -1558,8 +1558,8 @@ function Home() {
                       y2="886.419"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint27_linear_847_173"
@@ -1569,8 +1569,8 @@ function Home() {
                       y2="882.602"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint28_linear_847_173"
@@ -1580,8 +1580,8 @@ function Home() {
                       y2="878.784"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint29_linear_847_173"
@@ -1591,8 +1591,8 @@ function Home() {
                       y2="874.969"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint30_linear_847_173"
@@ -1602,8 +1602,8 @@ function Home() {
                       y2="871.151"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint31_linear_847_173"
@@ -1613,8 +1613,8 @@ function Home() {
                       y2="867.338"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint32_linear_847_173"
@@ -1624,8 +1624,8 @@ function Home() {
                       y2="863.523"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint33_linear_847_173"
@@ -1635,8 +1635,8 @@ function Home() {
                       y2="859.705"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint34_linear_847_173"
@@ -1646,8 +1646,8 @@ function Home() {
                       y2="855.887"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint35_linear_847_173"
@@ -1657,8 +1657,8 @@ function Home() {
                       y2="852.072"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint36_linear_847_173"
@@ -1668,8 +1668,8 @@ function Home() {
                       y2="848.257"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint37_linear_847_173"
@@ -1679,8 +1679,8 @@ function Home() {
                       y2="844.439"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint38_linear_847_173"
@@ -1690,8 +1690,8 @@ function Home() {
                       y2="840.621"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint39_linear_847_173"
@@ -1701,8 +1701,8 @@ function Home() {
                       y2="836.811"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <linearGradient
                       id="paint40_linear_847_173"
@@ -1712,8 +1712,8 @@ function Home() {
                       y2="832.993"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#121212" />
-                      <stop offset="1" stop-color="white" />
+                      <stop stopColor="#121212" />
+                      <stop offset="1" stopColor="white" />
                     </linearGradient>
                     <clipPath id="clip0_847_173">
                       <rect

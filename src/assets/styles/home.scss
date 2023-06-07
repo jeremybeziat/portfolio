@@ -84,11 +84,11 @@ img {
     a {
       width: 100%;
     }
-    h2 {
+    h3 {
       font-size: clamp(20px, 3vw, 40px);
       margin-right: 10px;
     }
-    h3 {
+    h4 {
       font-family: "Satoshi-Light";
       font-size: clamp(18px, 3vw, 32px);
     }
@@ -129,8 +129,7 @@ img {
     cursor: pointer;
   }
   h3 {
-    font-family: "Satoshi-Light";
-    font-size: clamp(18px, 3vw, 32px);
+    font-size: clamp(20px, 3vw, 32px);
   }
   ul {
     margin-bottom: 30px;
@@ -153,11 +152,11 @@ img {
     margin-bottom: 16px;
   }
   h3 {
-    font-family: "Satoshi-Light";
     font-size: clamp(18px, 3vw, 32px);
     margin-bottom: 20px;
   }
   .mail {
+    font-family: "Satoshi-Medium";
     color: #fff;
   }
 
