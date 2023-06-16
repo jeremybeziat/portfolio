@@ -6,6 +6,8 @@ import work1 from "../assets/images/mockup-raining.webp";
 import work2 from "../assets/images/mockup-dream.webp";
 import work3 from "../assets/images/mockup-purple.webp";
 import work4 from "../assets/images/linear-design-mockup-poster.webp";
+import work5 from "../assets/images/mock-up-help.webp";
+import work6 from "../assets/images/mock-up-margueritte.webp";
 
 function Work() {
   const pageRef = useRef(null);
@@ -86,6 +88,24 @@ function Work() {
                 </div>
               </div>
               <img src={work4} alt="Linear Design" />
+            </div>
+            <div className="work-container">
+              <div className="work-name">
+                <div className="work-title">
+                  <h2>Help</h2>
+                  <h3>poster</h3>
+                </div>
+              </div>
+              <img src={work5} alt="Sometimes I need help" />
+            </div>
+            <div className="work-container">
+              <div className="work-name">
+                <div className="work-title">
+                  <h2>Margueritte</h2>
+                  <h3>poster</h3>
+                </div>
+              </div>
+              <img src={work6} alt="Margueritte - Daysi" />
             </div>
           </section>
         </main>
