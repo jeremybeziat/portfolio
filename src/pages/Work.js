@@ -53,60 +53,68 @@ function Work() {
             <div ref={newMaskRef} className="mask">
               <h1 ref={newRef}>Work</h1>
             </div>
-            <a href="/" className="work-container raining">
-              <div className="work-name">
-                <div className="work-contain">
-                  <h2 className="title-works">Raining Stars</h2>
-                  <h3 className="subtitle-works">poster</h3>
+            <div className="cards-works">
+              <a
+                href="https://www.behance.net/gallery/159684055/Raining-Stars"
+                className="work-container raining"
+              >
+                <div className="work-name">
+                  <div className="work-contain">
+                    <h2 className="title-works">Raining Stars</h2>
+                    <h3 className="subtitle-works">poster</h3>
+                  </div>
                 </div>
-              </div>
-              <img src={work1} alt="raining stars" />
-            </a>
-            <a href="/" className="work-container purple">
-              <div className="work-name">
-                <div className="work-contain">
-                  <h2 className="title-works">Purple Stars</h2>
-                  <h3 className="subtitle-works">poster</h3>
-                </div>
-              </div>
-              <img src={work3} alt="Purple Stars" />
-            </a>
-            <a href="/" className="work-container dream">
-              <a href="/" className="work-name">
-                <div className="work-contain">
-                  <h2 className="title-works">DREAM II</h2>
-                  <h3 className="subtitle-works">book</h3>
-                </div>
+                <img src={work1} alt="raining stars" />
               </a>
-              <img src={work2} alt="Dream II" />
-            </a>
-            <a href="/" className="work-container linear">
-              <div className="work-name">
-                <div className="work-contain">
-                  <h2 className="title-works">Linear Design</h2>
-                  <h3 className="subtitle-works">poster</h3>
+              <a
+                href="https://www.behance.net/gallery/161765241/Purple-Stars"
+                className="work-container purple"
+              >
+                <div className="work-name">
+                  <div className="work-contain">
+                    <h2 className="title-works">Purple Stars</h2>
+                    <h3 className="subtitle-works">poster</h3>
+                  </div>
                 </div>
-              </div>
-              <img src={work4} alt="Linear Design" />
-            </a>
-            <a href="/" className="work-container help">
-              <div className="work-name">
-                <div className="work-contain">
-                  <h2 className="title-works">Help</h2>
-                  <h3 className="subtitle-works">poster</h3>
+                <img src={work3} alt="Purple Stars" />
+              </a>
+              <a href="https://www.behance.net/gallery/161021241/DREAM-II" className="work-container dream">
+                <div className="work-name">
+                  <div className="work-contain">
+                    <h2 className="title-works">DREAM II</h2>
+                    <h3 className="subtitle-works">book</h3>
+                  </div>
                 </div>
-              </div>
-              <img src={work5} alt="Sometimes I need help" />
-            </a>
-            <a href="/" className="work-container margueritte">
-              <div className="work-name">
-                <div className="work-contain">
-                  <h2 className="title-works">Margueritte</h2>
-                  <h3 className="subtitle-works">poster</h3>
+                <img src={work2} alt="Dream II" />
+              </a>
+              <a href="https://www.behance.net/gallery/172440105/Linear-Design" className="work-container linear">
+                <div className="work-name">
+                  <div className="work-contain">
+                    <h2 className="title-works">Linear Design</h2>
+                    <h3 className="subtitle-works">poster</h3>
+                  </div>
                 </div>
-              </div>
-              <img src={work6} alt="Margueritte - Daysi" />
-            </a>
+                <img src={work4} alt="Linear Design" />
+              </a>
+              <a href="https://www.behance.net/gallery/173071761/Sometines-I-need-help" className="work-container help">
+                <div className="work-name">
+                  <div className="work-contain">
+                    <h2 className="title-works">Help</h2>
+                    <h3 className="subtitle-works">poster</h3>
+                  </div>
+                </div>
+                <img src={work5} alt="Sometimes I need help" />
+              </a>
+              <a href="https://www.behance.net/gallery/173258971/Margueritte-Daysi" className="work-container margueritte">
+                <div className="work-name">
+                  <div className="work-contain">
+                    <h2 className="title-works">Margueritte</h2>
+                    <h3 className="subtitle-works">poster</h3>
+                  </div>
+                </div>
+                <img src={work6} alt="Margueritte - Daysi" />
+              </a>
+            </div>
           </section>
         </main>
       </div>
