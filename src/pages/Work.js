@@ -53,60 +53,60 @@ function Work() {
             <div ref={newMaskRef} className="mask">
               <h1 ref={newRef}>Work</h1>
             </div>
-            <div className="work-container">
+            <a href="/" className="work-container raining">
               <div className="work-name">
-                <div className="work-title">
-                  <h2>Raining Stars</h2>
-                  <h3>poster</h3>
+                <div className="work-contain">
+                  <h2 className="title-works">Raining Stars</h2>
+                  <h3 className="subtitle-works">poster</h3>
                 </div>
               </div>
               <img src={work1} alt="raining stars" />
-            </div>
-            <div className="work-container">
+            </a>
+            <a href="/" className="work-container purple">
               <div className="work-name">
-                <div className="work-title">
-                  <h2>Purple Stars</h2>
-                  <h3>poster</h3>
+                <div className="work-contain">
+                  <h2 className="title-works">Purple Stars</h2>
+                  <h3 className="subtitle-works">poster</h3>
                 </div>
               </div>
               <img src={work3} alt="Purple Stars" />
-            </div>
-            <div className="work-container">
-              <div className="work-name">
-                <div className="work-title">
-                  <h2>DREAM II</h2>
-                  <h3>book</h3>
+            </a>
+            <a href="/" className="work-container dream">
+              <a href="/" className="work-name">
+                <div className="work-contain">
+                  <h2 className="title-works">DREAM II</h2>
+                  <h3 className="subtitle-works">book</h3>
                 </div>
-              </div>
+              </a>
               <img src={work2} alt="Dream II" />
-            </div>
-            <div className="work-container">
+            </a>
+            <a href="/" className="work-container linear">
               <div className="work-name">
-                <div className="work-title">
-                  <h2>Linear Design</h2>
-                  <h3>poster</h3>
+                <div className="work-contain">
+                  <h2 className="title-works">Linear Design</h2>
+                  <h3 className="subtitle-works">poster</h3>
                 </div>
               </div>
               <img src={work4} alt="Linear Design" />
-            </div>
-            <div className="work-container">
+            </a>
+            <a href="/" className="work-container help">
               <div className="work-name">
-                <div className="work-title">
-                  <h2>Help</h2>
-                  <h3>poster</h3>
+                <div className="work-contain">
+                  <h2 className="title-works">Help</h2>
+                  <h3 className="subtitle-works">poster</h3>
                 </div>
               </div>
               <img src={work5} alt="Sometimes I need help" />
-            </div>
-            <div className="work-container">
+            </a>
+            <a href="/" className="work-container margueritte">
               <div className="work-name">
-                <div className="work-title">
-                  <h2>Margueritte</h2>
-                  <h3>poster</h3>
+                <div className="work-contain">
+                  <h2 className="title-works">Margueritte</h2>
+                  <h3 className="subtitle-works">poster</h3>
                 </div>
               </div>
               <img src={work6} alt="Margueritte - Daysi" />
-            </div>
+            </a>
           </section>
         </main>
       </div>
