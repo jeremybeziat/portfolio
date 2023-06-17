@@ -6,7 +6,7 @@
     font-size: clamp(50px, 10vw, 70px);
   }
   h2 {
-    font-size: clamp(18px, 5vw, 30px);
+    font-size: clamp(20px, 5vw, 50px);
   }
   .work-container {
     display: flex;
@@ -21,10 +21,10 @@
       background: #e55ff1;
     }
     &.dream {
-      background: #7380DB;
+      background: #7380db;
     }
     &.linear {
-      background: #F4F4FC;
+      background: #f4f4fc;
     }
     &.help {
       background: #2c99ff;
@@ -33,11 +33,12 @@
       background: #016ce5;
     }
     img {
-      width: 50%;
+      width: 40%;
       border-radius: 5px;
       height: 150px;
       object-fit: cover;
       object-position: center;
+      opacity: 0;
     }
   }
   .work-name {
@@ -57,7 +58,52 @@
   }
   .subtitle-works {
     font-family: "Satoshi-Light", sans-serif;
-    font-size: clamp(16px, 5vw, 24px);
+    font-size: clamp(16px, 5vw, 26px);
     color: #121212;
+  }
+}
+
+@media (min-width: 768px) {
+  .work {
+    .work-container {
+      img {
+        height: 250px;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .work {
+    .cards-works {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .work-container {
+      flex: 0 0 calc(50% - 20px);
+      .title-works,
+      .subtitle-works {
+        transition: 300ms;
+      }
+      img {
+        width: 50%;
+        opacity: 0;
+        height: 300px;
+      }
+    }
+    .work-container:hover {
+      .title-works {
+        transition: 500ms;
+        font-size: 60px;
+      }
+      .subtitle-works {
+        font-size: 40px;
+        transition: 500ms;
+      }
+      img {
+        transition: 800ms;
+        opacity: 1;
+      }
+    }
   }
 }

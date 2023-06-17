@@ -27,19 +27,6 @@
   }
 }
 
-.btn-translate {
-  position: fixed;
-  left: 20px;
-  top: 20px;
-  color: white;
-  mix-blend-mode: difference;
-  border: none;
-  background: none;
-  font-family: "Satoshi-Medium";
-  font-size: 20px;
-  z-index: 100;
-}
-
 .light-mode {
   background: #fff;
   height: 100%;
@@ -110,11 +97,6 @@
     background: url("../images/icon/pattern/pattern.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    .last-project {
-      background: url("../images/icon/pattern/pattern.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
   }
   h1,
   h2,
@@ -178,11 +160,6 @@
       background-repeat: no-repeat;
       background-size: cover;
       opacity: 0.5;
-    }
-    .work {
-      background: url("../images/icon/pattern/pattern-accueil-tablette-black.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
     }
   }
 }
