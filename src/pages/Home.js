@@ -6,6 +6,10 @@ import work1 from "../assets/images/mockup-raining.webp";
 import work2 from "../assets/images/linear-design-mockup-poster.webp";
 import work3 from "../assets/images/mockup-purple.webp";
 import work4 from "../assets/images/mockup-dream.webp";
+import work1Phone from "../assets/images/mockup-rainingstars-phone.webp";
+import work2Phone from "../assets/images/mockup-purple-phone.webp";
+import work3Phone from "../assets/images/linear-design-mockup-phone.webp";
+import work4Phone from "../assets/images/mockup-dream-phone.webp";
 
 gsap.registerPlugin(ScrollTrigger); // Enregistrez le plugin ScrollTrigger
 
@@ -119,14 +123,47 @@ function Home() {
                   </div>
                   <div ref={newMaskRef} className="container-image">
                     <div ref={newRef}>
-                      <img src={work1} alt="Raining-stars" />
-                      <img src={work2} alt="Linear Design" />
-                      <img src={work3} alt="Purple stars" />
-                      <img src={work4} alt="DREAM II" />
+                      <div className="presentation-img-desktop">
+                        <img src={work1} alt="Raining-stars" />
+                        <img src={work2} alt="Linear Design" />
+                        <img src={work3} alt="Purple stars" />
+                        <img src={work4} alt="DREAM II" />
+                      </div>
+                      <div className="presentation-img-phone">
+                        <img src={work1Phone} alt="Raining-stars" />
+                        <img src={work2Phone} alt="Linear Design" />
+                        <img src={work3Phone} alt="Purple stars" />
+                        <img src={work4Phone} alt="DREAM II" />
+                      </div>
                     </div>
                   </div>
                 </section>
               </div>
+              <section className="aboutmore">
+                <h2>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="white" />
+                  </svg>
+                  about me
+                </h2>
+                <p>
+                  I started as a graphic designer in 2021 and I reconverted in
+                  2022 to become a front-end developer with the graduation of my
+                  web/web mobile developer. I am now a designer UI training with
+                  Formasup81.
+                </p>
+                <p>
+                  The technologies I use every day : SCSS, Javascript,
+                  Wordpress, InDesign, Illustrator, Photoshop, Premiere Pro,
+                  After Effects, Figma.
+                </p>
+              </section>
               <section className="works">
                 <h2 className="title-works">My works</h2>
                 <div>
