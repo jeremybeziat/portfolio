@@ -47,22 +47,22 @@ function Home() {
       );
   }, []);
 
-  const myElement = useRef(null);
+  // const myElement = useRef(null);
 
-  useEffect(() => {
-    gsap.from(myElement.current, {
-      opacity: 0,
-      y: 100,
-      duration: 1.2,
-      scrollTrigger: {
-        // markers: true,
-        trigger: myElement.current,
-        start: "top 80%",
-        end: "50% 80%",
-        toggleActions: "play none none reverse",
-      },
-    });
-  }, []);
+  // useEffect(() => {
+  //   gsap.from(myElement.current, {
+  //     opacity: 0,
+  //     y: 100,
+  //     duration: 1.2,
+  //     scrollTrigger: {
+  //       // markers: true,
+  //       trigger: myElement.current,
+  //       start: "top 80%",
+  //       end: "50% 80%",
+  //       toggleActions: "play none none reverse",
+  //     },
+  //   });
+  // }, []);
 
   const newRef = useRef(null);
   const newMaskRef = useRef(null);
@@ -140,18 +140,16 @@ function Home() {
                 </section>
               </div>
               <section className="aboutmore">
-                <h2>
+                <div className="aboutmore-title">
                   <svg
-                    width="20"
-                    height="20"
                     viewBox="0 0 14 14"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="white" />
                   </svg>
-                  about me
-                </h2>
+                  <h2>about me</h2>
+                </div>
                 <p>
                   I started as a graphic designer in 2021 and I reconverted in
                   2022 to become a front-end developer with the graduation of my
@@ -168,6 +166,7 @@ function Home() {
                 <h2 className="title-works">My works</h2>
                 <div>
                   <a
+                    className="raining"
                     href="https://www.behance.net/gallery/159684055/Raining-Stars"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -178,6 +177,7 @@ function Home() {
                 </div>
                 <div>
                   <a
+                    className="purple"
                     href="https://www.behance.net/gallery/161765241/Purple-Stars"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -188,6 +188,7 @@ function Home() {
                 </div>
                 <div>
                   <a
+                    className="dream"
                     href="https://www.behance.net/gallery/161021241/DREAM-II"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -198,6 +199,7 @@ function Home() {
                 </div>
                 <div>
                   <a
+                    className="linear"
                     href="https://www.behance.net/gallery/172440105/Linear-Design"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -208,6 +210,7 @@ function Home() {
                 </div>
                 <div>
                   <a
+                    className="help"
                     href="https://www.behance.net/gallery/173071761/Sometines-I-need-help"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -218,6 +221,7 @@ function Home() {
                 </div>
                 <div>
                   <a
+                    className="margueritte"
                     href="https://www.behance.net/gallery/173258971/Margueritte-Daysi"
                     target="_blank"
                     rel="noopener noreferrer"
