@@ -81,6 +81,7 @@
     }
     .work-container {
       flex: 0 0 calc(50% - 20px);
+      overflow: hidden;
       .title-works,
       .subtitle-works {
         transition: 300ms;
@@ -89,6 +90,18 @@
         width: 50%;
         opacity: 0;
         height: 300px;
+        animation: slideRight 0.2s ease 0s 1 normal forwards;
+      }
+      @keyframes slideRight {
+        0% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      
+        100% {
+          opacity: 0;
+          transform: translateX(250px);
+        }
       }
     }
     .work-container:hover {
@@ -102,7 +115,18 @@
       }
       img {
         transition: 800ms;
-        opacity: 1;
+        animation: myAnim 0.5s ease 0s 1 normal forwards;
+      }
+      @keyframes myAnim {
+        0% {
+          opacity: 0;
+          transform: translateX(250px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
       }
     }
   }
