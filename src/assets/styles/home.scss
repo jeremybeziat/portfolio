@@ -46,7 +46,7 @@
   img {
     width: 25%;
     z-index: 100;
-  
+
     height: 350px;
     object-fit: cover;
     &:not(:last-child) {
@@ -64,6 +64,25 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  .presentation-img-desktop {
+    display: none;
+  }
+}
+
+.aboutmore {
+  width: 100%;
+  padding: 20px;
+  svg {
+    margin-right: 8px;
+  }
+  h2 {
+    font-size: clamp(40px, 7vw, 50px);
+    margin-bottom: 16px;
+  }
+  p {
+    margin-bottom: 16px;
+    font-size: clamp(16px, 3vw, 22px);
+  }
 }
 
 .works {
@@ -185,6 +204,14 @@
 @media (min-width: 1024px) {
   .container-presentation {
     padding: 0px 32px;
+    .container-image {
+      .presentation-img-desktop {
+        display: block;
+      }
+      .presentation-img-phone {
+        display: none;
+      }
+    }
     .responsive-presentation {
       h1 {
         margin: 0;
