@@ -1,12 +1,13 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .work {
   padding: 20px;
   padding-bottom: 100px;
   h1 {
     margin-top: 30px;
-    font-size: clamp(50px, 10vw, 70px);
-  }
-  h2 {
-    font-size: clamp(20px, 5vw, 50px);
+    font-size: clamp(50px, 10vw, 100px);
   }
   .work-container {
     display: flex;
@@ -14,6 +15,22 @@
     margin-top: 20px;
     background: #fff;
     border-radius: 5px;
+    .work-contain {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin: 5px;
+    }
+    .work-title {
+      color: #121212;
+      font-size: clamp(20px, 5vw, 44px);
+    }
+    .work-subtitle {
+      font-family: "Satoshi", sans-serif;
+      font-size: clamp(16px, 5vw, 26px);
+      color: #121212;
+    }
     &.raining {
       background: #f2f100;
     }
@@ -32,6 +49,9 @@
     &.margueritte {
       background: #016ce5;
     }
+    &.joker {
+      background: #35af35;
+    }
     img {
       width: 40%;
       border-radius: 5px;
@@ -40,26 +60,6 @@
       object-position: center;
       opacity: 0;
     }
-  }
-  .work-name {
-    display: flex;
-    align-items: flex-end;
-    width: 50%;
-  }
-
-  .work-contain {
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-  }
-
-  .title-works {
-    color: #121212;
-  }
-  .subtitle-works {
-    font-family: "Satoshi-Light", sans-serif;
-    font-size: clamp(16px, 5vw, 26px);
-    color: #121212;
   }
 }
 
@@ -77,27 +77,29 @@
     .cards-works {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
+      padding: 0 20px;
+      gap: 20px;
     }
     .work-container {
       flex: 0 0 calc(50% - 20px);
       overflow: hidden;
-      .title-works,
-      .subtitle-works {
+      .work-title,
+      .work-subtitle {
         transition: 300ms;
       }
       img {
         width: 50%;
         opacity: 0;
         height: 300px;
-        animation: slideRight 0.2s ease 0s 1 normal forwards;
+        animation: slideRight 0s ease 0s 1 normal forwards;
       }
       @keyframes slideRight {
         0% {
           opacity: 1;
           transform: translateX(0);
         }
-      
+
         100% {
           opacity: 0;
           transform: translateX(250px);
@@ -105,17 +107,17 @@
       }
     }
     .work-container:hover {
-      .title-works {
+      .work-title {
         transition: 500ms;
-        font-size: 60px;
+        font-size: 55px;
       }
-      .subtitle-works {
+      .work-subtitle {
         font-size: 40px;
         transition: 500ms;
       }
       img {
-        transition: 800ms;
-        animation: myAnim 0.5s ease 0s 1 normal forwards;
+        transition: 1s;
+        animation: myAnim 1s ease 0s 1 normal forwards;
       }
       @keyframes myAnim {
         0% {

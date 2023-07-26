@@ -40,7 +40,7 @@
   h1 {
     font-family: "Satoshi-Medium", sans-serif;
     font-style: normal;
-    font-size: clamp(25px, 7vw, 50px);
+    font-size: clamp(25px, 5vw, 70px);
     user-select: none;
   }
   img {
@@ -98,7 +98,6 @@
 .works {
   width: 100%;
   padding: 50px 20px;
-  height: 100vh;
   .title-works {
     font-size: clamp(40px, 7vw, 50px);
   }
@@ -225,7 +224,7 @@
     .responsive-presentation {
       h1 {
         margin: 0;
-        font-size: clamp(50px, 4vw, 70px);
+        font-size: clamp(50px, 10vw, 70px);
       }
     }
   }
@@ -241,7 +240,6 @@
   }
 
   .works div a {
-    width: 50%;
   }
   .works div:hover {
     .raining:hover {
@@ -289,6 +287,14 @@
       h3,
       h4 {
         color: #016ce5;
+      }
+    }
+    .joker:hover {
+      border-bottom: 1px solid #35af35;
+
+      h3,
+      h4 {
+        color: #35af35;
       }
     }
   }

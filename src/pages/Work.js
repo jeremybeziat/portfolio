@@ -7,7 +7,8 @@ import work2 from "../assets/images/mockup-dream.webp";
 import work3 from "../assets/images/mockup-purple.webp";
 import work4 from "../assets/images/linear-design-mockup-poster.webp";
 import work5 from "../assets/images/mock-up-help.webp";
-import work6 from "../assets/images/mock-up-margueritte.webp";
+import work6 from "../assets/images/mockup-marguerite.webp";
+import work7 from "../assets/images/joker-affiche-mock-up-skarrx-design.webp";
 
 function Work() {
   const pageRef = useRef(null);
@@ -58,61 +59,71 @@ function Work() {
                 href="https://www.behance.net/gallery/159684055/Raining-Stars"
                 className="work-container raining"
               >
-                <div className="work-name">
-                  <div className="work-contain">
-                    <h2 className="title-works">Raining Stars</h2>
-                    <h3 className="subtitle-works">poster</h3>
-                  </div>
+                <div className="work-contain">
+                  <h2 className="work-title">Raining Stars</h2>
+                  <h3 className="work-subtitle">poster</h3>
                 </div>
-                <img src={work1} alt="raining stars" />
+                <img className="work-image" src={work1} alt="raining stars" />
               </a>
               <a
                 href="https://www.behance.net/gallery/161765241/Purple-Stars"
                 className="work-container purple"
               >
-                <div className="work-name">
-                  <div className="work-contain">
-                    <h2 className="title-works">Purple Stars</h2>
-                    <h3 className="subtitle-works">poster</h3>
-                  </div>
+                <div className="work-contain">
+                  <h2 className="work-title">Purple Stars</h2>
+                  <h3 className="work-subtitle">poster</h3>
                 </div>
                 <img src={work3} alt="Purple Stars" />
               </a>
-              <a href="https://www.behance.net/gallery/161021241/DREAM-II" className="work-container dream">
-                <div className="work-name">
-                  <div className="work-contain">
-                    <h2 className="title-works">DREAM II</h2>
-                    <h3 className="subtitle-works">book</h3>
-                  </div>
+              <a
+                href="https://www.behance.net/gallery/161021241/DREAM-II"
+                className="work-container dream"
+              >
+                <div className="work-contain">
+                  <h2 className="work-title">DREAM II</h2>
+                  <h3 className="work-subtitle">book</h3>
                 </div>
                 <img src={work2} alt="Dream II" />
               </a>
-              <a href="https://www.behance.net/gallery/172440105/Linear-Design" className="work-container linear">
-                <div className="work-name">
-                  <div className="work-contain">
-                    <h2 className="title-works">Linear Design</h2>
-                    <h3 className="subtitle-works">poster</h3>
-                  </div>
+              <a
+                href="https://www.behance.net/gallery/172440105/Linear-Design"
+                className="work-container linear"
+              >
+                <div className="work-contain">
+                  <h2 className="work-title">Linear Design</h2>
+                  <h3 className="work-subtitle">poster</h3>
                 </div>
                 <img src={work4} alt="Linear Design" />
               </a>
-              <a href="https://www.behance.net/gallery/173071761/Sometines-I-need-help" className="work-container help">
-                <div className="work-name">
-                  <div className="work-contain">
-                    <h2 className="title-works">Help</h2>
-                    <h3 className="subtitle-works">poster</h3>
-                  </div>
+              <a
+                href="https://www.behance.net/gallery/173071761/Sometines-I-need-help"
+                className="work-container help"
+              >
+                <div className="work-contain">
+                  <h2 className="work-title">Help</h2>
+                  <h3 className="work-subtitle">poster</h3>
                 </div>
                 <img src={work5} alt="Sometimes I need help" />
               </a>
-              <a href="https://www.behance.net/gallery/173258971/Margueritte-Daysi" className="work-container margueritte">
-                <div className="work-name">
-                  <div className="work-contain">
-                    <h2 className="title-works">Margueritte</h2>
-                    <h3 className="subtitle-works">poster</h3>
-                  </div>
+              <a
+                href="https://www.behance.net/gallery/173258971/Margueritte-Daysi"
+                className="work-container margueritte"
+              >
+                <div className="work-contain">
+                  <h2 className="work-title">Marguerite</h2>
+                  <h3 className="work-subtitle">poster</h3>
                 </div>
                 <img src={work6} alt="Margueritte - Daysi" />
+              </a>
+              <a
+                href="https://www.behance.net/gallery/176174971/Affiche-Joker"
+                className="work-container joker"
+              >
+                <div className="work-contain">
+                  <h2 className="work-title">Joker</h2>
+                  <h3 className="work-subtitle">poster</h3>
+                </div>
+                <img src={work7} alt="Joker" />
               </a>
             </div>
           </section>

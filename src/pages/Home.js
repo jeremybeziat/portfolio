@@ -47,23 +47,6 @@ function Home() {
       );
   }, []);
 
-  // const myElement = useRef(null);
-
-  // useEffect(() => {
-  //   gsap.from(myElement.current, {
-  //     opacity: 0,
-  //     y: 100,
-  //     duration: 1.2,
-  //     scrollTrigger: {
-  //       // markers: true,
-  //       trigger: myElement.current,
-  //       start: "top 80%",
-  //       end: "50% 80%",
-  //       toggleActions: "play none none reverse",
-  //     },
-  //   });
-  // }, []);
-
   const newRef = useRef(null);
   const newMaskRef = useRef(null);
 
@@ -124,10 +107,10 @@ function Home() {
                   <div ref={newMaskRef} className="container-image">
                     <div ref={newRef}>
                       <div className="presentation-img-desktop">
-                        <img src={work1} alt="Raining-stars" />
-                        <img src={work2} alt="Linear Design" />
-                        <img src={work3} alt="Purple stars" />
-                        <img src={work4} alt="DREAM II" />
+                        <img rel="preload" src={work1} alt="Raining-stars" />
+                        <img rel="preload" src={work2} alt="Linear Design" />
+                        <img rel="preload" src={work3} alt="Purple stars" />
+                        <img rel="preload" src={work4} alt="DREAM II" />
                       </div>
                       <div className="presentation-img-phone">
                         <img src={work1Phone} alt="Raining-stars" />
@@ -226,7 +209,18 @@ function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <h3>Margueritte</h3>
+                    <h3>Marguerite</h3>
+                    <h4>poster</h4>
+                  </a>
+                </div>
+                <div>
+                  <a
+                    className="joker"
+                    href="https://www.behance.net/gallery/173258971/Margueritte-Daysi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h3>Joker</h3>
                     <h4>poster</h4>
                   </a>
                 </div>
