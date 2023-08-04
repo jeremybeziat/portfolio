@@ -5,161 +5,16 @@
 @use "home.scss";
 @use "work.scss";
 @use "contact.scss";
+@use "hamburgermenu.scss";
 
-.btn-mode {
-  mix-blend-mode: difference;
-  position: fixed;
-  background: white;
-  z-index: 1000;
-  right: 20px;
-  top: 20px;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-}
-
-@media (min-width: 1440px) {
-  .btn-mode {
-    height: 35px;
-    width: 35px;
-  }
-}
-
-.light-mode {
-  background: #fff;
-  height: 100%;
-  width: 100vw;
-  .container-presentation::before,
-  .last-work::before {
-    background: url("../images/icon/pattern/pattern-white.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+body.dark-mode {
+  background-color: #121212; /* Exemple de couleur d'arrière-plan en mode sombre */
+  color: #fff; /* Exemple de couleur de texte en mode sombre */
+  svg path {
+    fill: white;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  H6,
-  p,
-  span,
-  .intro {
-    color: #121212;
-  }
-  nav {
-    background: #121212;
-    a {
-      color: white;
-    }
-    a.active {
-      background: white;
-      color: #121212;
-    }
-  }
-  .btn-contact {
-    background: #121212;
-    color: white;
-  }
-  .icon-social {
-    path {
-      fill: #121212;
-    }
-  }
-
-  .works,
-  .services {
-    div {
-      border-bottom: 1px solid #000;
-    }
-    li {
-      color: #121212;
-    }
-  }
-
-  .contact {
-    a {
-      color: #121212;
-    }
-    .icon-social {
-      fill: #121212;
-    }
-  }
-}
-
-.dark-mode {
-  background: #121212;
-  height: 100%;
-  width: 100%;
-  .container-presentation::before {
-    background: url("../images/icon/pattern/pattern.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  H6,
-  p,
-  span,
-  .intro {
-    color: white;
-  }
-  nav {
-    background: white;
-    a {
-      color: #121212;
-    }
-    a.active {
-      background: #121212;
-      color: white;
-    }
-  }
-  .btn-contact {
-    background: white;
-    color: #121212;
-  }
-  .icon-social,
-  .behance {
-    svg path {
-      fill: white;
-    }
-  }
-}
-
-@media (min-width: 744px) {
-  .light-mode {
-    .container-presentation::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: url("../images/icon/pattern/pattern-accueil-tablette.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      opacity: 0.5;
-    }
-  }
-}
-@media (min-width: 744px) {
-  .dark-mode {
-    .container-presentation::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: url("../images/icon/pattern/pattern-accueil-tablette-black.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      opacity: 0.5;
-    }
+  .presentation {
+    background: url("../images/icon/pattern/portfolio-pattern-phone-jeremy-beziat-black-screen.svg");
   }
 }

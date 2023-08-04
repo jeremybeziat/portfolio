@@ -3,25 +3,24 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Work from "./pages/Work";
 import Contact from "./pages/Contact";
-import React, { useState} from "react";
-
+// import React, { useState } from "react";
+// import HamburgerMenu from "./components/HamburgerMenu";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  // const [isDarkMode, setIsDarkMode] = useState(false);
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+  // const toggleDarkMode = () => {
+  //   setIsDarkMode(!isDarkMode);
+  // };
 
   return (
-    
-    <div className={isDarkMode ? "light-mode" : "dark-mode"}>
-      <button
+    // <div className={isDarkMode ? "light-mode" : "dark-mode"}>
+    <div>
+      {/* <button
         title="button-mode"
         className="btn-mode"
         onClick={toggleDarkMode}
-      ></button>
-
+      ></button> */}
       <BrowserRouter>
         <Routes>
           <Route exact path="*" element={<Home />} />
