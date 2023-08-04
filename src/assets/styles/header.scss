@@ -1,39 +1,99 @@
-.navigation {
-  z-index: 1000;
-  width: 100vw;
-  position: fixed;
-  left: 0;
-  bottom: 20px;
-  display: flex;
-  justify-content: center;
+header {
+  width: 100px;
 }
 
-nav {
-  background: white;
-  border-radius: 5px;
+.open-menu {
+  overflow: hidden;
+}
+
+.name {
+  mix-blend-mode: difference;
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 100;
+  p:first-child {
+    font-family: "Satoshi-Medium";
+    font-weight: normal;
+    font-size: 20px;
+    color: #fff;
+  }
+  p:last-child {
+    font-family: "Satoshi";
+    font-size: 16px;
+    color: #fff;
+  }
+}
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: #121212;
+  transition: right 0.3s ease;
+  z-index: 1;
+}
+
+.menu-icon {
+  position: fixed;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3px;
-  a {
-    font-size: 14px;
-    text-align: center;
-    font-family: "Satoshi-Bold";
-    color: #121212;
-    padding: 12px 20px;
-    margin: 3px;
-    width: 35%;
-    &.active {
-      font-weight: normal;
-      color: white;
-      background-color: #121212;
-      border-radius: 5px;
-    }
+  top: 20px;
+  right: 16px;
+  mix-blend-mode: difference;
+  svg {
+  }
+  path {
+    fill: black;
+  }
+  .cross {
+    fill: #fff;
   }
 }
 
-@media (min-width: 768px) {
-  nav a {
-    font-size: 14px;
+.hamburger-menu.open {
+  right: 0;
+  top: 0;
+  width: 100%; /* Affiché lorsque le menu est ouvert */
+}
+
+.menu-toggle {
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: fixed;
+  right: 65px;
+  top: 20px;
+  z-index: 1000;
+  mix-blend-mode: difference;
+}
+
+.mode-indicator {
+  background: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.mode-indicator.dark {
+  background: white;
+}
+
+.menu-content {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  ul {
+    text-align: center;
+    li {
+      font-family: "Satoshi-Medium";
+      font-size: 80px;
+      color: #fff;
+    }
   }
 }
