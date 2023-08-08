@@ -60,7 +60,7 @@ function Home() {
     gsap.to(textElement, {
       opacity: 0,
       y: 20,
-      duration: 0.8,
+      duration: 0.5,
       ease: "power3.out",
       scrollTrigger: {
         // markers: true,
@@ -155,7 +155,7 @@ function Home() {
               </figure>
             </a>
           </div>
-          <a href="/work">
+          <a title="all work" href="/work">
             <svg
               viewBox="0 0 343 56"
               fill="none"
