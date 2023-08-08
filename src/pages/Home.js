@@ -132,7 +132,7 @@ function Home() {
                 </figcaption>
               </figure>
             </a>
-            <a 
+            <a
               href="/work/linear-design"
               ref={(el) => (cardsRef.current[2] = el)}
             >
