@@ -55,14 +55,18 @@
   }
 
   h2 {
-    font-size: clamp(24px, 3.5vw, 5rem);
+    font-size: clamp(24px, 7vw, 8rem);
     font-family: "Satoshi-Bold";
-    margin-bottom: 25px;
+  }
+
+  .featured-first-link {
+    margin-top: 25px;
   }
 
   figure {
     width: 100%;
     margin-bottom: 25px;
+
     img {
       width: 100%;
       object-fit: cover;
@@ -86,12 +90,10 @@
 @media (min-width: 768px) {
   .home {
     .card-container {
-      // width: 100%;
-      // display: flex;
-      // justify-content: center;
-      // flex-wrap: wrap;
-      // column-gap: 50px;
       grid-template-columns: repeat(2, 1fr); /* Deux colonnes égales */
+    }
+    .featured-first-link {
+      margin-top: 0;
     }
     figure {
       height: 400px;
@@ -102,24 +104,15 @@
   }
 }
 
-// @media (min-width: 1024px) {
-//   .home {
-//     figure {
-//       width: 471px;
-//       img {
-//         height: 350px;
-//       }
-//     }
-//   }
-// }
-
-// @media (min-width: 1280px) {
-//   .home {
-//     figure {
-//       width: 599px;
-//     }
-//   }
-// }
+@media (min-width: 1024px) {
+  .home {
+    .featured-work {
+      svg path:hover {
+        fill: blue;
+      }
+    }
+  }
+}
 
 @media (min-width: 1440px) {
   .home {

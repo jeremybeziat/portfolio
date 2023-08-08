@@ -70,6 +70,39 @@ function Home() {
     });
   }, []);
 
+  const textFeaturedRef = useRef(null);
+  const featuredRef = useRef(null);
+
+  useEffect(() => {
+    const textElement = textFeaturedRef.current; // Utilisation de textFeaturedRef
+    const maskElement = featuredRef.current; // Utilisation de featuredRef
+
+    gsap.set(textElement, { y: "100%", overflow: "hidden" });
+    gsap.set(maskElement, { y: "-100%", overflow: "hidden" });
+
+    gsap
+      .timeline({
+        scrollTrigger: {
+          // markers: true,
+          trigger: textElement,
+          start: "top 70%",
+          end: "center center",
+          // toggleActions: "play none none reset",
+        },
+      })
+      .fromTo(
+        maskElement,
+        { y: "0%" },
+        { y: "0%", duration: 1, ease: "power4.out" }
+      )
+      .fromTo(
+        textElement,
+        { y: "100%" },
+        { y: "0%", duration: 1, ease: "power4.out" },
+        "-=1"
+      );
+  }, []);
+
   const cardContainerRef = useRef(null);
   const cardsRef = useRef([]);
 
@@ -85,7 +118,7 @@ function Home() {
         ease: "power3.out",
         scrollTrigger: {
           trigger: card,
-          start: "top 50%",
+          start: "top 70%",
           stagger: {
             each: staggerValue,
           },
@@ -113,9 +146,15 @@ function Home() {
         </section>
 
         <section className="featured-work">
-          <h2>Featured work</h2>
+          <div ref={featuredRef}>
+            <h2 ref={textFeaturedRef}>Featured work</h2>
+          </div>
           <div className="card-container" ref={cardContainerRef}>
-            <a href="/work/flowers" ref={(el) => (cardsRef.current[0] = el)}>
+            <a
+              className="featured-first-link"
+              href="/work/flowers"
+              ref={(el) => (cardsRef.current[0] = el)}
+            >
               <figure>
                 <img src={flowers} alt="Sometimes i need help" />
                 <figcaption>
