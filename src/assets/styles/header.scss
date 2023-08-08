@@ -121,14 +121,14 @@ header {
       cursor: pointer;
       z-index: 1000;
       mix-blend-mode: difference;
-      margin-right: 25px;
+      margin-right: 20px;
     }
     ul {
       display: flex;
     }
     ul li a {
       color: white;
-      margin: 0px 10px;
+      margin-left: 10px;
       font-family: "Satoshi-Medium";
       font-size: clamp(16px, 2vw, 1.3rem);
     }
