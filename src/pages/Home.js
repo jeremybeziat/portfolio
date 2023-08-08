@@ -52,6 +52,47 @@ function Home() {
       );
   }, []);
 
+  const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const textElement = scrollRef.current;
+
+    gsap.to(textElement, {
+      opacity: 0,
+      y: 20,
+      duration: 0.8,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: textElement,
+        start: "top 100%", // Démarrer l'animation lorsque 80% du texte est visible
+      },
+    });
+  }, []);
+
+  const cardContainerRef = useRef(null);
+  const cardsRef = useRef([]);
+
+  useEffect(() => {
+    // Si la largeur de l'écran est supérieure ou égale à 768px, animer deux cartes à la fois
+    const staggerValue = window.innerWidth >= 768 ? 2 : 1;
+
+    cardsRef.current.forEach((card, index) => {
+      gsap.from(card, {
+        opacity: 0,
+        y: 20,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 50%",
+          stagger: {
+            each: staggerValue,
+          },
+        },
+      });
+    });
+  }, []);
+
   return (
     <div>
       <Header />
@@ -65,12 +106,15 @@ function Home() {
               <span>Designer With 3 years of experience.</span>
             </div>
           </div>
-          <span className="scroll">SCROLL DOWN</span>
+          <span className="scroll" ref={scrollRef}>
+            SCROLL DOWN
+          </span>
         </section>
+
         <section className="featured-work">
           <h2>Featured work</h2>
-          <div className="card-container">
-            <a href="/work/flowers">
+          <div className="card-container" ref={cardContainerRef}>
+            <a href="/work/flowers" ref={(el) => (cardsRef.current[0] = el)}>
               <figure>
                 <img src={flowers} alt="Sometimes i need help" />
                 <figcaption>
@@ -79,7 +123,7 @@ function Home() {
                 </figcaption>
               </figure>
             </a>
-            <a href="/work/marguerite">
+            <a href="/work/marguerite" ref={(el) => (cardsRef.current[1] = el)}>
               <figure>
                 <img src={marguerite} alt="Marguerite" />
                 <figcaption>
@@ -88,7 +132,10 @@ function Home() {
                 </figcaption>
               </figure>
             </a>
-            <a href="/work/linear-design">
+            <a 
+              href="/work/linear-design"
+              ref={(el) => (cardsRef.current[2] = el)}
+            >
               <figure>
                 <img src={linear} alt="Linear Design" />
                 <figcaption>
@@ -97,7 +144,7 @@ function Home() {
                 </figcaption>
               </figure>
             </a>
-            <a href="/work/joker">
+            <a href="/work/joker" ref={(el) => (cardsRef.current[3] = el)}>
               <figure>
                 <img src={joker} alt="Joker" />
                 <figcaption>

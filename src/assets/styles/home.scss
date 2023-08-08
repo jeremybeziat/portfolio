@@ -28,6 +28,16 @@
       bottom: 20px;
       font-size: clamp(12px, 2vw, 1rem);
       font-family: "Satoshi-Medium";
+      animation: scroll 1s ease 0s 1 normal forwards;
+    }
+    @keyframes scroll {
+      0% {
+        transform: translateY(100px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
     }
   }
 
@@ -124,37 +134,10 @@
       padding: 0px 32px;
     }
     figure {
-      height: 498px;
+      height: 700px;
       img {
-        height: 498px;
+        height: 700px;
       }
     }
   }
 }
-
-// @media (min-width: 1536px) {
-//   .home {
-//     figure {
-//       width: 727px;
-//     }
-//   }
-// }
-
-// @media (min-width: 1600px) {
-//   .home {
-//     figure {
-//       width: 759px;
-//     }
-//   }
-// }
-
-// @media (min-width: 1920px) {
-//   .home {
-//     figure {
-//       width: 919px;
-//       img {
-//         height: 600px;
-//       }
-//     }
-//   }
-// }
