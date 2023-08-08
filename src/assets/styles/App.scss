@@ -5,7 +5,7 @@
 @use "home.scss";
 @use "work.scss";
 @use "contact.scss";
-@use "hamburgermenu.scss";
+@use "footer.scss";
 
 body.dark-mode {
   background-color: #121212; /* Exemple de couleur d'arrière-plan en mode sombre */
@@ -14,10 +14,29 @@ body.dark-mode {
     fill: white;
   }
 
+  figcaption {
+    color: #fff;
+    font-size: 14px;
+  }
+
   .presentation {
     background: url("../images/icon/pattern/portfolio-pattern-phone-jeremy-beziat-black-screen.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
+  }
+}
+
+@media (min-width: 1440px) {
+  body.dark-mode {
+    .presentation {
+      background: url("../images/icon/pattern/portfolio-pattern-desktop-jeremy-beziat-black-screen.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+    }
+    figcaption {
+      font-size: clamp(14px, 2vw, 1.2rem);
+    }
   }
 }
