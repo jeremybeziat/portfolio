@@ -1,5 +1,10 @@
 header {
-  width: 100px;
+  width: 100%;
+}
+
+.menu-toggle-desktop,
+.navigation-desktop {
+  display: none;
 }
 
 .open-menu {
@@ -12,18 +17,8 @@ header {
   top: 20px;
   left: 16px;
   z-index: 100;
-  p:first-child {
-    font-family: "Satoshi-Medium";
-    font-weight: normal;
-    font-size: 20px;
-    color: #fff;
-  }
-  p:last-child {
-    font-family: "Satoshi";
-    font-size: 16px;
-    color: #fff;
-  }
 }
+
 .hamburger-menu {
   position: fixed;
   top: 0;
@@ -31,8 +26,8 @@ header {
   width: 300px;
   height: 100vh;
   background-color: #121212;
-  transition: right 0.3s ease;
   z-index: 1;
+  mix-blend-mode: difference;
 }
 
 .menu-icon {
@@ -40,11 +35,9 @@ header {
   display: flex;
   top: 20px;
   right: 16px;
-  mix-blend-mode: difference;
-  svg {
-  }
+  cursor: pointer;
   path {
-    fill: black;
+    fill: white;
   }
   .cross {
     fill: #fff;
@@ -55,6 +48,7 @@ header {
   right: 0;
   top: 0;
   width: 100%; /* Affiché lorsque le menu est ouvert */
+  mix-blend-mode: inherit;
 }
 
 .menu-toggle {
@@ -93,7 +87,62 @@ header {
     li {
       font-family: "Satoshi-Medium";
       font-size: 80px;
-      color: #fff;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .name,
+  .menu-toggle,
+  .hamburger-menu {
+    display: none;
+  }
+  .navigation-desktop {
+    position: fixed;
+    display: block;
+    width: 100%;
+    padding: 20px 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    mix-blend-mode: difference;
+    z-index: 1000;
+    .nav {
+      display: flex;
+      align-items: center;
+    }
+    .menu-toggle-desktop {
+      display: block;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      z-index: 1000;
+      mix-blend-mode: difference;
+      margin-right: 25px;
+    }
+    ul {
+      display: flex;
+    }
+    ul li a {
+      color: white;
+      margin: 0px 10px;
+      font-family: "Satoshi-Medium";
+      font-size: clamp(16px, 2vw, 1.3rem);
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .navigation-desktop {
+    padding: 20px 32px 0;
+  }
+  .name-desktop {
+    svg {
+      height: 45px;
+      width: auto;
     }
   }
 }

@@ -1,13 +1,15 @@
 import React from "react";
 import Header from "../components/Header";
 
-function Work() {
+function About() {
   return (
     <div>
       <Header />
-      <main></main>
+      <main>
+        
+      </main>
     </div>
   );
 }
 
-export default Work;
+export default About;

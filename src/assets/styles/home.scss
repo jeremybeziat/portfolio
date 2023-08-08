@@ -1,5 +1,5 @@
 .home {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   .presentation {
     position: relative;
@@ -8,7 +8,7 @@
     background-image: url("../images/icon/pattern/portfolio-pattern-phone-jeremy-beziat-white-screen.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     padding: 0px 16px;
     display: flex;
     flex-direction: column;
@@ -17,17 +17,144 @@
     text-align: center;
     h1 {
       font-family: "Satoshi-Medium";
-      font-size: clamp(45px, 7vw, 7rem);
+      font-size: clamp(45px, 10vw, 15rem);
     }
     span {
       margin-top: 0px;
-      font-size: clamp(17px, 2vw, 3rem);
+      font-size: clamp(17px, 3vw, 4rem);
     }
     .scroll {
       position: absolute;
       bottom: 20px;
-      font-size: 12px;
+      font-size: clamp(12px, 2vw, 1rem);
       font-family: "Satoshi-Medium";
     }
   }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Une colonne par défaut */
+    grid-gap: 25px; /* Espace entre les cartes */
+  }
+
+  .featured-work {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    padding: 0px 16px;
+  }
+
+  h2 {
+    font-size: clamp(24px, 3.5vw, 5rem);
+    font-family: "Satoshi-Bold";
+    margin-bottom: 25px;
+  }
+
+  figure {
+    width: 100%;
+    margin-bottom: 25px;
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      height: 250px;
+    }
+    figcaption {
+      color: black;
+      font-size: clamp(14px, 2vw, 1.2rem);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+  svg {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
 }
+
+@media (min-width: 768px) {
+  .home {
+    .card-container {
+      // width: 100%;
+      // display: flex;
+      // justify-content: center;
+      // flex-wrap: wrap;
+      // column-gap: 50px;
+      grid-template-columns: repeat(2, 1fr); /* Deux colonnes égales */
+    }
+    figure {
+      height: 400px;
+      img {
+        height: 400px;
+      }
+    }
+  }
+}
+
+// @media (min-width: 1024px) {
+//   .home {
+//     figure {
+//       width: 471px;
+//       img {
+//         height: 350px;
+//       }
+//     }
+//   }
+// }
+
+// @media (min-width: 1280px) {
+//   .home {
+//     figure {
+//       width: 599px;
+//     }
+//   }
+// }
+
+@media (min-width: 1440px) {
+  .home {
+    .presentation {
+      background-image: url("../images/icon/pattern/portfolio-pattern-desktop-jeremy-beziat-white-screen.svg");
+      background-position: bottom;
+    }
+    .card-container {
+      grid-gap: 50px;
+    }
+    .featured-work {
+      padding: 0px 32px;
+    }
+    figure {
+      height: 498px;
+      img {
+        height: 498px;
+      }
+    }
+  }
+}
+
+// @media (min-width: 1536px) {
+//   .home {
+//     figure {
+//       width: 727px;
+//     }
+//   }
+// }
+
+// @media (min-width: 1600px) {
+//   .home {
+//     figure {
+//       width: 759px;
+//     }
+//   }
+// }
+
+// @media (min-width: 1920px) {
+//   .home {
+//     figure {
+//       width: 919px;
+//       img {
+//         height: 600px;
+//       }
+//     }
+//   }
+// }
