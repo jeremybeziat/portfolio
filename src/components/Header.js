@@ -29,7 +29,7 @@ function Header() {
 
   return (
     <header>
-      <a href="/" className="name">
+      <a title="home" href="/" className="name">
         <svg
           width="101"
           height="32"
@@ -178,7 +178,7 @@ function Header() {
         </div>
       </div>
       <nav className="navigation-desktop">
-        <a href="/" className="name-desktop">
+        <a title="home" href="/" className="name-desktop">
           <svg
             width="101"
             height="32"
