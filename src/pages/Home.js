@@ -63,8 +63,9 @@ function Home() {
       duration: 0.8,
       ease: "power3.out",
       scrollTrigger: {
+        markers: true,
         trigger: textElement,
-        start: "top 100%", // Démarrer l'animation lorsque 80% du texte est visible
+        start: "top 90%", // Démarrer l'animation lorsque 80% du texte est visible
       },
     });
   }, []);
