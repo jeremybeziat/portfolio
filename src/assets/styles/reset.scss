@@ -14,6 +14,10 @@ body {
   font-family: "Satoshi";
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body,
 header,
 main,
@@ -52,7 +56,6 @@ a {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 
 @media (min-width: 768px) {
   :where(html) {
