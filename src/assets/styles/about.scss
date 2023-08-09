@@ -1,0 +1,98 @@
+.about {
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  .content {
+    height: 50vh;
+    padding: 0px 16px;
+  }
+  .title-about {
+    font-size: clamp(60px, 9vw, 15rem);
+    font-family: "Satoshi-Bold";
+    text-align: center;
+  }
+  .subtitle-about {
+    font-size: clamp(24px, 4vw, 2rem);
+    text-align: center;
+  }
+
+  .text-about {
+    font-size: clamp(16px, 2.5vw, 1.2rem);
+    margin-top: 50px;
+    text-align: center;
+  }
+  .portrait-logo {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    bottom: 0;
+  }
+
+  .portrait-about {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .logo-about {
+    position: absolute;
+    width: 215px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -25%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    padding-top: 0;
+    .container-about {
+      display: flex;
+      align-items: center;
+    }
+
+    .content {
+      height: initial;
+      padding: 0px 32px;
+      width: 50%;
+    }
+
+    .title-about {
+      text-align: left;
+    }
+    .subtitle-about {
+      margin-top: -25px;
+      text-align: left;
+    }
+    .text-about {
+      text-align: left;
+      margin-top: 25px;
+    }
+
+    .portrait-logo {
+      width: 50%;
+      height: 100vh;
+      .portrait-about {
+        position: relative;
+        height: 100%;
+      }
+      .logo-about {
+        width: 400px;
+        bottom: 50%;
+        transform: translate(-50%, 50%);
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .about {
+    .portrait-logo {
+      .logo-about {
+        width: 550px;
+      }
+    }
+  }
+}

@@ -107,8 +107,31 @@
 @media (min-width: 1024px) {
   .home {
     .featured-work {
-      svg path:hover {
-        fill: blue;
+      svg:hover {
+        .a-path {
+          fill: #a5bedd;
+        }
+        .l-path {
+          fill: #a4c7e7;
+        }
+        .l-deux-path {
+          fill: #a6d2eb;
+        }
+        .w-path {
+          fill: #a7d4e7;
+        }
+        .o-path {
+          fill: #abd4ce;
+        }
+        .r-path {
+          fill: #aad3c1;
+        }
+        .k-path {
+          fill: #aed1b9;
+        }
+        .arrow-path {
+          fill: #bad7b9;
+        }
       }
     }
   }
