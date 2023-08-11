@@ -137,12 +137,18 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .home {
     .presentation {
       background-image: url("../images/icon/pattern/portfolio-pattern-desktop-jeremy-beziat-white-screen.svg");
       background-position: bottom;
+      background-size: cover;
     }
+  }
+}
+
+@media (min-width: 1440px) {
+  .home {
     .card-container {
       grid-gap: 50px;
     }

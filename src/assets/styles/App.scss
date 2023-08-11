@@ -37,6 +37,16 @@ body.dark-mode {
     font-size: 14px;
   }
 
+  .contact {
+    background: url("../images/icon/pattern/portfolio-pattern-phone-jeremy-beziat-black-screen-contact.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .mail-about-link {
+    color: #fff;
+  }
+
   .presentation {
     background: url("../images/icon/pattern/portfolio-pattern-phone-jeremy-beziat-black-screen.svg");
     background-repeat: no-repeat;
@@ -45,7 +55,7 @@ body.dark-mode {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   body.dark-mode {
     .presentation {
       background: url("../images/icon/pattern/portfolio-pattern-desktop-jeremy-beziat-black-screen.svg");
@@ -53,8 +63,11 @@ body.dark-mode {
       background-size: cover;
       background-position: bottom;
     }
-    figcaption {
-      font-size: clamp(14px, 2vw, 1.2rem);
+    
+    .contact {
+      background: url("../images/icon/pattern/portfolio-pattern-desktop-jeremy-beziat-black-screen-contact.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
 }

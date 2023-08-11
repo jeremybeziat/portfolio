@@ -34,6 +34,7 @@ function Home() {
 
   const textRef = useRef(null);
   const maskRef = useRef(null);
+  
   useEffect(() => {
     gsap.set(textRef.current, { y: "100%", overflow: "hidden" });
     gsap.set(maskRef.current, { y: "-100%", overflow: "hidden" });
