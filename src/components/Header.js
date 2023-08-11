@@ -3,14 +3,18 @@ import React, { useState, useEffect } from "react";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(
+    localStorage.getItem("darkMode") === "true"
+  );
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
+    const newDarkModeState = !isDarkMode;
+    setIsDarkMode(newDarkModeState);
+    localStorage.setItem("darkMode", newDarkModeState);
   };
 
   useEffect(() => {
