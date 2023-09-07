@@ -75,20 +75,45 @@ function Work() {
       });
     });
   }, []);
+
+  const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const textElement = scrollRef.current;
+
+    gsap.to(textElement, {
+      opacity: 0,
+      y: 20,
+      duration: 0.5,
+      ease: "power3.out",
+      scrollTrigger: {
+        // markers: true,
+        trigger: textElement,
+        start: "top 90%", // Démarrer l'animation lorsque 80% du texte est visible
+      },
+    });
+  }, []);
+  
   return (
     <div>
       <Header />
       <main className="work">
-        <div ref={titleMaskRef}>
-          <h1 className="title-work" ref={titleRef}>
-            Design and Graphics
-          </h1>
+        <div className="work-titles">
+          <div ref={titleMaskRef}>
+            <h1 className="title-work" ref={titleRef}>
+              Design and Graphics
+            </h1>
+          </div>
+          <div ref={maskRef}>
+            <h2 className="subtitle-work" ref={textRef}>
+              Explore my work
+            </h2>
+          </div>
+          <span className="scroll" ref={scrollRef}>
+            SCROLL DOWN
+          </span>
         </div>
-        <div ref={maskRef}>
-          <h2 className="subtitle-work" ref={textRef}>
-            Explore My Artistic and Graphic Creations
-          </h2>
-        </div>
+
         <section className="all-work">
           <div className="card-container" ref={cardContainerRef}>
             <a
@@ -97,9 +122,9 @@ function Work() {
               ref={(el) => (cardsRef.current[0] = el)}
             >
               <figure>
-                <img src={flowers} alt="Sometimes i need help" />
+                <img src={flowers} alt="Flowers" />
                 <figcaption>
-                  <h3>Sometimes I need help</h3>
+                  <h3>Flowers</h3>
                   <h4>2023</h4>
                 </figcaption>
               </figure>

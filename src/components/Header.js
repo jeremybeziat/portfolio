@@ -1,5 +1,9 @@
 // import { NavLink } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import about from "../pages/About";
+import work from "../pages/Work";
+import contact from "../pages/Contact";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

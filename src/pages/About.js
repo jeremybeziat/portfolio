@@ -12,12 +12,13 @@ function About() {
         <div className="container-about">
           <div className="content">
             <h1 className="title-about">About me</h1>
-            <h2 className="subtitle-about">Petite description</h2>
+            <h2 className="subtitle-about">Learn more about me.</h2>
+            <h3>Designer / Front Developer</h3>
             <p className="text-about">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              sequi reiciendis voluptatum fugiat, nobis earum aut iusto
-              temporibus a soluta recusandae aspernatur vero odit, ipsa dicta
-              quasi molestiae quidem rerum.
+              My name is Jérémy Béziat, I am 20 years old, and I am passionate
+              about design and web development. Currently, I am looking for a
+              professional opportunity in the field of design. I have six years
+              of experience in design under my belt.
             </p>
           </div>
           <div className="portrait-logo">

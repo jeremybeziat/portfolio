@@ -34,7 +34,7 @@ function Home() {
 
   const textRef = useRef(null);
   const maskRef = useRef(null);
-  
+
   useEffect(() => {
     gsap.set(textRef.current, { y: "100%", overflow: "hidden" });
     gsap.set(maskRef.current, { y: "-100%", overflow: "hidden" });
@@ -87,7 +87,7 @@ function Home() {
       scrollTrigger: {
         // markers: true,
         trigger: textElement,
-        start: "top 90%", // Démarrer l'animation lorsque 80% du texte est visible
+        start: "top 90%",
       },
     });
   }, []);
@@ -178,9 +178,18 @@ function Home() {
               ref={(el) => (cardsRef.current[0] = el)}
             >
               <figure>
-                <img src={flowers} alt="Sometimes i need help" />
+                <img src={flowers} alt="Flowers" />
                 <figcaption>
-                  <h3>Sometimes I need help</h3>
+                  <h3>Flowers</h3>
+                  <h4>2023</h4>
+                </figcaption>
+              </figure>
+            </a>
+            <a href="/work/joker" ref={(el) => (cardsRef.current[3] = el)}>
+              <figure>
+                <img src={joker} alt="Joker" />
+                <figcaption>
+                  <h3>Joker</h3>
                   <h4>2023</h4>
                 </figcaption>
               </figure>
@@ -202,15 +211,6 @@ function Home() {
                 <img src={linear} alt="Linear Design" />
                 <figcaption>
                   <h3>Linear Design</h3>
-                  <h4>2023</h4>
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/work/joker" ref={(el) => (cardsRef.current[3] = el)}>
-              <figure>
-                <img src={joker} alt="Joker" />
-                <figcaption>
-                  <h3>Joker</h3>
                   <h4>2023</h4>
                 </figcaption>
               </figure>

@@ -19,26 +19,6 @@
       font-family: "Satoshi-Medium";
       font-size: clamp(45px, 10vw, 15rem);
     }
-    span {
-      margin-top: 0px;
-      font-size: clamp(17px, 3vw, 4rem);
-    }
-    .scroll {
-      position: absolute;
-      bottom: 100px;
-      font-size: clamp(12px, 2vw, 1rem);
-      font-family: "Satoshi-Medium";
-      animation: scroll 1s ease 0s 1 normal forwards;
-    }
-    @keyframes scroll {
-      0% {
-        transform: translateY(100px);
-      }
-
-      100% {
-        transform: translateY(0px);
-      }
-    }
   }
 
   .card-container {
@@ -81,9 +61,39 @@
       align-items: baseline;
     }
   }
+  span {
+    margin-top: 0px;
+    font-size: clamp(17px, 3vw, 4rem);
+  }
+
+  .scroll {
+    font-size: clamp(17px, 3vw, 1rem);
+  }
+
   svg {
     margin-top: 60px;
     margin-bottom: 20px;
+  }
+}
+
+.scroll {
+  span {
+    margin-top: 0px;
+    font-size: clamp(17px, 3vw, 1rem);
+  }
+  position: absolute;
+  bottom: 100px;
+  font-size: clamp(12px, 2vw, 1rem);
+  font-family: "Satoshi-Medium";
+  animation: scroll 1s ease 0s 1 normal forwards;
+}
+@keyframes scroll {
+  0% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(0px);
   }
 }
 
@@ -109,27 +119,35 @@
     .featured-work {
       svg:hover {
         .a-path {
+          transition: ease-out;
           fill: #a5bedd;
         }
         .l-path {
+          transition: ease-out;
           fill: #a4c7e7;
         }
         .l-deux-path {
+          transition: ease-out;
           fill: #a6d2eb;
         }
         .w-path {
+          transition: ease-out;
           fill: #a7d4e7;
         }
         .o-path {
+          transition: ease-out;
           fill: #abd4ce;
         }
         .r-path {
+          transition: ease-out;
           fill: #aad3c1;
         }
         .k-path {
+          transition: ease-out;
           fill: #aed1b9;
         }
         .arrow-path {
+          transition: ease-out;
           fill: #bad7b9;
         }
       }

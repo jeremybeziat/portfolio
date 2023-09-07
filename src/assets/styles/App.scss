@@ -34,7 +34,7 @@ body.dark-mode {
 
   figcaption {
     color: #fff;
-    font-size: 14px;
+    font-size: clamp(14px, 2vw, 1.2rem);
   }
 
   .contact {
@@ -53,6 +53,12 @@ body.dark-mode {
     background-size: cover;
     background-position: bottom;
   }
+
+  .work-title {
+    .flowers-title {
+      color: #b95399;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -63,11 +69,50 @@ body.dark-mode {
       background-size: cover;
       background-position: bottom;
     }
-    
+
     .contact {
       background: url("../images/icon/pattern/portfolio-pattern-desktop-jeremy-beziat-black-screen-contact.svg");
       background-size: cover;
       background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .dark-mode .home {
+    svg:hover {
+      .a-path {
+        transition: ease-out;
+        fill: #cdafce;
+      }
+      .l-path {
+        transition: ease-out;
+        fill: #bcaccd;
+      }
+      .l-deux-path {
+        transition: ease-out;
+        fill: #b1a6ce;
+      }
+      .w-path {
+        transition: ease-out;
+        fill: #aaabcf;
+      }
+      .o-path {
+        transition: ease-out;
+        fill: #a9b4d7;
+      }
+      .r-path {
+        transition: ease-out;
+        fill: #a6bedd;
+      }
+      .k-path {
+        transition: ease-out;
+        fill: #a3c7e6;
+      }
+      .arrow-path {
+        transition: ease-out;
+        fill: #a7d3eb;
+      }
     }
   }
 }

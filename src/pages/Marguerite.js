@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Header from "../components/Header";
 
 function Marguerite() {
   return (
-    <div>Marguerite</div>
-  )
+    <div>
+      <Header />
+    </div>
+  );
 }
 
-export default Marguerite
+export default Marguerite;
