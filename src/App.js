@@ -10,6 +10,7 @@ import Joker from "./pages/Joker";
 import LinearDesign from "./pages/LinearDesign";
 import Nuclear from "./pages/Nuclear";
 import Smile from "./pages/Smile";
+import Help from "./pages/Help";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/work/marguerite" element={<Marguerite />} />
           <Route exact path="/work/joker" element={<Joker />} />
           <Route exact path="/work/linear-design" element={<LinearDesign />} />
+          <Route exact path="/work/help" element={<Help />} />
           <Route exact path="/work/nuclear" element={<Nuclear />} />
           <Route exact path="/work/smile" element={<Smile />} />
         </Routes>

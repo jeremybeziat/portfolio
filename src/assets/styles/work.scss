@@ -90,7 +90,13 @@
   .marguerite-title {
     color: #076edd;
   }
+  .help-title {
+    color: #2c98ff;
+    text-align: center;
+    font-size: clamp(45px, 8vw, 20rem);
+  }
   .linear-title {
+    text-align: center;
     font-size: clamp(40px, 10vw, 20rem);
   }
 }

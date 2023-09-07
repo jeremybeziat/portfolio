@@ -8,6 +8,7 @@ import linear from "../assets/images/mockup/linear-mockup-affiche-wall-skarryx-d
 import joker from "../assets/images/mockup/joker-affiche-mock-up-skarrx-design.webp";
 import flowers from "../assets/images/mockup/flowers-mockup-affiche-wall-jeremy-beziat.webp";
 import nuclear from "../assets/images/mockup/billboard2-mockup-nuclear-jeremy-beziat.webp";
+import help from "../assets/images/mockup/mockup-help3.webp";
 import smile from "../assets/images/mockup/mockup-smile.webp";
 import Footer from "../components/Footer";
 
@@ -163,6 +164,18 @@ function Work() {
                 <img src={marguerite} alt="Marguerite" />
                 <figcaption>
                   <h3>Marguerite</h3>
+                  <h4>2023</h4>
+                </figcaption>
+              </figure>
+            </a>
+            <a
+              href="/work/help"
+              ref={(el) => (cardsRef.current[4] = el)}
+            >
+              <figure>
+                <img src={help} alt="Help" />
+                <figcaption>
+                  <h3>Sometimes I need help</h3>
                   <h4>2023</h4>
                 </figcaption>
               </figure>
