@@ -113,6 +113,15 @@
   h2 {
     text-align: center;
   }
+  .link-behance {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 25px;
+    h3 {
+      margin-right: 10px;
+    }
+  }
 }
 
 @media (min-width: 768px) {
