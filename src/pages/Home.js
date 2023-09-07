@@ -174,7 +174,7 @@ function Home() {
           <div className="card-container" ref={cardContainerRef}>
             <a
               className="featured-first-link"
-              href="/work/nuclear"
+              href="/work/smile"
               ref={(el) => (cardsRef.current[0] = el)}
             >
               <figure>
@@ -194,7 +194,7 @@ function Home() {
                 </figcaption>
               </figure>
             </a>
-            <a href="/work/flowers" ref={(el) => (cardsRef.current[1] = el)}>
+            <a href="/work/flowers" ref={(el) => (cardsRef.current[2] = el)}>
               <figure>
                 <img src={flowers} alt="Flowers" />
                 <figcaption>
@@ -203,7 +203,7 @@ function Home() {
                 </figcaption>
               </figure>
             </a>
-            <a href="/work/joker" ref={(el) => (cardsRef.current[2] = el)}>
+            <a href="/work/joker" ref={(el) => (cardsRef.current[3] = el)}>
               <figure>
                 <img src={joker} alt="Joker" />
                 <figcaption>

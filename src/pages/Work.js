@@ -150,7 +150,7 @@ function Work() {
                 </figcaption>
               </figure>
             </a>
-            <a href="/work/joker" ref={(el) => (cardsRef.current[5] = el)}>
+            <a href="/work/joker" ref={(el) => (cardsRef.current[3] = el)}>
               <figure>
                 <img src={joker} alt="Joker" />
                 <figcaption>
@@ -159,7 +159,7 @@ function Work() {
                 </figcaption>
               </figure>
             </a>
-            <a href="/work/marguerite" ref={(el) => (cardsRef.current[3] = el)}>
+            <a href="/work/marguerite" ref={(el) => (cardsRef.current[4] = el)}>
               <figure>
                 <img src={marguerite} alt="Marguerite" />
                 <figcaption>
@@ -170,7 +170,7 @@ function Work() {
             </a>
             <a
               href="/work/help"
-              ref={(el) => (cardsRef.current[4] = el)}
+              ref={(el) => (cardsRef.current[5] = el)}
             >
               <figure>
                 <img src={help} alt="Help" />
@@ -182,7 +182,7 @@ function Work() {
             </a>
             <a
               href="/work/linear-design"
-              ref={(el) => (cardsRef.current[4] = el)}
+              ref={(el) => (cardsRef.current[6] = el)}
             >
               <figure>
                 <img src={linear} alt="Linear Design" />
