@@ -2,14 +2,14 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
 import Header from "../components/Header";
-import joker from "../assets/images/mockup/joker-affiche.webp";
-import joker1 from "../assets/images/mockup/joker-affiche-mock-up-skarrx-design.webp";
-import joker2 from "../assets/images/mockup/joker-affiche-mockup-bus-skarryx-design.webp";
-import joker3 from "../assets/images/mockup/joker-affiche-mockup-city-skarryx-design.webp";
-import joker4 from "../assets/images/mockup/joker-affiche-mockup-bus2-skarryx-design.webp";
+import smile from "../assets/images/mockup/mockup-smile.webp";
+import smile1 from "../assets/images/mockup/smile-logo.webp";
+import smile2 from "../assets/images/mockup/smile-mockup-1.webp";
+import smile3 from "../assets/images/mockup/smile-mockup-2.webp";
+import smile4 from "../assets/images/mockup/smile-texte-1.webp";
+import smile5 from "../assets/images/mockup/smile-texte-2.webp";
 import Footer from "../components/Footer";
-
-function Joker() {
+function Flowers() {
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -32,19 +32,20 @@ function Joker() {
       <Header />
       <main>
         <div className="work-title">
-          <h1 className="joker-title">Joker</h1>
+          <h1 className="smile-title">Smile</h1>
           <h2>Poster</h2>
           <span className="scroll" ref={scrollRef}>
             SCROLL DOWN
           </span>
         </div>
         <div className="presentation-work">
-          <img rel="preload" src={joker} alt="poster Joker" />
-          <img rel="preload" src={joker1} alt="Joker mock-up n°01" />
-          <img rel="preload" src={joker2} alt="" />
-          <img rel="preload" src={joker3} alt="" />
-          <img rel="preload" src={joker4} alt="" />
-          <h2>Joker - 2023</h2>
+          <img rel="preload" src={smile} alt="poster Smile" />
+          <img rel="preload" src={smile1} alt="" />
+          <img rel="preload" src={smile2} alt="" />
+          <img rel="preload" src={smile4} alt="" />
+          <img rel="preload" src={smile3} alt="" />
+          <img rel="preload" src={smile5} alt="" />
+          <h2>Smile - 2023</h2>
         </div>
       </main>
       <Footer />
@@ -52,4 +53,4 @@ function Joker() {
   );
 }
 
-export default Joker;
+export default Flowers;

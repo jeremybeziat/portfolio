@@ -8,6 +8,8 @@ import Flowers from "./pages/Flowers";
 import Marguerite from "./pages/Marguerite";
 import Joker from "./pages/Joker";
 import LinearDesign from "./pages/LinearDesign";
+import Nuclear from "./pages/Nuclear";
+import Smile from "./pages/Smile";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route exact path="/work/marguerite" element={<Marguerite />} />
           <Route exact path="/work/joker" element={<Joker />} />
           <Route exact path="/work/linear-design" element={<LinearDesign />} />
+          <Route exact path="/work/nuclear" element={<Nuclear />} />
+          <Route exact path="/work/smile" element={<Smile />} />
         </Routes>
       </BrowserRouter>
     </div>

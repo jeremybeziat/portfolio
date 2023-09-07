@@ -5,8 +5,10 @@ import ScrollTrigger from "gsap-trial/ScrollTrigger";
 import Header from "../components/Header";
 import marguerite from "../assets/images/mockup/marguerite-mockup-affiche-skarrx-design.webp";
 import linear from "../assets/images/mockup/linear-mockup-affiche-wall-skarryx-design.webp";
-import flowers from "../assets/images/mockup/flowers-mockup-affiche-wall-jeremy-beziat.webp";
 import joker from "../assets/images/mockup/joker-affiche-mock-up-skarrx-design.webp";
+import flowers from "../assets/images/mockup/flowers-mockup-affiche-wall-jeremy-beziat.webp";
+import nuclear from "../assets/images/mockup/billboard2-mockup-nuclear-jeremy-beziat.webp";
+import smile from "../assets/images/mockup/mockup-smile.webp";
 import Footer from "../components/Footer";
 
 gsap.registerPlugin(ScrollTrigger); // Enregistrez le plugin ScrollTrigger
@@ -93,7 +95,7 @@ function Work() {
       },
     });
   }, []);
-  
+
   return (
     <div>
       <Header />
@@ -118,9 +120,27 @@ function Work() {
           <div className="card-container" ref={cardContainerRef}>
             <a
               className="work-first-link"
-              href="/work/flowers"
+              href="/work/smile"
               ref={(el) => (cardsRef.current[0] = el)}
             >
+              <figure>
+                <img src={smile} alt="Smile" />
+                <figcaption>
+                  <h3>Smile</h3>
+                  <h4>2023</h4>
+                </figcaption>
+              </figure>
+            </a>
+            <a href="/work/nuclear" ref={(el) => (cardsRef.current[1] = el)}>
+              <figure>
+                <img src={nuclear} alt="Nuclear" />
+                <figcaption>
+                  <h3>Nuclear</h3>
+                  <h4>2023</h4>
+                </figcaption>
+              </figure>
+            </a>
+            <a href="/work/flowers" ref={(el) => (cardsRef.current[2] = el)}>
               <figure>
                 <img src={flowers} alt="Flowers" />
                 <figcaption>
@@ -129,7 +149,16 @@ function Work() {
                 </figcaption>
               </figure>
             </a>
-            <a href="/work/marguerite" ref={(el) => (cardsRef.current[1] = el)}>
+            <a href="/work/joker" ref={(el) => (cardsRef.current[5] = el)}>
+              <figure>
+                <img src={joker} alt="Joker" />
+                <figcaption>
+                  <h3>Joker</h3>
+                  <h4>2023</h4>
+                </figcaption>
+              </figure>
+            </a>
+            <a href="/work/marguerite" ref={(el) => (cardsRef.current[3] = el)}>
               <figure>
                 <img src={marguerite} alt="Marguerite" />
                 <figcaption>
@@ -140,21 +169,12 @@ function Work() {
             </a>
             <a
               href="/work/linear-design"
-              ref={(el) => (cardsRef.current[2] = el)}
+              ref={(el) => (cardsRef.current[4] = el)}
             >
               <figure>
                 <img src={linear} alt="Linear Design" />
                 <figcaption>
                   <h3>Linear Design</h3>
-                  <h4>2023</h4>
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/work/joker" ref={(el) => (cardsRef.current[3] = el)}>
-              <figure>
-                <img src={joker} alt="Joker" />
-                <figcaption>
-                  <h3>Joker</h3>
                   <h4>2023</h4>
                 </figcaption>
               </figure>
