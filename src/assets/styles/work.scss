@@ -70,6 +70,8 @@
   h1 {
     font-family: "Satoshi-Bold";
     font-size: clamp(70px, 10vw, 20rem);
+    text-align: center;
+    line-height: 4rem;
   }
   h2 {
     font-size: clamp(20px, 4vw, 3rem);
