@@ -37,6 +37,17 @@ body.dark-mode {
     font-size: clamp(14px, 2vw, 1.2rem);
   }
 
+  .link-behance {
+    h3 {
+      color: #fff;
+    }
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
   .contact {
     background: url("../images/icon/pattern/portfolio-pattern-phone-jeremy-beziat-black-screen-contact.svg");
     background-repeat: no-repeat;

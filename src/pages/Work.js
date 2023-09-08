@@ -10,6 +10,7 @@ import flowers from "../assets/images/mockup/flowers-mockup-affiche-wall-jeremy-
 import nuclear from "../assets/images/mockup/billboard2-mockup-nuclear-jeremy-beziat.webp";
 import help from "../assets/images/mockup/mockup-help3.webp";
 import smile from "../assets/images/mockup/mockup-smile.webp";
+import raining from "../assets/images/mockup/mockup-raining.webp";
 import Footer from "../components/Footer";
 
 gsap.registerPlugin(ScrollTrigger); // Enregistrez le plugin ScrollTrigger
@@ -188,6 +189,18 @@ function Work() {
                 <img src={linear} alt="Linear Design" />
                 <figcaption>
                   <h3>Linear Design</h3>
+                  <h4>2023</h4>
+                </figcaption>
+              </figure>
+            </a>
+            <a
+              href="/work/raining-stars"
+              ref={(el) => (cardsRef.current[7] = el)}
+            >
+              <figure>
+                <img src={raining} alt="Raining Stars" />
+                <figcaption>
+                  <h3>Raining Stars N°07</h3>
                   <h4>2023</h4>
                 </figcaption>
               </figure>

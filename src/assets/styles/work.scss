@@ -99,6 +99,9 @@
     text-align: center;
     font-size: clamp(40px, 10vw, 20rem);
   }
+  .raining-title {
+    color: #555aa1;
+  }
 }
 
 .presentation-work {
@@ -119,7 +122,13 @@
     align-items: baseline;
     margin-top: 25px;
     h3 {
+      color: #000;
       margin-right: 10px;
+    }
+    svg {
+      path {
+        fill: #000;
+      }
     }
   }
 }
