@@ -10,6 +10,7 @@ import Joker from "./pages/Joker";
 import LinearDesign from "./pages/LinearDesign";
 import Nuclear from "./pages/Nuclear";
 import Smile from "./pages/Smile";
+import RainingStars from "./pages/RainingStars";
 import Help from "./pages/Help";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route exact path="/work/help" element={<Help />} />
           <Route exact path="/work/nuclear" element={<Nuclear />} />
           <Route exact path="/work/smile" element={<Smile />} />
+          <Route exact path="/work/raining-stars" element={<RainingStars />} />
         </Routes>
       </BrowserRouter>
     </div>
