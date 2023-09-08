@@ -44,10 +44,10 @@ function Marguerite() {
           <img rel="preload" src={raining2} alt="" />
           <img rel="preload" src={raining3} alt="" />
           <img rel="preload" src={raining4} alt="" />
-          <h2>Marguerite - 2023</h2>
+          <h2>Raining Stars N°07 - 2023</h2>
           <a
             className="link-behance"
-            href="https://www.behance.net/gallery/174677851/Marguerite-Daisy"
+            href="https://www.behance.net/gallery/159684055/Raining-Stars-N07"
           >
             <h3>Available on</h3>
             <svg
