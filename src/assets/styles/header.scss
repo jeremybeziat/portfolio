@@ -134,6 +134,12 @@ header {
   }
 }
 
+@media (min-width: 1024px) {
+  .navigation-desktop {
+    padding: 20px 32px;
+  }
+}
+
 @media (min-width: 1440px) {
   .navigation-desktop {
     padding: 20px 32px 0;
