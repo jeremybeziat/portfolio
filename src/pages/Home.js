@@ -165,6 +165,13 @@ function Home() {
           <span className="scroll" ref={scrollRef}>
             SCROLL DOWN
           </span>
+          <a
+            className="link-available"
+            href="mailto:jeremybeziat.pro@gmail.com"
+          >
+            <div className="circle"></div>
+            <div>Available for work</div>
+          </a>
         </section>
 
         <section className="featured-work">
