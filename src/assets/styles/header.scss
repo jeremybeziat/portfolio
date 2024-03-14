@@ -2,6 +2,44 @@ header {
   width: 100%;
 }
 
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  mix-blend-mode: difference;
+}
+
+.logo svg {
+  position: fixed;
+  z-index: 100;
+  top: 10px;
+  left: 16px;
+  height: 50px;
+  mix-blend-mode: difference;
+}
+
+.menu {
+  font-family: "Satoshi-Medium";
+  font-size: 20px;
+  background: none;
+  color: #f6f6f6;
+  border: none;
+  mix-blend-mode: difference;
+}
+
+.btn-contact {
+  // padding: 16px 20px;
+  font-size: 20px;
+  color: #f6f6f6;
+  // border: 1px solid #f6f6f6;
+  background: none;
+  border-radius: 50px;
+}
+
 .menu-toggle-desktop,
 .navigation-desktop {
   display: none;
@@ -11,21 +49,13 @@ header {
   overflow: hidden;
 }
 
-.name {
-  mix-blend-mode: difference;
-  position: fixed;
-  top: 20px;
-  left: 16px;
-  z-index: 100;
-}
-
 .hamburger-menu {
   position: fixed;
   top: 0;
   right: -300px;
   width: 300px;
   height: 100vh;
-  background-color: #121212;
+  background-color: #0038ff;
   z-index: 1;
   mix-blend-mode: difference;
 }
@@ -36,12 +66,6 @@ header {
   top: 20px;
   right: 16px;
   cursor: pointer;
-  path {
-    fill: white;
-  }
-  .cross {
-    fill: #fff;
-  }
 }
 
 .hamburger-menu.open {
@@ -49,6 +73,9 @@ header {
   top: 0;
   width: 100%; /* Affiché lorsque le menu est ouvert */
   mix-blend-mode: inherit;
+  .logo svg {
+    mix-blend-mode: inherit;
+  }
 }
 
 .menu-toggle {
@@ -64,23 +91,13 @@ header {
   mix-blend-mode: difference;
 }
 
-.mode-indicator {
-  background: white;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-}
-
-.mode-indicator.dark {
-  background: white;
-}
-
 .menu-content {
   display: flex;
+  flex-direction: column;
   padding: 20px;
   width: 100%;
   height: 100vh;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   ul {
     text-align: center;
@@ -95,7 +112,16 @@ header {
 }
 
 @media (min-width: 768px) {
-  .name,
+  .logo {
+    height: 100%;
+  }
+  .logo svg {
+    position: relative;
+    height: 60px;
+  }
+  .logo-phone {
+    display: none;
+  }
   .menu-toggle,
   .hamburger-menu {
     display: none;
@@ -111,8 +137,10 @@ header {
     mix-blend-mode: difference;
     z-index: 1000;
     .nav {
+      width: 100%;
       display: flex;
       align-items: center;
+      justify-content: space-between;
     }
     .menu-toggle-desktop {
       display: table;
@@ -143,11 +171,5 @@ header {
 @media (min-width: 1440px) {
   .navigation-desktop {
     padding: 20px 32px 0;
-  }
-  .name-desktop {
-    svg {
-      height: 45px;
-      width: auto;
-    }
   }
 }
