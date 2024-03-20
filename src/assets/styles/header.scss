@@ -20,10 +20,11 @@ nav {
   left: 16px;
   height: 50px;
   mix-blend-mode: difference;
+  fill: #fff;
 }
 
 .menu {
-  font-family: "Satoshi-Medium";
+  font-family: "Satoshi";
   font-size: 20px;
   background: none;
   color: #f6f6f6;
@@ -32,6 +33,11 @@ nav {
 }
 
 .btn-contact {
+  position: absolute;
+  bottom: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   // padding: 16px 20px;
   font-size: 20px;
   color: #f6f6f6;
@@ -112,64 +118,63 @@ nav {
 }
 
 @media (min-width: 768px) {
+  .navigation-desktop {
+    padding: 16px;
+  }
   .logo {
     height: 100%;
   }
   .logo svg {
     position: relative;
     height: 60px;
+    left: 0;
+    top: 0;
   }
-  .logo-phone {
-    display: none;
-  }
-  .menu-toggle,
+
   .hamburger-menu {
     display: none;
   }
+
+  .btn-contact {
+    bottom: 0;
+    z-index: 100;
+    position: relative;
+    width: auto;
+  }
+
   .navigation-desktop {
     position: fixed;
     display: block;
     width: 100%;
-    padding: 20px 16px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     mix-blend-mode: difference;
     z-index: 1000;
+
     .nav {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
-    .menu-toggle-desktop {
-      display: table;
-      width: 20px;
-      height: 20px;
-      cursor: pointer;
-      z-index: 1000;
-      mix-blend-mode: difference;
-    }
+
     ul {
       display: flex;
     }
+
     ul li a {
       color: white;
-      margin-left: 10px;
+      margin: 10px;
       font-family: "Satoshi";
       font-size: clamp(16px, 2vw, 1.3rem);
     }
   }
-}
 
-@media (min-width: 1024px) {
-  .navigation-desktop {
-    padding: 20px 32px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .navigation-desktop {
-    padding: 20px 32px 0;
+  .link-page {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
   }
 }

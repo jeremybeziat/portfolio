@@ -1,24 +1,18 @@
-// import { NavLink } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
-// import about from "../pages/About";
-// import work from "../pages/Work";
-// import contact from "../pages/Contact";
+import { Link, useLocation } from "react-router-dom";
 
 function Header() {
+  // Récupérer l'URL de la page actuelle
+  const location = useLocation();
+
+  // Fonction pour déterminer si la page actuelle correspond à la page "About"
+  const isAboutPage = location.pathname === "/about";
+  const isWorkPage = location.pathname === "/work";
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(
-    localStorage.getItem("darkMode") === "true"
-  );
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
-
-  const toggleDarkMode = () => {
-    const newDarkModeState = !isDarkMode;
-    setIsDarkMode(newDarkModeState);
-    localStorage.setItem("darkMode", newDarkModeState);
   };
 
   useEffect(() => {
@@ -27,13 +21,7 @@ function Header() {
     } else {
       document.body.classList.remove("open-menu");
     }
-
-    if (isDarkMode) {
-      document.body.classList.add("dark-mode");
-    } else {
-      document.body.classList.remove("dark-mode");
-    }
-  }, [isMenuOpen, isDarkMode]);
+  });
 
   return (
     <header>
@@ -66,16 +54,20 @@ function Header() {
         <div className="menu-content">
           <ul>
             <li>
-              <a href="/about">ABOUT</a>
+              <Link to="/about" className={isAboutPage ? "active" : ""}>
+                ABOUT
+              </Link>
             </li>
             <li>
-              <a href="/work">WORK</a>
+              <Link to="/work" className={isWorkPage ? "active" : ""}>
+                WORK
+              </Link>
             </li>
           </ul>
-          <a href="mailto:epurevision@gmail.com" className="btn-contact">
-            @epurevision
-          </a>
         </div>
+        <a href="mailto:epurevision@gmail.com" className="btn-contact">
+          @epurevision
+        </a>
       </div>
       <nav className="navigation-desktop">
         <div className="nav">
@@ -97,12 +89,16 @@ function Header() {
               </svg>
             }
           </a>
-          <ul>
+          <ul className="link-page">
             <li>
-              <a href="/about">ABOUT</a>
+              <Link to="/about" className={isAboutPage ? "active" : ""}>
+                ABOUT
+              </Link>
             </li>
             <li>
-              <a href="/work">WORK</a>
+              <Link to="/work" className={isWorkPage ? "active" : ""}>
+                WORK
+              </Link>
             </li>
           </ul>
           <a href="mailto:epurevision@gmail.com" className="btn-contact">

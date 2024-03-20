@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #fff;
+  background: #121212;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -26,13 +26,20 @@ footer {
   height: 100%;
 }
 
+li,
+a,
+p {
+  color: #f6f6f6;
+}
+
 :where(html) {
   box-sizing: border-box;
 }
 
 :where(h1, h2, h3, h4, h5, h6) {
   font-weight: 500;
-  font-family: "Satoshi-Medium";
+  font-family: "Medium";
+  color: #f6f6f6;
 }
 
 a {
