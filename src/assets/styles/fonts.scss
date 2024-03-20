@@ -18,3 +18,10 @@ font-weight: normal;
   font-display: swap;
 font-weight: normal;
 }
+
+@font-face {
+  font-family: "Medium";
+  src: local("Medium"), url("../fonts/satoshi/Medium.otf");
+  font-display: swap;
+font-weight: normal;
+}

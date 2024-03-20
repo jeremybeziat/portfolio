@@ -1,257 +1,154 @@
 .home {
+  ::selection {
+    background-color: #0038ff;
+  }
   height: 100%;
   width: 100%;
+  background: #121212;
   .presentation {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
-    background-image: url("../images/icon/pattern/portfolio-pattern-phone-jeremy-beziat-white-screen.svg");
+    // background-image: url("../images/icon/pattern/pattern_blue.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     padding: 0px 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    h1 {
-      font-family: "Satoshi-Medium";
-      font-size: clamp(45px, 10vw, 15rem);
+  }
+
+  .cls-1 {
+    animation: first 1s ease 0s 1 normal forwards;
+  }
+
+  @keyframes first {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
     }
-    .link-available {
-      margin-top: 50px;
-      display: flex;
-      align-items: center;
-      font-size: clamp(16px, 2vw, 18px);
-      background: #121212;
-      padding: 16px 20px;
-      border-radius: 50px;
-      border: 1px solid #fff;
-      color: white !important;
-      .circle {
-        background: #00cf00;
-        height: 10px;
-        width: 10px;
-        border-radius: 50%;
-        margin-right: 10px;
-        &:before {
-          content: "";
-          position: relative;
-          display: block;
-          width: 300%;
-          height: 300%;
-          box-sizing: border-box;
-          margin-left: -100%;
-          margin-top: -100%;
-          border-radius: 45px;
-          background-color: #00cf0078;
-          animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-        }
-        &:after {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 0;
-          display: block;
-          animation: pulse-dot 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
-        }
-      }
-      @keyframes pulse-ring {
-        0% {
-          transform: scale(0.33);
-        }
-        80%,
-        100% {
-          opacity: 0;
-        }
-      }
 
-      @keyframes pulse-dot {
-        0% {
-          transform: scale(0.8);
-        }
-        50% {
-          transform: scale(1);
-        }
-        100% {
-          transform: scale(0.8);
-        }
-      }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
     }
-    .scroll {
-    }
-  }
-
-  .link-available:hover {
-    border: 1px solid #00cf0078;
-  }
-
-  .card-container {
-    display: grid;
-    grid-template-columns: 1fr; /* Une colonne par défaut */
-    grid-gap: 25px; /* Espace entre les cartes */
-  }
-
-  .featured-work {
-    width: 100%;
-    height: 100%;
-    padding: 0px 16px;
-  }
-
-  h2 {
-    font-size: clamp(50px, 7vw, 8rem);
-    font-family: "Satoshi-Bold";
-    text-align: center;
-  }
-
-  .featured-first-link {
-    margin-top: 25px;
-  }
-
-  figure {
-    width: 100%;
-    margin-bottom: 25px;
-
-    img {
-      width: 100%;
-      object-fit: cover;
-      object-position: center;
-      height: 250px;
-    }
-    figcaption {
-      color: black;
-      font-size: clamp(14px, 2vw, 1.2rem);
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-  }
-  span {
-    margin-top: 0px;
-    font-size: clamp(17px, 3vw, 4rem);
-  }
-
-  .scroll {
-    font-size: clamp(16px, 3vw, 1rem);
   }
 
   svg {
-    margin-top: 100px;
-    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  .cls-2 {
+    animation: myAnim 1.3s ease 0s 1 normal forwards;
+  }
+
+  @keyframes myAnim {
+    0% {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .cls-3 {
+    animation: third 1.2s ease 0s 1 normal forwards;
+  }
+
+  svg {
+    width: 80%;
+  }
+
+  @keyframes third {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .link-social-container {
+    position: absolute;
+    bottom: 0;
+    padding: 16px;
+    width: 100%;
+  }
+  .link-social {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+    text-align: center;
+    justify-content: space-between;
+    color: #f6f6f6;
   }
 }
 
-.scroll {
-  span {
-    margin-top: 0px;
-    font-size: clamp(17px, 3vw, 1rem);
+.introduction {
+  background: #0038FF;
+  padding: 0 16px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  ::selection{
+    background-color: #121212;
   }
-  position: absolute;
-  bottom: 100px;
-  font-size: clamp(16px, 2vw, 1rem);
-  font-family: "Satoshi-Medium";
-  animation: scroll 1s ease 0s 1 normal forwards;
-}
-@keyframes scroll {
-  0% {
-    transform: translateY(100px);
+  h1 {
+    font-size: clamp(16px, 2.2vw, 24px);
+    font-family: "Satoshi";
+    text-align: center;
+    span {
+      font-size: clamp(25px, 5vw, 60px);
+      font-family: "Medium";
+      line-height: 1.2;
+    }
   }
-
-  100% {
-    transform: translateY(0px);
+  p {
+    margin-top: 16px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: clamp(16px, 2vw, 20px);
+  }
+  ul {
+    margin-top: 16px;
+    display: flex;
+    li {
+      margin: 0 10px;
+      font-size: clamp(16px, 2vw, 20px);
+    }
   }
 }
 
 @media (min-width: 768px) {
-  .home {
-    h2 {
-      padding-bottom: 50px;
-    }
-    .card-container {
-      grid-template-columns: repeat(2, 1fr); /* Deux colonnes égales */
-    }
-    .featured-first-link {
-      margin-top: 0;
-    }
-    figure {
-      height: 400px;
-      img {
-        height: 400px;
-      }
-    }
-    svg {
-      margin-top: 150px;
-    }
-  }
-}
-
-@media (min-width: 1024px) {
-  .home {
-    .featured-work {
-      margin-top: 100px;
-      padding: 0px 32px;
-      svg:hover {
-        .a-path {
-          transition: ease-out;
-          fill: #a5bedd;
-        }
-        .l-path {
-          transition: ease-out;
-          fill: #a4c7e7;
-        }
-        .l-deux-path {
-          transition: ease-out;
-          fill: #a6d2eb;
-        }
-        .w-path {
-          transition: ease-out;
-          fill: #a7d4e7;
-        }
-        .o-path {
-          transition: ease-out;
-          fill: #abd4ce;
-        }
-        .r-path {
-          transition: ease-out;
-          fill: #aad3c1;
-        }
-        .k-path {
-          transition: ease-out;
-          fill: #aed1b9;
-        }
-        .arrow-path {
-          transition: ease-out;
-          fill: #bad7b9;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .home {
-    .presentation {
-      background-image: url("../images/icon/pattern/portfolio-pattern-desktop-jeremy-beziat-white-screen.svg");
-      background-position: bottom;
-      background-size: cover;
+  .introduction {
+    p {
+      margin: 10%;
+      margin-bottom: 0;
+      margin-top: 16px;
+      text-align: center;
     }
   }
 }
 
 @media (min-width: 1440px) {
-  .home {
-    .card-container {
-      grid-gap: 50px;
-    }
-    .featured-work {
-      padding: 0px 32px;
-    }
-    figure {
-      height: 700px;
-      img {
-        height: 700px;
-      }
+  .introduction {
+    p {
+      margin: 28%;
+      margin-bottom: 0;
+      margin-top: 16px;
     }
   }
 }

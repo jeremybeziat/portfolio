@@ -3,15 +3,15 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap-trial/ScrollTrigger";
 
 import Header from "../components/Header";
-import marguerite from "../assets/images/mockup/marguerite-mockup-affiche-skarrx-design.webp";
-import linear from "../assets/images/mockup/linear-mockup-affiche-wall-skarryx-design.webp";
-import joker from "../assets/images/mockup/joker-affiche-mock-up-skarrx-design.webp";
-import flowers from "../assets/images/mockup/flowers-mockup-affiche-wall-jeremy-beziat.webp";
-import nuclear from "../assets/images/mockup/billboard2-mockup-nuclear-jeremy-beziat.webp";
-import help from "../assets/images/mockup/mockup-help3.webp";
-import smile from "../assets/images/mockup/mockup-smile.webp";
-import raining from "../assets/images/mockup/mockup-raining.webp";
-import Footer from "../components/Footer";
+// import marguerite from "../assets/images/mockup/marguerite-mockup-affiche-skarrx-design.webp";
+// import linear from "../assets/images/mockup/linear-mockup-affiche-wall-skarryx-design.webp";
+// import joker from "../assets/images/mockup/joker-affiche-mock-up-skarrx-design.webp";
+// import flowers from "../assets/images/mockup/flowers-mockup-affiche-wall-jeremy-beziat.webp";
+// import nuclear from "../assets/images/mockup/billboard2-mockup-nuclear-jeremy-beziat.webp";
+// import help from "../assets/images/mockup/mockup-help3.webp";
+// import smile from "../assets/images/mockup/mockup-smile.webp";
+// import raining from "../assets/images/mockup/mockup-raining.webp";
+// import Footer from "../components/Footer";
 
 gsap.registerPlugin(ScrollTrigger); // Enregistrez le plugin ScrollTrigger
 
@@ -102,7 +102,8 @@ function Work() {
     <div>
       <Header />
       <main className="work">
-        <div className="work-titles">
+        <h1>COMING SOON</h1>
+        {/* <div className="work-titles">
           <div ref={titleMaskRef}>
             <h1 className="title-work" ref={titleRef}>
               Design and Graphics
@@ -206,9 +207,8 @@ function Work() {
               </figure>
             </a>
           </div>
-        </section>
+        </section> */}
       </main>
-      <Footer />
     </div>
   );
 }
