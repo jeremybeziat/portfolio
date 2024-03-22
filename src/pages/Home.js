@@ -101,15 +101,27 @@ function Home() {
           <h1>
             ABOUT THE PROCESS WITH <br /> <span>EPUREVISION</span>
           </h1>
-          <p>
-            Your creative partner for an exceptional digital universe.
-            Specialized in web development and graphic design, we merge
-            innovation and aesthetics to bring your ideas to life. From sleek
-            design to optimized code, each project is an interactive work of
-            art. Entrust us with your vision, and we will transform it into an
-            immersive and memorable online experience, reflecting the unique
-            essence of your business.
-          </p>
+          <div className="text-introduction">
+            <p>
+              Votre partenaire créatif pour un univers numérique exceptionnel.
+              Spécialisés dans le développement web et le design graphique, nous
+              fusionnons innovation et esthétique pour donner vie à vos idées.
+              Du design épuré au code optimisé, chaque projet est une œuvre
+              d'art interactive. Confiez-nous votre vision, et nous la
+              transformerons en une expérience en ligne immersive et mémorable,
+              reflétant l'essence unique de votre entreprise.
+            </p>
+            <div className="line"></div>
+            <p>
+              Your creative partner for an exceptional digital universe.
+              Specialized in web development and graphic design, we merge
+              innovation and aesthetics to bring your ideas to life. From sleek
+              design to optimized code, each project is an interactive work of
+              art. Entrust us with your vision, and we will transform it into an
+              immersive and memorable online experience, reflecting the unique
+              essence of your business.
+            </p>
+          </div>
           <ul>
             <li>ADOBE CREATIVE CLOUD</li>
             <li>FIGMA</li>
