@@ -109,7 +109,7 @@ function Home() {
               Du design épuré au code optimisé, chaque projet est une œuvre
               d'art interactive. Confiez-nous votre vision, et nous la
               transformerons en une expérience en ligne immersive et mémorable,
-              reflétant l'essence unique de votre entreprise.
+              reflétant l'essence unique de votre entreprise. (FR)
             </p>
             <div className="line"></div>
             <p>
@@ -119,7 +119,7 @@ function Home() {
               design to optimized code, each project is an interactive work of
               art. Entrust us with your vision, and we will transform it into an
               immersive and memorable online experience, reflecting the unique
-              essence of your business.
+              essence of your business. (EN)
             </p>
           </div>
           <ul>
