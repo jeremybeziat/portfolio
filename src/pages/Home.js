@@ -222,7 +222,7 @@ function Home() {
                 <img src={humains} alt="poster humains EpureVision" />
                 <div className="figcaption">
                   <h3>NOUS SOMMES TOUS HUMAINS</h3>
-                  <p>2024</p>
+                  <p>2023 </p>
                 </div>
               </a>
             </div>
@@ -234,7 +234,7 @@ function Home() {
                 <img src={autumn} alt="poster autumn EpureVision" />
                 <div className="figcaption">
                   <h3>AUTUMN</h3>
-                  <p>2024</p>
+                  <p>2023</p>
                 </div>
               </a>
             </div>
@@ -246,7 +246,7 @@ function Home() {
                 <img src={smile} alt="poster smile EpureVision" />
                 <div className="figcaption">
                   <h3>SMILE</h3>
-                  <p>2024</p>
+                  <p>2023</p>
                 </div>
               </a>
             </div>
@@ -258,7 +258,7 @@ function Home() {
                 <img src={nuke} alt="poster nuke EpureVision" />
                 <div className="figcaption">
                   <h3>NUKE</h3>
-                  <p>2024</p>
+                  <p>2023</p>
                 </div>
               </a>
             </div>

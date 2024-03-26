@@ -247,8 +247,11 @@
         display: flex;
         justify-content: space-between;
         h3 {
-          font-size: clamp(14px, 2vw, 18px);
+          font-size: clamp(14px, 2vw, 16px);
           font-family: "Satoshi";
+        }
+        p {
+          font-size: clamp(14px, 2vw, 16px);
         }
       }
     }
