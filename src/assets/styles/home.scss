@@ -165,6 +165,7 @@
 
   h2 {
     margin-bottom: 16px;
+    font-size: clamp(24px, 2.5vw, 34px);
   }
   ul {
     border-bottom: 1px solid #f6f6f6;
