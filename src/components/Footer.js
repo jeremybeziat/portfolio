@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div>
+    <div data-scroll-section>
       <footer>
         <h2>Jérémy Béziat</h2>
         <ul>

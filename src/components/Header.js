@@ -24,9 +24,9 @@ function Header() {
   });
 
   return (
-    <header>
+    <header data-scroll-section>
       <div className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}>
-        <a title="home" href="/" className="logo logo-phone">
+        <Link title="home" to="/" className="logo logo-phone">
           {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
               <path
@@ -43,7 +43,7 @@ function Header() {
               />
             </svg>
           }
-        </a>
+        </Link>
         <div className="menu-icon" onClick={toggleMenu}>
           {isMenuOpen ? (
             <button className="menu">CLOSE</button>
