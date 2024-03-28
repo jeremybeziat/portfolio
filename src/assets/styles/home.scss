@@ -4,27 +4,25 @@
   justify-content: center;
   flex-direction: column;
   background: #0038ff;
+  background: #121212;
   transition: 0.5s ease-in;
 
   .loader {
     position: absolute;
     bottom: 16px;
     left: 16px;
-    width: 100%;
-    margin-right: 16px;
+    width: 95%;
   }
 
   .loader__bar {
     margin-top: 5px;
     margin-right: 16px;
-    width: 98%;
   }
 
   .loader__progress {
     height: 5px;
     background: #f6f6f6;
     transition: 0.5s ease-in-out;
-    margin-right: 16px;
   }
 
   .loader__label {
@@ -250,6 +248,11 @@
 }
 
 @media (min-width: 768px) {
+  .loader-wrapper {
+    .loader {
+      width: 98.5%;
+    }
+  }
   .introduction {
     .text-introduction {
       display: flex;
