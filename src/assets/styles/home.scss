@@ -17,6 +17,7 @@
   .loader__bar {
     margin-top: 5px;
     margin-right: 16px;
+    width: 98%;
   }
 
   .loader__progress {
@@ -34,22 +35,26 @@
   svg {
     height: 20%;
     fill: #f6f6f6;
-    animation: load 2s ease 0s 5 normal forwards;
+    // animation: load 2s ease 0s 5 normal forwards;
   }
 }
 
-@keyframes load {
-  0%,
-  50%,
-  100% {
-    opacity: 1;
-  }
-
-  25%,
-  75% {
-    opacity: 0;
-  }
+#loader__progress {
+  width: 0;
 }
+
+// @keyframes load {
+//   0%,
+//   50%,
+//   100% {
+//     opacity: 1;
+//   }
+
+//   25%,
+//   75% {
+//     opacity: 0;
+//   }
+// }
 
 .absolute {
   position: fixed;
