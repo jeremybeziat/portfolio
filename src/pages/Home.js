@@ -39,10 +39,19 @@ function Home() {
       {loading ? (
         <div className="loader-wrapper absolute">
           <video
+            className="logo-animation-desktop"
             autoPlay={true}
             playsInline
             muted
             src="video/logo.mp4"
+            type="video/mp4"
+          ></video>
+          <video
+            className="logo-animation-phone"
+            autoPlay={true}
+            playsInline
+            muted
+            src="video/logo1.mp4"
             type="video/mp4"
           ></video>
           <div className="loader">

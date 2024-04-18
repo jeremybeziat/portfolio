@@ -7,11 +7,16 @@
   background: #121212;
   transition: 0.5s ease-in;
 
-  video {
+  .logo-animation-desktop,
+  .logo-animation-phone {
     object-fit: cover;
     height: 100%;
     width: 100%;
     object-position: center;
+  }
+
+  .logo-animation-desktop {
+    display: none;
   }
 
   .loader {
@@ -246,6 +251,14 @@
   .loader-wrapper {
     .loader {
       width: 98.5%;
+    }
+
+    .logo-animation-desktop {
+      display: block;
+    }
+
+    .logo-animation-phone {
+      display: none;
     }
   }
   .introduction {
