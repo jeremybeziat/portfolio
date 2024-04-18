@@ -7,6 +7,12 @@
   background: #121212;
   transition: 0.5s ease-in;
 
+  video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
   .loader {
     position: absolute;
     bottom: 16px;
@@ -40,19 +46,6 @@
 #loader__progress {
   width: 0;
 }
-
-// @keyframes load {
-//   0%,
-//   50%,
-//   100% {
-//     opacity: 1;
-//   }
-
-//   25%,
-//   75% {
-//     opacity: 0;
-//   }
-// }
 
 .absolute {
   position: fixed;
@@ -186,6 +179,7 @@
   }
   p {
     // margin-top: 16px;
+    opacity: 1;
     margin-bottom: 0;
     text-align: justify;
     font-size: clamp(14px, 1.5vw, 18px);
