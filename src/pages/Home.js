@@ -42,7 +42,7 @@ function Home() {
             autoPlay={true}
             playsInline
             muted
-            src="video/logo_3.mp4"
+            src="video/logo.mp4"
             type="video/mp4"
           ></video>
           <div className="loader">
