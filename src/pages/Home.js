@@ -25,7 +25,7 @@ function Home() {
         if (loadedResources === images.length) {
           setTimeout(() => {
             setLoading(false);
-          }, 3000000); // Change the timeout value as needed
+          }, 3000); // Change the timeout value as needed
         }
       };
       image.src = src;
@@ -42,7 +42,7 @@ function Home() {
             autoPlay={true}
             playsInline
             muted
-            src="video/logo_3.mp4"
+            src="video/logo.mp4"
             type="video/mp4"
           ></video>
           <div className="loader">
