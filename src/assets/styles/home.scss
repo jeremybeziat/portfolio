@@ -342,9 +342,14 @@
 
 @media (min-width: 972.22px) {
   .work-section {
+    margin: 100px 0 0 0;
+  }
+  .container-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100vh;
-    padding-top: 150px;
-    margin-bottom: 0;
+
   }
 }
 
