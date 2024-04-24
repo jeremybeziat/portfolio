@@ -80,7 +80,7 @@
 
   h1 {
     font-family: "Satoshi-Light";
-    font-size: clamp(16px, 2.5vw, 44px);
+    font-size: clamp(16px, 2.5vw, 40px);
     margin-bottom: 16px;
     text-transform: uppercase;
     padding-left: 16px;
@@ -88,6 +88,7 @@
 
   span {
     font-family: "Satoshi-Bold";
+    background: #0038ff;
   }
 
   .link-form {
@@ -182,6 +183,12 @@
   align-items: center;
   justify-content: center;
   .bg-productivite {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 56, 255, 1) 0%,
+      rgba(18, 18, 18, 0) 50%,
+      rgba(18, 18, 18, 1) 100%
+    );
     z-index: 1;
     width: 100%;
     height: 100%;
@@ -223,7 +230,6 @@
       opacity: 80%;
     }
     ul {
-      margin-bottom: px;
       li {
         font-family: "Satoshi-Medium";
         color: #121212;
@@ -234,18 +240,18 @@
   }
 }
 
-// .productivite::before {
-//   content: "";
-//   position: absolute;
-//   background: url("../images/pattern_blue.webp");
-//   background-repeat: no-repeat;
-//   background-position: center center;
-//   background-size: cover;
-//   width: 100%;
-//   height: 100%;
-//   bottom: 0;
-//   z-index: 1;
-// }
+.productivite::before {
+  content: "";
+  position: absolute;
+  background: url("../images/pattern_blue.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: 1;
+}
 
 .work-section {
   padding: 0 16px;
@@ -453,6 +459,9 @@
         mix-blend-mode: luminosity;
         opacity: 1;
         transition: opacity 0.3s ease;
+        &:hover {
+          mix-blend-mode: normal;
+        }
       }
 
       .figcaption {
@@ -541,7 +550,7 @@
 @media (min-width: 1900px) {
   .presentation {
     h1 {
-      width: 48%;
+      width: 44%;
     }
   }
 }

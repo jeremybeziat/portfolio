@@ -42,7 +42,7 @@ function Home() {
       const lines = titleRef.current.querySelectorAll("span");
       gsap.from(lines, {
         opacity: 0,
-        y: -100, // Décaler chaque ligne de 20 pixels vers le bas
+        x: 80, // Décaler chaque ligne de 20 pixels vers le bas
         duration: 1,
         ease: "power3.out",
         stagger: 0.4, // Délai entre chaque animation de ligne
@@ -89,13 +89,9 @@ function Home() {
             <section className="presentation">
               <div>
                 <h1 ref={titleRef}>
-                  Prêt à donner vie à votre
-                  <span> vision </span>
-                  ?<br />
-                  Ensemble, créons
-                  <span> une identité graphique </span>
-                  et
-                  <span> une expérience web</span> qui reflètent parfaitement
+                  Prêt à donner vie à votre <span>vision</span> ?<br />
+                  Ensemble, créons <span>une identité graphique</span> et{" "}
+                  <span>une expérience web</span> qui reflètent parfaitement
                   l'essence de votre projet.
                 </h1>
                 <a className="link-form" href="/contact">
