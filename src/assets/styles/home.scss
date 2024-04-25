@@ -80,6 +80,7 @@
 
   .title {
     width: 100%;
+    z-index: 200;
   }
 
   h1 {
@@ -96,17 +97,17 @@
       background: #f6f6f6;
     }
     font-family: "Satoshi-Bold";
-    color: #0038ff;
-    background: #b3dcff;
-    text-transform: normal;
   }
 
   .link-form {
-    font-size: clamp(14px, 2.5vw, 24px);
+    display: inline-block;
+    font-family: "Satoshi-Medium";
+    font-size: clamp(14px, 2.5vw, 18px);
     background: none;
     border: none;
-    color: #f6f6f6;
-    border-bottom: 1px solid #f6f6f6;
+    border: 1px solid #f6f6f6;
+    padding: 12px 24px;
+    border-radius: 50px;
     margin-left: 16px;
   }
 
@@ -115,6 +116,7 @@
     bottom: 0;
     padding: 16px;
     width: 100%;
+    z-index: 200;
   }
   .link-social {
     display: flex;
@@ -125,6 +127,37 @@
     justify-content: space-between;
     color: #f6f6f6;
   }
+}
+
+.presentation::before {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: url("../images/tulip.webp");
+  background-repeat: no-repeat;
+  opacity: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.presentation-bg {
+  height: 100%;
+  width: 100%;
+  z-index: 200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(18, 18, 18, 0.5) 0%,
+    rgba(0, 56, 255, 1) 100%
+  );
+  opacity: 1;
 }
 
 .introduction {

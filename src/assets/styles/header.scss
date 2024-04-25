@@ -5,7 +5,7 @@ header {
 nav {
   width: 100%;
   position: fixed;
-  z-index: 100;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,7 +62,7 @@ nav {
   width: 300px;
   height: 100vh;
   background-color: #0038ff;
-  z-index: 100;
+  z-index: 1000;
   mix-blend-mode: difference;
 }
 
