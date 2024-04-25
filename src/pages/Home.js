@@ -86,6 +86,7 @@ function Home() {
         <div data-scroll-container>
           <Header />
           <main className="home">
+              <div className="presentation-bg"></div>
             <section className="presentation">
               <div className="title">
                 <h1 ref={titleRef}>
