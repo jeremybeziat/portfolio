@@ -87,12 +87,12 @@ function Home() {
           <Header />
           <main className="home">
             <section className="presentation">
-              <div>
+              <div className="title">
                 <h1 ref={titleRef}>
                   Prêt à donner vie à votre <span>vision</span> ?<br />
-                  Ensemble, créons <span>une identité graphique</span> et{" "}
-                  <span>une expérience web</span> qui reflètent parfaitement
-                  l'essence de votre projet.
+                  Créons <span>une identité graphique</span> et{" "}
+                  <span>une expérience web</span> qui reflètent parfaitement{" "}
+                  <span>votre projet</span>
                 </h1>
                 <a className="link-form" href="/contact">
                   VOTRE VISION
