@@ -78,21 +78,29 @@
     height: 100vh;
   }
 
+  .title {
+    width: 100%;
+  }
+
   h1 {
-    font-family: "Satoshi-Light";
+    width: 100%;
+    font-family: "Satoshi";
     font-size: clamp(16px, 2.5vw, 40px);
     margin-bottom: 16px;
     text-transform: uppercase;
-    padding-left: 16px;
+    padding: 0 10px 0 16px;
   }
 
   span {
+    &::selection {
+      background: #f6f6f6;
+    }
     font-family: "Satoshi-Bold";
-    background: #0038ff;
+    color: #0038ff;
   }
 
   .link-form {
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: clamp(14px, 2.5vw, 24px);
     background: none;
     border: none;
     color: #f6f6f6;
@@ -139,6 +147,7 @@
       font-size: clamp(27px, 8vw, 60px);
       font-family: "Medium";
       line-height: 1.2;
+      color: #f6f6f6;
     }
   }
   .line {
@@ -292,85 +301,6 @@
   }
 }
 
-@media (min-width: 400px) {
-  .presentation {
-    h1 {
-      width: 94%;
-    }
-  }
-}
-@media (min-width: 419px) {
-  .presentation {
-    h1 {
-      width: 89%;
-    }
-  }
-}
-
-@media (min-width: 442px) {
-  .presentation {
-    h1 {
-      width: 85%;
-    }
-  }
-}
-
-@media (min-width: 463px) {
-  .presentation {
-    h1 {
-      width: 81%;
-    }
-  }
-}
-
-@media (min-width: 486px) {
-  .presentation {
-    h1 {
-      width: 77%;
-    }
-  }
-}
-
-@media (min-width: 511px) {
-  .presentation {
-    h1 {
-      width: 73%;
-    }
-  }
-}
-
-@media (min-width: 539px) {
-  .presentation {
-    h1 {
-      width: 69%;
-    }
-  }
-}
-
-@media (min-width: 570px) {
-  .presentation {
-    h1 {
-      width: 66%;
-    }
-  }
-}
-
-@media (min-width: 595px) {
-  .presentation {
-    h1 {
-      width: 63%;
-    }
-  }
-}
-
-@media (min-width: 624px) {
-  .presentation {
-    h1 {
-      width: 60%;
-    }
-  }
-}
-
 @media (min-width: 768px) {
   .loader-wrapper {
     .loader {
@@ -388,7 +318,7 @@
   .presentation {
     justify-content: space-around;
     h1 {
-      width: 60%;
+      width: 80%;
     }
   }
   .productivite {
@@ -512,6 +442,10 @@
         width: 500px;
         padding: 35px 25px;
       }
+      .work-section {
+        img {
+        }
+      }
     }
   }
 }
@@ -550,7 +484,7 @@
 @media (min-width: 1900px) {
   .presentation {
     h1 {
-      width: 48%;
+      width: 65%;
     }
   }
 }
