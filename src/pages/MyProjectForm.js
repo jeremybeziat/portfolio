@@ -11,6 +11,8 @@ const MyProjectForm = () => {
         style={{
           position: "absolute",
           paddingTop: "150px",
+          paddingLeft: "16px",
+          paddingRight: "16px",
           left: 0,
           bottom: 0,
           width: "100%",
