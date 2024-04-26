@@ -95,7 +95,7 @@ function Home() {
                   <span>une expérience web</span> qui reflètent parfaitement{" "}
                   <span>votre projet</span>
                 </h1>
-                <a className="link-form" href="/contact">
+                <a className="link-form" href="/formulaire">
                   VOTRE VISION
                 </a>
               </div>
