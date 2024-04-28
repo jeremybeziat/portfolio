@@ -11,7 +11,7 @@ import nuke from "../assets/images/mockup/nuke.webp";
 
 function Home() {
   const [loading, setLoading] = useState(true);
-  const [progress, setProgress] = useState(0);
+  // const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     const images = [transformers, humains, autumn, smile, nuke];
@@ -21,8 +21,8 @@ function Home() {
       const image = new Image();
       image.onload = () => {
         loadedResources++;
-        const newProgress = (loadedResources / images.length) * 100;
-        setProgress(newProgress);
+        // const newProgress = (loadedResources / images.length) * 100;
+        // setProgress(newProgress);
         if (loadedResources === images.length) {
           setTimeout(() => {
             setLoading(false);
@@ -70,7 +70,7 @@ function Home() {
             src="video/logo1.mp4"
             type="video/mp4"
           ></video>
-          <div className="loader">
+          {/* <div className="loader">
             <span className="loader__label">
               LOADING {Math.round(progress)}%
             </span>
@@ -80,13 +80,13 @@ function Home() {
                 style={{ width: `${progress}%` }}
               ></div>
             </div>
-          </div>
+          </div> */}
         </div>
       ) : (
         <div data-scroll-container>
           <Header />
           <main className="home">
-              <div className="presentation-bg"></div>
+            <div className="presentation-bg"></div>
             <section className="presentation">
               <div className="title">
                 <h1 ref={titleRef}>
