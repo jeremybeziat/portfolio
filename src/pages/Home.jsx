@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
-// import LocomotiveScroll from "locomotive-scroll";
+import useLocoScroll from "../hooks/useLocoScroll";
 import transformers from "../assets/images/mockup/transformers.webp";
 import humains from "../assets/images/mockup/humains.webp";
 import autumn from "../assets/images/mockup/autumn.webp";
@@ -10,50 +10,87 @@ import smile from "../assets/images/mockup/smile.webp";
 import nuke from "../assets/images/mockup/nuke.webp";
 
 function Home() {
-  const [loading, setLoading] = useState(true);
-  // const [progress, setProgress] = useState(0);
-
-  useEffect(() => {
-    const images = [transformers, humains, autumn, smile, nuke];
-    let loadedResources = 0;
-
-    const loadImage = (src) => {
-      const image = new Image();
-      image.onload = () => {
-        loadedResources++;
-        // const newProgress = (loadedResources / images.length) * 100;
-        // setProgress(newProgress);
-        if (loadedResources === images.length) {
-          setTimeout(() => {
-            setLoading(false);
-          }, 3000); // Change the timeout value as needed
-        }
-      };
-      image.src = src;
-    };
-
-    images.forEach((src) => loadImage(src));
-  }, []);
-
+  // const [loading, setLoading] = useState(true);
+  // const ref = useRef(null);
   const titleRef = useRef(null);
+  // const [progress, setProgress] = useState(0);
+  // const [preloader, setPreload] = useState(true);
+
+  const ref = useRef(null);
+  const [preloader, setPreload] = useState(true);
 
   useEffect(() => {
-    if (!loading) {
+    if (!preloader && titleRef.current) {
       const lines = titleRef.current.querySelectorAll("span");
       gsap.from(lines, {
         opacity: 0,
-        x: 80, // Décaler chaque ligne de 20 pixels vers le bas
+        x: 80,
         duration: 1,
         ease: "power3.out",
-        stagger: 0.4, // Délai entre chaque animation de ligne
+        stagger: 0.4,
       });
     }
-  }, [loading]);
+  }, [preloader]); // Assurez-vous de mettre titleRef.current dans les dépendances
+
+  useLocoScroll(!preloader);
+
+  useEffect(() => {
+    if (!preloader && ref) {
+      if (typeof window === "undefined" || !window.document) {
+        return;
+      }
+    }
+  }, [preloader]);
+
+  const [timer, setTimer] = React.useState(3);
+
+  const id = React.useRef(null);
+
+  const clear = () => {
+    window.clearInterval(id.current);
+    setPreload(false);
+  };
+
+  React.useEffect(() => {
+    id.current = window.setInterval(() => {
+      setTimer((time) => time - 1);
+    }, 1000);
+    return () => clear();
+  }, []);
+
+  React.useEffect(() => {
+    if (timer === 0) {
+      clear();
+    }
+  }, [timer]);
+
+  if (typeof window === "undefined" || !window.document) {
+    return null;
+  }
+
+  // useEffect(() => {
+  //   const images = [transformers, humains, autumn, smile, nuke];
+  //   let loadedResources = 0;
+
+  //   const loadImage = (src) => {
+  //     const image = new Image();
+  //     image.onload = () => {
+  //       loadedResources++;
+  //       // const newProgress = (loadedResources / images.length) * 100;
+  //       // setProgress(newProgress);
+  //       if (loadedResources === images.length) {
+  //         setTimeout(() => {
+  //           setPreload(false);
+  //         }, 3000); // Change the timeout value as needed
+  //       }
+  //     };
+  //     image.src = src;
+  //   };
 
   return (
     <>
-      {loading ? (
-        <div className="loader-wrapper absolute">
+      {preloader ? (
+        <div className="loader-wrapper absolute hide-cursor">
           <video
             className="logo-animation-desktop"
             autoPlay={true}
@@ -85,7 +122,7 @@ function Home() {
       ) : (
         <div data-scroll-container>
           <Header />
-          <main className="home">
+          <main className="home" id="main-container">
             <div className="presentation-bg"></div>
             <section className="presentation">
               <div className="title">
