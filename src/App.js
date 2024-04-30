@@ -1,6 +1,6 @@
 import "./assets/styles/App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./container/Home";
 import About from "./pages/About";
 import Work from "./pages/Work";
 import Form from "./pages/MyProjectForm";

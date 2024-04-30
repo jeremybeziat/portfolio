@@ -1,10 +1,17 @@
-header {
+#header {
   width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.div-header {
+  position: fixed;
+  z-index: 1000;
 }
 
 nav {
-  width: 100%;
   position: fixed;
+  width: 100%;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -118,12 +125,15 @@ nav {
 }
 
 @media (min-width: 768px) {
+  #header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
   .navigation-desktop {
     padding: 16px;
   }
-  .logo {
-    height: 100%;
-  }
+
   .logo svg {
     position: relative;
     height: 60px;
@@ -141,33 +151,25 @@ nav {
     position: relative;
     width: auto;
   }
-
-  .navigation-desktop {
-    position: fixed;
-    display: block;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    mix-blend-mode: difference;
-    z-index: 1000;
-
-    .nav {
+    .navigation-desktop {
       width: 100%;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-    }
+      align-items: center;
+      mix-blend-mode: difference;
+      z-index: 1000;
+      top: 0;
 
-    ul {
-      display: flex;
-    }
+      ul {
+        display: flex;
+      }
 
-    ul li a {
-      color: white;
-      margin: 10px;
-      font-family: "Satoshi";
-      font-size: clamp(16px, 2vw, 1.3rem);
+      ul li a {
+        color: white;
+        margin: 10px;
+        font-family: "Satoshi";
+        font-size: clamp(16px, 2vw, 1.3rem);
+      }
     }
   }
 
