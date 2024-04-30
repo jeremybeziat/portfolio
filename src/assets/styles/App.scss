@@ -1,18 +1,10 @@
 @use "reset.scss";
 @use "fonts.scss";
-@use "animation.scss";
-@use "header.scss";
 @use "home.scss";
 @use "work.scss";
-@use "contact.scss";
-@use "footer.scss";
 @use "about.scss";
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: #f6f6f6;
-  }
+@use "../../components/Presentation/presentation.scss";
+@use "../../components/Intro/introduction.scss";
+@use "../../components/Capacities/productivite.scss";
+@use "../../components/Project/projet.scss";
+@use "../../components/Header/header.scss";

@@ -1,0 +1,113 @@
+.productivite {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .bg-productivite {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 56, 255, 1) 0%,
+      rgba(18, 18, 18, 0) 50%,
+      rgba(18, 18, 18, 1) 100%
+    );
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  h2 {
+    font-family: "Medium";
+    font-size: clamp(24px, 4vw, 60px);
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+
+  .container-details {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .details {
+    ::selection {
+      background: #121212;
+      color: #f6f6f6;
+    }
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    background: #f6f6f6;
+    &:not(:nth-child(2)) {
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-family: "Medium";
+      font-size: clamp(20px, 2.5vw, 60px);
+      color: #121212;
+    }
+    p {
+      margin-bottom: 10px;
+      color: #121212;
+      font-family: "Satoshi";
+      font-size: clamp(16px, 2.5vw, 18px);
+      opacity: 80%;
+    }
+    ul {
+      li {
+        font-family: "Satoshi-Medium";
+        color: #121212;
+        font-size: clamp(16px, 2.5vw, 20px);
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+.productivite::before {
+  content: "";
+  position: absolute;
+  background: url("../../assets/images/pattern_blue.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .productivite {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      margin-bottom: 35px;
+    }
+    .container-details {
+      display: flex;
+    }
+    .details:nth-child(1) {
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .productivite {
+    .container-details {
+      justify-content: center;
+    }
+    .details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 500px;
+      padding: 35px 25px;
+    }
+  }
+}
